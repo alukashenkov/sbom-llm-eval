@@ -1,0 +1,38 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 6,
+      "completeness": 8,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 7.35,
+      "notes": "Good CRA compliance structure but contains inaccuracies in CVE counts and EPSS values. Some hallucinated details like 'and 0 more across 0 packages'."
+    },
+    "gemini-3-flash": {
+      "cra_alignment": 8,
+      "accuracy": 5,
+      "completeness": 7,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 7.15,
+      "notes": "Strong CRA alignment and actionable recommendations, but significant accuracy issues including duplicate CVE-2025-7783 entries and incorrect package associations."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 9,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.7,
+      "notes": "Excellent overall performance with accurate CVE details, proper CRA Article references, clear exploit evidence, and specific actionable recommendations. Most concise while maintaining completeness."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash",
+    "gemini-3-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 provides the most accurate and actionable summary with proper CRA Article citations, correct CVE details, and clear exploit evidence presentation. While all models correctly identify no mandatory reporting triggers, DeepSeek-v3 excels in accuracy and conciseness without sacrificing completeness."
+}

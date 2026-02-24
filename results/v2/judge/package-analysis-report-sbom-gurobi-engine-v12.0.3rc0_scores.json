@@ -1,0 +1,48 @@
+{
+  "scores": {
+    "gemini-3-flash": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 7.6,
+      "notes": "Good CRA compliance structure, accurate CVE counts (43 vs source 42), comprehensive coverage of critical/high CVEs, but slightly verbose at ~600 words"
+    },
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 8,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 8.0,
+      "notes": "Strong CRA alignment, accurate CVE count (39 close to source), good exploit evidence surfacing, well-structured and concise, clear actionable priorities"
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 9,
+      "completeness": 9,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 9.0,
+      "notes": "Excellent CRA compliance awareness, most accurate CVE count (42 matches source), comprehensive exploit evidence with specific PoC counts, very concise, highly actionable with clear prioritization"
+    },
+    "glm-4.7": {
+      "cra_alignment": 7,
+      "accuracy": 6,
+      "completeness": 7,
+      "conciseness": 7,
+      "actionability": 7,
+      "weighted_total": 6.8,
+      "notes": "Adequate CRA structure but inflated CVE count (59 vs source 42), good exploit coverage, reasonable completeness but accuracy issues with package advisory counts"
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash",
+    "gemini-3-flash",
+    "glm-4.7"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "Deepseek-v3 excels with perfect CVE count accuracy (42), excellent CRA compliance awareness, and highly actionable prioritization with specific PoC evidence counts. Gemini-2.5-flash provides strong overall performance with good accuracy and structure, while Gemini-3-flash is comprehensive but slightly verbose. GLM-4.7 significantly inflates CVE counts (59 vs 42) which impacts accuracy scoring."
+}

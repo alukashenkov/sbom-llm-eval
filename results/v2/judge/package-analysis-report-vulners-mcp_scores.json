@@ -1,0 +1,38 @@
+{
+  "scores": {
+    "gemini-3-flash": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 9,
+      "conciseness": 7,
+      "actionability": 9,
+      "weighted_total": 8.4,
+      "notes": "Excellent CRA alignment with correct CISA KEV identification and Article 14 timelines. Accurate CVE counts and good completeness. Slightly verbose but highly actionable."
+    },
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 9,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 8.3,
+      "notes": "Good CRA compliance with correct mandatory reporting identification. Very accurate data matching source. Well-structured and actionable recommendations."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 3,
+      "accuracy": 6,
+      "completeness": 7,
+      "conciseness": 9,
+      "actionability": 6,
+      "weighted_total": 5.8,
+      "notes": "Major CRA alignment failure - incorrectly states no mandatory reporting triggers despite CVE-2025-48384 being CISA KEV. Inaccurate CVE counts and some package version mismatches."
+    }
+  },
+  "ranking": [
+    "gemini-3-flash",
+    "gemini-2.5-flash",
+    "deepseek-v3"
+  ],
+  "winner": "gemini-3-flash",
+  "analysis": "Gemini-3-flash wins with superior CRA compliance, correctly identifying CVE-2025-48384 as a CISA KEV entry requiring mandatory reporting. Deepseek-v3 fails critically by missing this CRA trigger entirely, while Gemini-2.5-flash provides solid accuracy and structure but falls slightly behind in overall scoring."
+}

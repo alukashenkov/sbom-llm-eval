@@ -1,0 +1,48 @@
+{
+  "scores": {
+    "gemini-3-flash": {
+      "cra_alignment": 8,
+      "accuracy": 6,
+      "completeness": 8,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 7.35,
+      "notes": "Good CRA compliance focus and actionable recommendations, but has accuracy issues with CVE counts (claims 48 unique CVEs vs source showing 46) and some hallucinated CVEs like CVE-2026-22709"
+    },
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 7.7,
+      "notes": "Strong overall performance with good structure and accurate EPSS values. Minor issues with CVE count discrepancy (46 vs 47 claimed) but maintains focus on CRA compliance"
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 9,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.7,
+      "notes": "Excellent CRA alignment with clear Article 14 assessment, accurate CVE counts, comprehensive exploit evidence, and highly actionable recommendations with proper priority ordering"
+    },
+    "glm-4.7": {
+      "cra_alignment": 7,
+      "accuracy": 6,
+      "completeness": 7,
+      "conciseness": 8,
+      "actionability": 7,
+      "weighted_total": 6.95,
+      "notes": "Decent structure but accuracy issues with inflated CVE count (55 vs 46) and some potential hallucinations. Good conciseness but weaker on CRA-specific guidance"
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash",
+    "gemini-3-flash",
+    "glm-4.7"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 delivers the strongest performance with excellent CRA alignment, accurate vulnerability counts, and highly actionable recommendations properly prioritized by exploitability and severity. Gemini-2.5-flash provides solid overall quality with good structure, while the other models suffer from accuracy issues and weaker CRA-specific guidance."
+}

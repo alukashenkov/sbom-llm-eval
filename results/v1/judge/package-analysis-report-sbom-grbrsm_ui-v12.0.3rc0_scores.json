@@ -1,0 +1,58 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 4,
+      "accuracy": 6,
+      "completeness": 7,
+      "conciseness": 6,
+      "actionability": 7,
+      "weighted_total": 5.85,
+      "notes": "Correctly identifies no CRA triggers but has inaccurate vulnerability counts (claims 1 CRITICAL, 8 HIGH vs actual 1 CRITICAL, 5 HIGH). Good completeness but verbose at ~600 words."
+    },
+    "glm-4.7": {
+      "cra_alignment": 5,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 7.0,
+      "notes": "Good CRA alignment, mostly accurate counts (1 Critical, 5 High matches), comprehensive coverage of key CVEs, concise format, and actionable recommendations with proper prioritization."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 6,
+      "accuracy": 8,
+      "completeness": 8,
+      "conciseness": 9,
+      "actionability": 8,
+      "weighted_total": 7.7,
+      "notes": "Strong CRA compliance focus, accurate vulnerability data, comprehensive critical findings coverage, very concise presentation, and well-structured actionable steps."
+    },
+    "qwen-turbo": {
+      "cra_alignment": 5,
+      "accuracy": 7,
+      "completeness": 7,
+      "conciseness": 9,
+      "actionability": 7,
+      "weighted_total": 6.8,
+      "notes": "Good CRA awareness, mostly accurate data with some EPSS formatting inconsistencies, covers key vulnerabilities, very concise, and provides clear action items."
+    },
+    "claude-3-haiku": {
+      "cra_alignment": 3,
+      "accuracy": 5,
+      "completeness": 6,
+      "conciseness": 5,
+      "actionability": 6,
+      "weighted_total": 4.85,
+      "notes": "Misunderstands CRA triggers (incorrectly flags CVEs for ENISA notification), has accuracy issues with severity counts, and provides less precise actionability despite good structure."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "glm-4.7",
+    "qwen-turbo",
+    "gemini-2.5-flash",
+    "claude-3-haiku"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "Deepseek-v3 wins with the strongest CRA compliance focus, accurate vulnerability data, and excellent conciseness while maintaining comprehensive coverage. Claude-3-haiku performs poorly due to fundamental misunderstanding of CRA triggers, incorrectly flagging normal CVEs for mandatory reporting."
+}

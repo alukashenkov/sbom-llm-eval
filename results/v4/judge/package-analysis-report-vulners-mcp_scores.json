@@ -1,0 +1,28 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 9,
+      "accuracy": 6,
+      "completeness": 8,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 7.55,
+      "notes": "Excellent CRA compliance with proper Article 14 identification and CISA KEV mention. However, CVE counts don't match source data (claims 10 Critical vs 4 actual). Good completeness and actionability."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 9,
+      "completeness": 8,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.85,
+      "notes": "Strong CRA alignment with correct KEV identification. Accurate CVE counts matching source data. Concise format under 600 words with specific, well-prioritized actions."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "Both summaries correctly identify CRA Article 14 triggers and CISA KEV entries, but deepseek-v3 provides more accurate CVE counts (4 Critical vs gemini's incorrect 10 Critical). Deepseek-v3 also delivers better conciseness and more specific actionable recommendations with proper version numbers."
+}

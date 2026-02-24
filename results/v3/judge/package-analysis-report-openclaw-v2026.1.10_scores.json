@@ -1,0 +1,28 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 9,
+      "conciseness": 6,
+      "actionability": 8,
+      "weighted_total": 7.65,
+      "notes": "Strong CRA compliance focus with proper Article 14 checks and detailed vulnerability coverage. Slightly verbose and some minor accuracy issues with CVE counts (43 vs 42 unique CVEs)."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 8,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.55,
+      "notes": "Excellent CRA compliance with explicit wildExploited and CISA KEV checks. More accurate CVE counts, concise format, and well-prioritized actions. Strong focus on exploitability-based prioritization."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 delivers superior CRA alignment with explicit wildExploited and CISA KEV scanning methodology, more accurate vulnerability counts, and better conciseness while maintaining comprehensive coverage. Gemini provides more detailed vulnerability descriptions but suffers from verbosity and minor accuracy issues."
+}

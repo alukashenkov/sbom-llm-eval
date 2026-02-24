@@ -1,0 +1,48 @@
+{
+  "scores": {
+    "gemini-3-flash": {
+      "cra_alignment": 8,
+      "accuracy": 6,
+      "completeness": 8,
+      "conciseness": 6,
+      "actionability": 8,
+      "weighted_total": 7.1,
+      "notes": "Good CRA compliance structure but inaccurate CVE counts (claims 7 unique CVEs vs actual 8). Comprehensive but verbose at ~600 words."
+    },
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 5,
+      "completeness": 7,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 6.9,
+      "notes": "Strong CRA focus but major accuracy issue claiming 3 CRITICAL CVEs when only 2 exist. Good structure and actionable recommendations."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 6,
+      "conciseness": 9,
+      "actionability": 8,
+      "weighted_total": 7.4,
+      "notes": "Excellent conciseness at 298 words with good accuracy. Minor completeness issues with advisory count discrepancies but strong overall structure."
+    },
+    "glm-4.7": {
+      "cra_alignment": 8,
+      "accuracy": 8,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 8.0,
+      "notes": "Most accurate CVE counts and severity distribution. Well-structured, concise, and provides specific vulnerability details with clear action items."
+    }
+  },
+  "ranking": [
+    "glm-4.7",
+    "deepseek-v3",
+    "gemini-3-flash",
+    "gemini-2.5-flash"
+  ],
+  "winner": "glm-4.7",
+  "analysis": "GLM-4.7 achieves the best balance across all criteria with accurate CVE counts, proper severity classification, and concise presentation. DeepSeek-v3 excels in conciseness but has minor accuracy issues, while both Gemini models suffer from CVE count inaccuracies despite good structural approaches."
+}

@@ -1,0 +1,48 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 9,
+      "accuracy": 6,
+      "completeness": 8,
+      "conciseness": 7,
+      "actionability": 9,
+      "weighted_total": 7.65,
+      "notes": "Excellent CRA alignment with proper Article 14 deadlines and wild exploitation flag. However, significant accuracy issues with inflated CVE counts and severity mismatches."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 7,
+      "conciseness": 9,
+      "actionability": 8,
+      "weighted_total": 7.7,
+      "notes": "Good CRA compliance focus with CISA KEV mention. More accurate severity counts but some completeness gaps. Excellent conciseness at 598 words."
+    },
+    "qwen-turbo": {
+      "cra_alignment": 2,
+      "accuracy": 3,
+      "completeness": 4,
+      "conciseness": 1,
+      "actionability": 3,
+      "weighted_total": 2.45,
+      "notes": "Major failures: missed wild exploitation flag, massive repetitive content making it unusable, severe accuracy issues with wrong severity counts."
+    },
+    "claude-3-haiku": {
+      "cra_alignment": 6,
+      "accuracy": 8,
+      "completeness": 5,
+      "conciseness": 8,
+      "actionability": 7,
+      "weighted_total": 6.7,
+      "notes": "Good accuracy and conciseness but missed critical CRA requirement of wild exploitation flag. Limited completeness with only 20 CVEs covered."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash",
+    "claude-3-haiku",
+    "qwen-turbo"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 wins with the best balance of CRA compliance, accuracy, and conciseness, properly identifying CISA KEV status and maintaining readability. Gemini-2.5-flash shows strong CRA understanding but suffers from significant accuracy issues with inflated vulnerability counts. Qwen-turbo fails completely due to massive repetitive content and missing critical CRA triggers."
+}

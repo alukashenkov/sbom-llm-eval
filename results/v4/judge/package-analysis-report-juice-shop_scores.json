@@ -1,0 +1,28 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 6,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 7.05,
+      "notes": "Correctly identifies no CRA triggers but has CVE count discrepancy (25 vs actual 32). Good exploit coverage and actionable recommendations."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 6,
+      "accuracy": 9,
+      "completeness": 9,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.25,
+      "notes": "Accurate CVE count (32), comprehensive exploit analysis, well-structured CRA compliance actions with specific version recommendations."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 provides superior accuracy with correct CVE counts and more comprehensive exploit analysis. Both models correctly identify no CRA mandatory reporting triggers, but DeepSeek offers more actionable remediation guidance with specific version numbers and better risk prioritization."
+}

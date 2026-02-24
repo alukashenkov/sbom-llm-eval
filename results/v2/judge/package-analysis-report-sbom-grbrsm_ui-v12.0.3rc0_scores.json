@@ -1,0 +1,48 @@
+{
+  "scores": {
+    "gemini-3-flash": {
+      "cra_alignment": 8,
+      "accuracy": 6,
+      "completeness": 7,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 7.05,
+      "notes": "Good CRA compliance structure but inaccurate CVE count (8 vs 9) and missing one medium CVE. Clear actionable recommendations."
+    },
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 7.65,
+      "notes": "Strong overall performance with good exploit identification and CRA structure. Minor CVSS discrepancy for CVE-2025-13465 (7.9 vs 8.2)."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 8,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.5,
+      "notes": "Excellent CRA alignment with proper wildExploited/KEV terminology. Accurate counts and concise format. Strong actionable priorities."
+    },
+    "glm-4.7": {
+      "cra_alignment": 8,
+      "accuracy": 8,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 8.0,
+      "notes": "Accurate CVE count (9) and good exploit identification. Solid CRA compliance structure with specific version recommendations."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "glm-4.7",
+    "gemini-2.5-flash",
+    "gemini-3-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "Deepseek-v3 excels with precise CRA terminology (wildExploited/KEV), accurate vulnerability counts, and exceptional conciseness while maintaining completeness. GLM-4.7 follows closely with accurate counts and specific version recommendations, while both Gemini models show good structure but have accuracy issues with CVE counts or CVSS scores."
+}

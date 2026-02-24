@@ -1,0 +1,38 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 6,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 6,
+      "actionability": 7,
+      "weighted_total": 6.8,
+      "notes": "Good completeness and structure but lacks CRA-specific language about Article 14 deadlines. Some accuracy issues with CVE counts (claims 62 unique CVEs vs 154 advisories). Well-organized but verbose."
+    },
+    "gemini-3-flash": {
+      "cra_alignment": 7,
+      "accuracy": 8,
+      "completeness": 9,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 7.9,
+      "notes": "Strong technical accuracy and completeness. Good CRA awareness mentioning Article 10 requirements. Excellent exploit analysis and specific version recommendations. Well-balanced length and actionable guidance."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 8,
+      "accuracy": 9,
+      "completeness": 8,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.4,
+      "notes": "Best CRA alignment with explicit mention of obligations and prioritization framework. Most accurate CVE reporting. Excellent conciseness while maintaining completeness. Clear, actionable recommendations with proper urgency levels."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-3-flash",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 provides the most CRA-compliant summary with explicit obligation-based prioritization and accurate technical details in a concise format. Gemini-3-Flash offers strong technical depth but is slightly more verbose, while Gemini-2.5-Flash has good structure but accuracy issues and lacks CRA-specific guidance."
+}

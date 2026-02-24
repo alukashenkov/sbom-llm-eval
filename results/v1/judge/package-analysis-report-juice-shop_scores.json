@@ -1,0 +1,58 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 6,
+      "completeness": 9,
+      "conciseness": 4,
+      "actionability": 8,
+      "weighted_total": 7.1,
+      "notes": "Strong CRA compliance focus and comprehensive coverage, but contains severity count inaccuracies and exceeds word limit significantly"
+    },
+    "glm-4.7": {
+      "cra_alignment": 7,
+      "accuracy": 5,
+      "completeness": 3,
+      "conciseness": 8,
+      "actionability": 6,
+      "weighted_total": 5.8,
+      "notes": "Good CRA structure and conciseness but appears truncated, missing critical vulnerabilities and has accuracy issues"
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 9,
+      "completeness": 8,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.8,
+      "notes": "Excellent CRA compliance awareness, accurate counts, well-structured and actionable within word limits"
+    },
+    "qwen-turbo": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 7,
+      "conciseness": 8,
+      "actionability": 7,
+      "weighted_total": 7.4,
+      "notes": "Good CRA structure and conciseness, but has some severity count discrepancies and missing some critical details"
+    },
+    "claude-3-haiku": {
+      "cra_alignment": 6,
+      "accuracy": 4,
+      "completeness": 5,
+      "conciseness": 7,
+      "actionability": 6,
+      "weighted_total": 5.4,
+      "notes": "Major accuracy issues with severity classifications, missing critical vulnerabilities, though well-structured"
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "qwen-turbo",
+    "gemini-2.5-flash",
+    "glm-4.7",
+    "claude-3-haiku"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "Deepseek-v3 provides the most accurate and CRA-compliant summary with correct vulnerability counts, proper exploit source identification, and actionable recommendations within word limits. Claude-3-haiku significantly underperforms due to major accuracy issues, incorrectly classifying critical vulnerabilities as medium severity."
+}

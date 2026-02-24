@@ -1,0 +1,269 @@
+{
+  "prompt_version": "v2",
+  "metrics": [
+    {
+      "file": "package-analysis-report-juice-shop.json",
+      "model": "gemini-3-flash",
+      "model_id": "google/gemini-3-flash-preview",
+      "status": "ok",
+      "time_s": 8.7,
+      "input_tokens": 29755,
+      "output_tokens": 1106,
+      "cost_usd": 0.018195,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-juice-shop.json",
+      "model": "gemini-2.5-flash",
+      "model_id": "google/gemini-2.5-flash",
+      "status": "ok",
+      "time_s": 7.3,
+      "input_tokens": 29755,
+      "output_tokens": 1222,
+      "cost_usd": 0.011982,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-juice-shop.json",
+      "model": "deepseek-v3",
+      "model_id": "deepseek/deepseek-chat-v3-0324",
+      "status": "ok",
+      "time_s": 40.1,
+      "input_tokens": 27550,
+      "output_tokens": 867,
+      "cost_usd": 0.008061,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-juice-shop.json",
+      "model": "glm-4.7",
+      "model_id": "z-ai/glm-4.7",
+      "status": "ok",
+      "time_s": 80.6,
+      "input_tokens": 26723,
+      "output_tokens": 5565,
+      "cost_usd": 0.024268,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-la-vulners-mcp.json",
+      "model": "gemini-3-flash",
+      "model_id": "google/gemini-3-flash-preview",
+      "status": "ok",
+      "time_s": 6.8,
+      "input_tokens": 4981,
+      "output_tokens": 764,
+      "cost_usd": 0.004783,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-la-vulners-mcp.json",
+      "model": "gemini-2.5-flash",
+      "model_id": "google/gemini-2.5-flash",
+      "status": "ok",
+      "time_s": 3.5,
+      "input_tokens": 4981,
+      "output_tokens": 689,
+      "cost_usd": 0.003217,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-la-vulners-mcp.json",
+      "model": "deepseek-v3",
+      "model_id": "deepseek/deepseek-chat-v3-0324",
+      "status": "ok",
+      "time_s": 38.0,
+      "input_tokens": 4513,
+      "output_tokens": 529,
+      "cost_usd": 0.001475,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-la-vulners-mcp.json",
+      "model": "glm-4.7",
+      "model_id": "z-ai/glm-4.7",
+      "status": "ok",
+      "time_s": 66.3,
+      "input_tokens": 4380,
+      "output_tokens": 3512,
+      "cost_usd": 0.009697,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-openclaw-v2026.1.10.json",
+      "model": "gemini-3-flash",
+      "model_id": "google/gemini-3-flash-preview",
+      "status": "ok",
+      "time_s": 8.1,
+      "input_tokens": 40686,
+      "output_tokens": 1175,
+      "cost_usd": 0.023868,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-openclaw-v2026.1.10.json",
+      "model": "gemini-2.5-flash",
+      "model_id": "google/gemini-2.5-flash",
+      "status": "ok",
+      "time_s": 5.7,
+      "input_tokens": 40686,
+      "output_tokens": 1050,
+      "cost_usd": 0.014831,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-openclaw-v2026.1.10.json",
+      "model": "deepseek-v3",
+      "model_id": "deepseek/deepseek-chat-v3-0324",
+      "status": "ok",
+      "time_s": 25.0,
+      "input_tokens": 37799,
+      "output_tokens": 711,
+      "cost_usd": 0.010868,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-openclaw-v2026.1.10.json",
+      "model": "glm-4.7",
+      "model_id": "z-ai/glm-4.7",
+      "status": "ok",
+      "time_s": 51.1,
+      "input_tokens": 36713,
+      "output_tokens": 4096,
+      "cost_usd": 0.025532,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-sbom-grbrsm_ui-v12.0.3rc0.json",
+      "model": "gemini-3-flash",
+      "model_id": "google/gemini-3-flash-preview",
+      "status": "ok",
+      "time_s": 7.6,
+      "input_tokens": 5177,
+      "output_tokens": 850,
+      "cost_usd": 0.005138,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-sbom-grbrsm_ui-v12.0.3rc0.json",
+      "model": "gemini-2.5-flash",
+      "model_id": "google/gemini-2.5-flash",
+      "status": "ok",
+      "time_s": 10.6,
+      "input_tokens": 5177,
+      "output_tokens": 1013,
+      "cost_usd": 0.004086,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-sbom-grbrsm_ui-v12.0.3rc0.json",
+      "model": "deepseek-v3",
+      "model_id": "deepseek/deepseek-chat-v3-0324",
+      "status": "ok",
+      "time_s": 36.5,
+      "input_tokens": 4804,
+      "output_tokens": 613,
+      "cost_usd": 0.00159,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-sbom-grbrsm_ui-v12.0.3rc0.json",
+      "model": "glm-4.7",
+      "model_id": "z-ai/glm-4.7",
+      "status": "ok",
+      "time_s": 56.0,
+      "input_tokens": 4664,
+      "output_tokens": 3770,
+      "cost_usd": 0.010393,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-sbom-gurobi-engine-v12.0.3rc0.json",
+      "model": "gemini-3-flash",
+      "model_id": "google/gemini-3-flash-preview",
+      "status": "ok",
+      "time_s": 9.5,
+      "input_tokens": 49879,
+      "output_tokens": 1204,
+      "cost_usd": 0.028552,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-sbom-gurobi-engine-v12.0.3rc0.json",
+      "model": "gemini-2.5-flash",
+      "model_id": "google/gemini-2.5-flash",
+      "status": "ok",
+      "time_s": 13.0,
+      "input_tokens": 49877,
+      "output_tokens": 1148,
+      "cost_usd": 0.017833,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-sbom-gurobi-engine-v12.0.3rc0.json",
+      "model": "deepseek-v3",
+      "model_id": "deepseek/deepseek-chat-v3-0324",
+      "status": "ok",
+      "time_s": 40.1,
+      "input_tokens": 44950,
+      "output_tokens": 723,
+      "cost_usd": 0.012875,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-sbom-gurobi-engine-v12.0.3rc0.json",
+      "model": "glm-4.7",
+      "model_id": "z-ai/glm-4.7",
+      "status": "ok",
+      "time_s": 113.8,
+      "input_tokens": 43604,
+      "output_tokens": 7296,
+      "cost_usd": 0.035673,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-vulners-mcp.json",
+      "model": "gemini-3-flash",
+      "model_id": "google/gemini-3-flash-preview",
+      "status": "ok",
+      "time_s": 8.8,
+      "input_tokens": 119326,
+      "output_tokens": 1132,
+      "cost_usd": 0.063059,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-vulners-mcp.json",
+      "model": "gemini-2.5-flash",
+      "model_id": "google/gemini-2.5-flash",
+      "status": "ok",
+      "time_s": 8.0,
+      "input_tokens": 119324,
+      "output_tokens": 1471,
+      "cost_usd": 0.039475,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-vulners-mcp.json",
+      "model": "deepseek-v3",
+      "model_id": "deepseek/deepseek-chat-v3-0324",
+      "status": "ok",
+      "time_s": 80.3,
+      "input_tokens": 107213,
+      "output_tokens": 746,
+      "cost_usd": 0.030318,
+      "prompt_version": "v2"
+    },
+    {
+      "file": "package-analysis-report-vulners-mcp.json",
+      "model": "glm-4.7",
+      "model_id": "z-ai/glm-4.7",
+      "status": "ok",
+      "time_s": 55.2,
+      "input_tokens": 104295,
+      "output_tokens": 4096,
+      "cost_usd": 0.055944,
+      "prompt_version": "v2"
+    }
+  ]
+}

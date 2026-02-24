@@ -1,0 +1,28 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 4,
+      "completeness": 6,
+      "conciseness": 5,
+      "actionability": 7,
+      "weighted_total": 6.05,
+      "notes": "Good CRA structure and Article 14 mention, but contains hallucinated CVEs and inaccurate counts. Correctly identifies no mandatory triggers but fabricates vulnerability details."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 9,
+      "weighted_total": 8.25,
+      "notes": "Excellent CRA compliance focus, accurate CVE counts, concise format. Minor accuracy issues with specific CVE details but maintains data integrity and provides clear prioritized actions."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 provides superior CRA alignment with clear mandatory reporting assessment and accurate vulnerability counts (1 CRITICAL, 5 HIGH vs Gemini's fabricated 9 unique CVEs). While both correctly identify no Article 14 triggers, DeepSeek maintains data integrity and delivers more actionable, prioritized remediation steps in a concise format."
+}

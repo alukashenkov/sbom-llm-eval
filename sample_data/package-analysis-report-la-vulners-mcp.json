@@ -1,0 +1,3720 @@
+{
+  "meta": {
+    "format": "CycloneDX",
+    "created": "2026-02-24T14:40:52.000Z",
+    "type": "container",
+    "name": "la-vulners-mcp",
+    "version": "sha256:571bf2600c309bc636c6a4b4af23f08b15eb5f3ad184d540126647d0ed1e8aaf",
+    "tags": []
+  },
+  "data": [
+    {
+      "package": "zlib",
+      "version": "1.3.1-r2",
+      "applicableAdvisories": [
+        {
+          "id": "SNYK:CONAN-ZLIB-10078583",
+          "type": "snyk",
+          "match": "<1.3.1",
+          "title": "Integer Overflow or Wraparound",
+          "description": "## Overview\n\nAffected versions of this package are vulnerable to Integer Overflow or Wraparound via the `MiniZip` function in `zlib`, by providing a long filename, comment, or extra field.\n## Remediation\nUpgrade `zlib` to version 1.3.1 or higher.\n## References\n- [GitHub Commit](https://github.com/madler/zlib/commit/73331a6a0481067628f065ffe87bb1d8f787d10c)\n- [GitHub PR](https://github.com/madler/zlib/pull/843)\n- [Vulnerable Code](https://github.com/madler/zlib/blob/ac8f12c97d1afd9bafa9c710f827d40a407d3266/contrib/README.contrib#L1-L4)\n",
+          "published": "2023-10-14T02:48:21",
+          "epss": [
+            {
+              "cve": "CVE-2023-45853",
+              "epss": 0.01396,
+              "percentile": 0.80044,
+              "date": "2026-02-05"
+            }
+          ],
+          "aiScore": {
+            "value": 7,
+            "uncertainty": 1.6
+          },
+          "metrics": {
+            "cvss": {
+              "score": 9.8,
+              "severity": "CRITICAL",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "source": "snyk"
+            },
+            "epss": [
+              "CVE-2023-45853"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "score": {
+              "value": 7,
+              "uncertanity": 1.6,
+              "vector": "NONE"
+            },
+            "short_description": "Zlib MiniZip integer overflow with long filenames or fields; upgrade to version 1.3.1 or higher.",
+            "tags": [
+              "zlib",
+              "integer overflow",
+              "mini zip",
+              "long filenames",
+              "long comments",
+              "extra fields"
+            ],
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "amazon",
+                  "idList": [
+                    "ALAS2-2023-2320",
+                    "ALAS2023-2023-410"
+                  ]
+                },
+                {
+                  "type": "broadcom",
+                  "idList": [
+                    "BSNSA25000",
+                    "BSNSA36823"
+                  ]
+                },
+                {
+                  "type": "cbl_mariner",
+                  "idList": [
+                    "CBLMARINER:31294",
+                    "CBLMARINER:31298",
+                    "CBLMARINER:31496",
+                    "CBLMARINER:31497",
+                    "CBLMARINER:31500",
+                    "CBLMARINER:33350",
+                    "CBLMARINER:34597",
+                    "CBLMARINER:35229",
+                    "CBLMARINER:35242",
+                    "CBLMARINER:35295",
+                    "CBLMARINER:35400",
+                    "CBLMARINER:38040",
+                    "CBLMARINER:42720",
+                    "CBLMARINER:42741",
+                    "CBLMARINER:44127",
+                    "CBLMARINER:61049",
+                    "CBLMARINER:61279"
+                  ]
+                },
+                {
+                  "type": "cgr",
+                  "idList": [
+                    "CHAINGUARD:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "cloudlinux",
+                  "idList": [
+                    "CLSA-2023:1698180806"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202310-1086"
+                  ]
+                },
+                {
+                  "type": "cve",
+                  "idList": [
+                    "CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "debian",
+                  "idList": [
+                    "DEBIAN:DLA-3670-1:6749A"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "f5",
+                  "idList": [
+                    "F5:K000149884"
+                  ]
+                },
+                {
+                  "type": "gentoo",
+                  "idList": [
+                    "GLSA-202401-18"
+                  ]
+                },
+                {
+                  "type": "github",
+                  "idList": [
+                    "GHSA-MQ29-J5XF-CJWR",
+                    "GHSA-Q5FM-55C2-V6J9"
+                  ]
+                },
+                {
+                  "type": "hp",
+                  "idList": [
+                    "HPSBPI03995"
+                  ]
+                },
+                {
+                  "type": "ibm",
+                  "idList": [
+                    "0B2F69A144F1461A81B3869DD3D33D19DF5EF530031D5BE43EE526656C85817B",
+                    "0C34D0C9B4D74E71DA380BD00800FFD0C1D3B49C7B2B4257B0BCEBB3E7DAE018",
+                    "154C8CCE208FF879D55BAC1FEA991C25F5010B3A211601479BD69F8476FCDCFB",
+                    "155084C99677911AF8D2CA6EDD46CCC8A3190F6D8AB83B6C92F7D75E742FEA04",
+                    "165D1FD9976920FE2655CBFABD808FB4199179B935E77C3A606C27E1BC7108D8",
+                    "292C00613E199F260025A95631FB264459A8224992DE2C39B9CD1BE58475231C",
+                    "2EEE2187B99AEE33E9737E5928E9C49C6D58E17B9A8843AD35B4C0B3432E3A93",
+                    "586C1A19A49AF757074CCECDB71A46ADFEB4B0B6672DCB20726DA6B8454C428C",
+                    "5886D81177FE3A866919378174BE6E372F8AB5C2D205A53BC8BB94B2200E5632",
+                    "627B380EE3023B5CA8FAE6FC9F02164CE5718777764A5567EFF02CC12B48366D",
+                    "70D23E0E814BCC07751291B0F9D1450627FE0983182E4B947F4EEF9061F1890B",
+                    "92457FA7CF35AAF898FC1A0D46EA275558420B7C4DB3C312D11C6E51A9BF51FB",
+                    "9BC77113548155FF918E250ABFEBE01590D56B94C5FFE3C2FA5CC2F5397A8F9E",
+                    "A3A095E42E7ED23FCC44865CFB2E566039BC9B4A83CC4DEC7D08900ED7B65DAA",
+                    "AD75791C7B0B2B24926B6A7A86F6CEAEB562304C18C1EC8E8130B6EFE0EFE355",
+                    "AFB35CF0ADA814CC9C89F81CCC58FD1355ED70FDA1FC2F70481AC7446575FB7D",
+                    "B679F43C245B03193BC16FF561C78F7C733B3A73B5AAD1212118E16E0EBE46B1",
+                    "D0DC6C673E5E5D3FCE29101EE8CADF4026DFA124F51734A635CA6F516B3EE001",
+                    "D2FFF86174F3475C4235B20A4CD914E2013BDDEFB60F5B3E2F788F984A2C8E12",
+                    "DBEBE86EA32468351B3410ABC22DA58E406C78F8E172CD85D090B58922473A1E",
+                    "F158672018FDC523A5802E40AF1952206917163CC2929C0AC3617DD1862CE57C",
+                    "F4A79818554B818D1338664A66913DD23419EF26B8405691A0DEC962FEB1257B",
+                    "FFE89D8502810C976F7BAFE0A825C06746BC388F9DA7CF5B6128FC9E63BDD49D"
+                  ]
+                },
+                {
+                  "type": "ics",
+                  "idList": [
+                    "ICSA-23-348-10",
+                    "ICSA-25-044-09"
+                  ]
+                },
+                {
+                  "type": "mageia",
+                  "idList": [
+                    "MGASA-2023-0312"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "ncsc",
+                  "idList": [
+                    "NCSC-2024-0154",
+                    "NCSC-2024-0298",
+                    "NCSC-2024-0420",
+                    "NCSC-2025-0051",
+                    "NCSC-2025-0061",
+                    "NCSC-2025-0334"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "AL2023_ALAS2023-2023-410.NASL",
+                    "AL2_ALAS-2023-2320.NASL",
+                    "AZURE_LINUX_CVE-2023-45853.NASL",
+                    "CENTOS9_ZLIB-1_2_11-41_40243.NASL",
+                    "DEBIAN_DLA-3670.NASL",
+                    "EULEROS_SA-2023-3236.NASL",
+                    "EULEROS_SA-2023-3261.NASL",
+                    "EULEROS_SA-2023-3264.NASL",
+                    "EULEROS_SA-2023-3289.NASL",
+                    "EULEROS_SA-2023-3292.NASL",
+                    "EULEROS_SA-2023-3321.NASL",
+                    "EULEROS_SA-2023-3324.NASL",
+                    "EULEROS_SA-2023-3353.NASL",
+                    "EULEROS_SA-2024-1003.NASL",
+                    "EULEROS_SA-2024-1025.NASL",
+                    "EULEROS_SA-2024-1029.NASL",
+                    "EULEROS_SA-2024-1051.NASL",
+                    "EULEROS_SA-2024-1054.NASL",
+                    "EULEROS_SA-2024-1076.NASL",
+                    "EULEROS_SA-2024-1078.NASL",
+                    "EULEROS_SA-2024-1100.NASL",
+                    "EULEROS_SA-2024-1133.NASL",
+                    "EULEROS_SA-2024-1170.NASL",
+                    "EULEROS_SA-2024-1257.NASL",
+                    "EULEROS_SA-2024-1308.NASL",
+                    "EULEROS_SA-2024-1354.NASL",
+                    "EULEROS_SA-2024-1373.NASL",
+                    "EULEROS_SA-2024-1375.NASL",
+                    "EULEROS_SA-2024-1394.NASL",
+                    "EULEROS_SA-2024-1396.NASL",
+                    "EULEROS_SA-2024-1409.NASL",
+                    "EULEROS_SA-2024-1424.NASL",
+                    "EULEROS_SA-2024-1437.NASL",
+                    "EULEROS_SA-2024-1645.NASL",
+                    "EULEROS_SA-2024-1670.NASL",
+                    "EULEROS_SA-2024-1674.NASL",
+                    "EULEROS_SA-2024-1710.NASL",
+                    "F5_BIGIP_SOL000149884.NASL",
+                    "GENTOO_GLSA-202401-18.NASL",
+                    "IBM_DOORS_7238992.NASL",
+                    "MARINER_CVE-2023-45853.NASL",
+                    "NESSUS_TNS-2023-37.NASL",
+                    "NEWSTART_CGSL_NS-SA-2025-0200_ZLIB.NASL",
+                    "ORACLE_HTTP_SERVER_CPU_JUL_2024.NASL",
+                    "ORACLE_MYSQL_CONNECTORS_CPU_OCT_2024.NASL",
+                    "PHOTONOS_PHSA-2023-4_0-0497_ZLIB.NASL",
+                    "PHOTONOS_PHSA-2023-5_0-0126_ZLIB.NASL",
+                    "REDHAT_UNPATCHED-ZLIB-RHEL6.NASL",
+                    "REDHAT_UNPATCHED-ZLIB-RHEL7.NASL",
+                    "SUSE_SU-2023-4215-1.NASL",
+                    "SUSE_SU-2023-4216-1.NASL",
+                    "SUSE_SU-2023-4217-1.NASL",
+                    "TENABLE_NESSUS_AGENT_TNS-2023-38.NASL",
+                    "TENABLE_OT_SIEMENS_CVE-2023-45853.NASL",
+                    "TENCENTOS_TSSA_2024_0805.NASL",
+                    "UBUNTU_USN-7107-1.NASL",
+                    "UNPATCHED_CVE_2023_45853.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "opensuse",
+                  "idList": [
+                    "OPENSUSE-SU-2025:14857-1"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:1361412562310118549",
+                    "OPENVAS:1361412562310833237",
+                    "OPENVAS:1361412562310833727",
+                    "OPENVAS:13614125623111020230312",
+                    "OPENVAS:13614125623111220233670",
+                    "OPENVAS:136141256231112202471071",
+                    "OPENVAS:1361412562311220233236",
+                    "OPENVAS:1361412562311220233261",
+                    "OPENVAS:1361412562311220233264",
+                    "OPENVAS:1361412562311220233289",
+                    "OPENVAS:1361412562311220233292",
+                    "OPENVAS:1361412562311220233321",
+                    "OPENVAS:1361412562311220233324",
+                    "OPENVAS:1361412562311220233353",
+                    "OPENVAS:1361412562311220241003",
+                    "OPENVAS:1361412562311220241025",
+                    "OPENVAS:1361412562311220241029",
+                    "OPENVAS:1361412562311220241051",
+                    "OPENVAS:1361412562311220241054",
+                    "OPENVAS:1361412562311220241076",
+                    "OPENVAS:1361412562311220241078",
+                    "OPENVAS:1361412562311220241100",
+                    "OPENVAS:1361412562311220241133",
+                    "OPENVAS:1361412562311220241170",
+                    "OPENVAS:1361412562311220241257",
+                    "OPENVAS:1361412562311220241308",
+                    "OPENVAS:1361412562311220241354",
+                    "OPENVAS:1361412562311220241373",
+                    "OPENVAS:1361412562311220241375",
+                    "OPENVAS:1361412562311220241394",
+                    "OPENVAS:1361412562311220241396",
+                    "OPENVAS:1361412562311220241409",
+                    "OPENVAS:1361412562311220241424",
+                    "OPENVAS:1361412562311220241437",
+                    "OPENVAS:1361412562311220241645",
+                    "OPENVAS:1361412562311220241670",
+                    "OPENVAS:1361412562311220241674",
+                    "OPENVAS:1361412562311220241710",
+                    "OPENVAS:13614125623114202342161"
+                  ]
+                },
+                {
+                  "type": "oracle",
+                  "idList": [
+                    "ORACLE:CPUJUL2024",
+                    "ORACLE:CPUOCT2024",
+                    "ORACLE:CPUOCT2025"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:ALPINE-CVE-2023-45853",
+                    "OSV:CGA-9342-5WJ4-M9VW",
+                    "OSV:CGA-JQ67-276V-CRW8",
+                    "OSV:CVE-2023-45853",
+                    "OSV:DEBIAN-CVE-2023-45853",
+                    "OSV:DLA-3670-1",
+                    "OSV:ECHO-8ED3-9419-847F",
+                    "OSV:GHSA-MQ29-J5XF-CJWR",
+                    "OSV:GHSA-Q5FM-55C2-V6J9",
+                    "OSV:MGASA-2023-0312",
+                    "OSV:OESA-2023-1751",
+                    "OSV:OPENSUSE-SU-2024:13363-1",
+                    "OSV:OPENSUSE-SU-2024:13462-1",
+                    "OSV:OPENSUSE-SU-2025:14857-1",
+                    "OSV:ROOT-OS-DEBIAN-11-CVE-2023-45853",
+                    "OSV:ROOT-OS-DEBIAN-12-CVE-2023-45853",
+                    "OSV:SUSE-SU-2023:4215-1",
+                    "OSV:SUSE-SU-2023:4216-1",
+                    "OSV:SUSE-SU-2023:4217-1",
+                    "OSV:SUSE-SU-2024:2431-1",
+                    "OSV:UBUNTU-CVE-2023-45853",
+                    "OSV:USN-7107-1"
+                  ]
+                },
+                {
+                  "type": "photon",
+                  "idList": [
+                    "PHSA-2023-3.0-0674",
+                    "PHSA-2023-4.0-0497",
+                    "PHSA-2023-5.0-0126"
+                  ]
+                },
+                {
+                  "type": "prion",
+                  "idList": [
+                    "PRION:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2022-2042",
+                    "PT-2023-6402"
+                  ]
+                },
+                {
+                  "type": "qualysblog",
+                  "idList": [
+                    "QUALYSBLOG:314B40844ECA29B86078FC6FD1CC2F32",
+                    "QUALYSBLOG:FB374FABE636265468B62F0B74FE8C82"
+                  ]
+                },
+                {
+                  "type": "redhat",
+                  "idList": [
+                    "RHSA-2023:7626"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "redos",
+                  "idList": [
+                    "ROS-20231020-01"
+                  ]
+                },
+                {
+                  "type": "rosalinux",
+                  "idList": [
+                    "ROSA-SA-2024-2463"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "ubuntu",
+                  "idList": [
+                    "USN-7107-1"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "veracode",
+                  "idList": [
+                    "VERACODE:43951"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "wolfi",
+                  "idList": [
+                    "WOLFI:CVE-2023-45853"
+                  ]
+                }
+              ]
+            }
+          },
+          "references": [
+            "https://security.snyk.io/vuln/SNYK-CONAN-ZLIB-10078583",
+            "https://cwe.mitre.org/data/definitions/CWE-190.html"
+          ],
+          "cvelist": [
+            "CVE-2023-45853"
+          ]
+        },
+        {
+          "id": "CVE-2026-22184",
+          "type": "cve",
+          "match": "<=1.3.1.2",
+          "title": "CVE-2026-22184",
+          "description": "zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.",
+          "aiDescription": "**CVE-2026-22184** concerns a global buffer overflow in zlib’s standalone untgz utility (TGZfname()) prior to patch fixes. The vulnerability arises when a user supplies an archive name via the command line that exceeds the fixed-size global buffer (1024 bytes), causing an out-of-bounds write. The flaw is limited to the untgz demonstration utility and does not affect the core zlib compression library. Exploitation details or in-the-wild activity are not provided in the initial documents, but multiple vendors and advisories (e.g., Mageia with a fix for zlib <= 1.3.1.2) indicate a coordinated patch release. **Remediation:** upgrade zlib to the patched version as distributed by affected vendors (e.g., Mageia advisory MGASA-2026-0006; other distro advisories reference the same CVE). Monitor vendor advisories for exact patched versions and apply accordingly.",
+          "published": "2026-01-07T20:25:19",
+          "epss": [
+            {
+              "cve": "CVE-2026-22184",
+              "epss": 0.00042,
+              "percentile": 0.12521,
+              "date": "2026-02-09"
+            }
+          ],
+          "aiScore": {
+            "value": 6.9,
+            "uncertainty": 2.4
+          },
+          "metrics": {
+            "cvss": {
+              "score": 9.8,
+              "severity": "CRITICAL",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "source": "nvd"
+            },
+            "epss": [
+              "CVE-2026-22184"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "attackerkb",
+                  "idList": [
+                    "AKB:ADEC3C6E-04BB-432B-88F2-8DC826AAA565"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202601-1150"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2026-1173"
+                  ]
+                },
+                {
+                  "type": "f5",
+                  "idList": [
+                    "F5:K000160077"
+                  ]
+                },
+                {
+                  "type": "mageia",
+                  "idList": [
+                    "MGASA-2026-0006"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "UNPATCHED_CVE_2026_22184.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:13614125623111020260006"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:BELL-CVE-2026-22184",
+                    "OSV:CGA-4V8V-X7HX-H96W",
+                    "OSV:CVE-2026-22184",
+                    "OSV:DEBIAN-CVE-2026-22184",
+                    "OSV:MGASA-2026-0006",
+                    "OSV:MINI-W4P6-33X2-V3JQ",
+                    "OSV:UBUNTU-CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2026-2158"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "thn",
+                  "idList": [
+                    "THN:ED80900C8AD3C3C130290400045D0C3D"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-22184"
+                  ]
+                }
+              ]
+            },
+            "score": {
+              "value": 6.9,
+              "uncertanity": 2.4,
+              "vector": "NONE"
+            },
+            "short_description": "CVE-2026-22184: Zlib until 1.3.1.2 has untgz overflow via strcpy into 1024-byte buffer from attacker name.",
+            "tags": [
+              "buffer overflow",
+              "untgz overflow",
+              "archive name",
+              "memory corruption",
+              "denial of service",
+              "code execution"
+            ],
+            "reddit": {
+              "counter": 1,
+              "posts": [
+                {
+                  "link": "https://www.reddit.com/r/SecOpsDaily/comments/1qapqqj/critical_patch_zlib_cve202622184_cvss_93_allows/",
+                  "text": "CriticalPatch:zlibCVE-2026-22184(CVSS9.3)AllowsRCEviaGlobalBufferOverflow",
+                  "author": "falconupkid",
+                  "author_photo": "",
+                  "date": "2026-01-12T08:40:40+00:00"
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": false,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname",
+            "https://github.com/madler/zlib",
+            "https://zlib.net/",
+            "https://seclists.org/fulldisclosure/2026/Jan/3",
+            "https://github.com/madler/zlib/issues/1142"
+          ],
+          "exploits": [],
+          "cvelist": [
+            "CVE-2026-22184"
+          ]
+        },
+        {
+          "id": "CVE-2026-27171",
+          "type": "cve",
+          "match": ">=0,<1.3.2",
+          "title": "CVE-2026-27171",
+          "description": "zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition.",
+          "aiDescription": "CVE-2026-27171 affects zlib up to version before 1.3.2. The issue enables CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can perform right shifts inside a loop that has no termination condition, potentially leading to a local-resource DoS. The CVSS indicates a Low impact to availability with local attack vector and high attack complexity, no privileges required, and no user interaction required. The recommended remediation is to upgrade to zlib 1.3.2 or later (per the linked release note). The connected documents confirm the vulnerability mechanism and the patch release, but do not provide exploit code or in-the-wild exploit details.",
+          "published": "2026-02-18T02:36:19",
+          "epss": [
+            {
+              "cve": "CVE-2026-27171",
+              "epss": 0.00006,
+              "percentile": 0.00363,
+              "date": "2026-02-19"
+            }
+          ],
+          "aiScore": {
+            "value": 5.4,
+            "uncertainty": 1.3
+          },
+          "metrics": {
+            "cvss": {
+              "score": 5.5,
+              "severity": "MEDIUM",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "source": "nvd"
+            },
+            "epss": [
+              "CVE-2026-27171"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "score": {
+              "value": 5.4,
+              "uncertanity": 1.3,
+              "vector": "NONE"
+            },
+            "short_description": "CVE-2026-27171: zlib before version 1.3.2 may cause CPU exhaustion via crc32_combine64 and crc32_combine_gen64 because of an infinite loop.",
+            "tags": [
+              "zlib vulnerability",
+              "infinite loop",
+              "cpu consumption",
+              "older versions"
+            ],
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "attackerkb",
+                  "idList": [
+                    "AKB:7B1DE7BE-82DA-46F2-ACF6-09192876519F"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "UNPATCHED_CVE_2026_27171.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:CVE-2026-27171",
+                    "OSV:DEBIAN-CVE-2026-27171",
+                    "OSV:ECHO-E10B-F259-A98B",
+                    "OSV:MINI-HWJJ-MJ9H-QH5G",
+                    "OSV:UBUNTU-CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2026-20360"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "snyk",
+                  "idList": [
+                    "SNYK:CONAN-ZLIB-15317566"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-27171"
+                  ]
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": null,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://github.com/madler/zlib/issues/904",
+            "https://github.com/madler/zlib/releases/tag/v1.3.2",
+            "https://7asecurity.com/blog/2026/02/zlib-7asecurity-audit/",
+            "https://7asecurity.com/reports/pentest-report-zlib-RC1.1.pdf",
+            "https://ostif.org/zlib-audit-complete/"
+          ],
+          "exploits": [
+            {
+              "id": "CVE-2026-27171",
+              "href": "https://github.com/madler/zlib/issues/904",
+              "type": "nvd"
+            }
+          ],
+          "cvelist": [
+            "CVE-2026-27171"
+          ]
+        },
+        {
+          "id": "CVE-2026-22184",
+          "type": "cve",
+          "match": ">=0,<=1.3.1.2",
+          "title": "CVE-2026-22184",
+          "description": "zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.",
+          "aiDescription": "**CVE-2026-22184** concerns a global buffer overflow in zlib’s standalone untgz utility (TGZfname()) prior to patch fixes. The vulnerability arises when a user supplies an archive name via the command line that exceeds the fixed-size global buffer (1024 bytes), causing an out-of-bounds write. The flaw is limited to the untgz demonstration utility and does not affect the core zlib compression library. Exploitation details or in-the-wild activity are not provided in the initial documents, but multiple vendors and advisories (e.g., Mageia with a fix for zlib <= 1.3.1.2) indicate a coordinated patch release. **Remediation:** upgrade zlib to the patched version as distributed by affected vendors (e.g., Mageia advisory MGASA-2026-0006; other distro advisories reference the same CVE). Monitor vendor advisories for exact patched versions and apply accordingly.",
+          "published": "2026-01-07T20:25:19",
+          "epss": [
+            {
+              "cve": "CVE-2026-22184",
+              "epss": 0.00042,
+              "percentile": 0.12521,
+              "date": "2026-02-09"
+            }
+          ],
+          "aiScore": {
+            "value": 6.9,
+            "uncertainty": 2.4
+          },
+          "metrics": {
+            "cvss": {
+              "score": 9.8,
+              "severity": "CRITICAL",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "source": "nvd"
+            },
+            "epss": [
+              "CVE-2026-22184"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "attackerkb",
+                  "idList": [
+                    "AKB:ADEC3C6E-04BB-432B-88F2-8DC826AAA565"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202601-1150"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2026-1173"
+                  ]
+                },
+                {
+                  "type": "f5",
+                  "idList": [
+                    "F5:K000160077"
+                  ]
+                },
+                {
+                  "type": "mageia",
+                  "idList": [
+                    "MGASA-2026-0006"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "UNPATCHED_CVE_2026_22184.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:13614125623111020260006"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:BELL-CVE-2026-22184",
+                    "OSV:CGA-4V8V-X7HX-H96W",
+                    "OSV:CVE-2026-22184",
+                    "OSV:DEBIAN-CVE-2026-22184",
+                    "OSV:MGASA-2026-0006",
+                    "OSV:MINI-W4P6-33X2-V3JQ",
+                    "OSV:UBUNTU-CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2026-2158"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "thn",
+                  "idList": [
+                    "THN:ED80900C8AD3C3C130290400045D0C3D"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2026-22184"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-22184"
+                  ]
+                }
+              ]
+            },
+            "score": {
+              "value": 6.9,
+              "uncertanity": 2.4,
+              "vector": "NONE"
+            },
+            "short_description": "CVE-2026-22184: Zlib until 1.3.1.2 has untgz overflow via strcpy into 1024-byte buffer from attacker name.",
+            "tags": [
+              "buffer overflow",
+              "untgz overflow",
+              "archive name",
+              "memory corruption",
+              "denial of service",
+              "code execution"
+            ],
+            "reddit": {
+              "counter": 1,
+              "posts": [
+                {
+                  "link": "https://www.reddit.com/r/SecOpsDaily/comments/1qapqqj/critical_patch_zlib_cve202622184_cvss_93_allows/",
+                  "text": "CriticalPatch:zlibCVE-2026-22184(CVSS9.3)AllowsRCEviaGlobalBufferOverflow",
+                  "author": "falconupkid",
+                  "author_photo": "",
+                  "date": "2026-01-12T08:40:40+00:00"
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": false,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname",
+            "https://github.com/madler/zlib",
+            "https://zlib.net/",
+            "https://seclists.org/fulldisclosure/2026/Jan/3",
+            "https://github.com/madler/zlib/issues/1142"
+          ],
+          "exploits": [],
+          "cvelist": [
+            "CVE-2026-22184"
+          ]
+        },
+        {
+          "id": "CVE-2023-45853",
+          "type": "cve",
+          "match": "<1.3.1",
+          "title": "CVE-2023-45853",
+          "description": "MiniZip in zlib through 1.3 has an integer overflow and resultant heap-based buffer overflow in zipOpenNewFileInZip4_64 via a long filename, comment, or extra field. NOTE: MiniZip is not a supported part of the zlib product. NOTE: pyminizip through 0.2.6 is also vulnerable because it bundles an affected zlib version, and exposes the applicable MiniZip code through its compress API.",
+          "aiDescription": "CVE-2023-45853 affects MiniZip in zlib up to version 1.3, with an integer overflow that leads to a heap-based buffer overflow in zipOpenNewFileInZip4_64 when processing long filename, comment, or extra field. Pyminizip (up to 0.2.6) is also vulnerable as it bundles this zlib/MiniZip code. Connected advisories confirm the issue and note that MiniZip is not a core part of zlib; a patched/upgraded version resolves the vulnerability. Remediation: upgrade to a fixed version of the affected package as indicated by the advisories. If upgrading is not immediately possible, apply vendor-supplied mitigations or workarounds per the advisories.",
+          "published": "2023-10-14T00:00:00",
+          "epss": [
+            {
+              "cve": "CVE-2023-45853",
+              "epss": 0.01396,
+              "percentile": 0.80044,
+              "date": "2026-02-05"
+            }
+          ],
+          "aiScore": {
+            "value": 9.7,
+            "uncertainty": 0.2
+          },
+          "metrics": {
+            "cvss": {
+              "score": 9.8,
+              "severity": "CRITICAL",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "source": "nvd"
+            },
+            "epss": [
+              "CVE-2023-45853"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "score": {
+              "value": 9.7,
+              "uncertanity": 0.2,
+              "vector": "NONE"
+            },
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "amazon",
+                  "idList": [
+                    "ALAS2-2023-2320",
+                    "ALAS2023-2023-410"
+                  ]
+                },
+                {
+                  "type": "broadcom",
+                  "idList": [
+                    "BSNSA25000",
+                    "BSNSA36823"
+                  ]
+                },
+                {
+                  "type": "cbl_mariner",
+                  "idList": [
+                    "CBLMARINER:31294",
+                    "CBLMARINER:31298",
+                    "CBLMARINER:31496",
+                    "CBLMARINER:31497",
+                    "CBLMARINER:31500",
+                    "CBLMARINER:33350",
+                    "CBLMARINER:34597",
+                    "CBLMARINER:35229",
+                    "CBLMARINER:35242",
+                    "CBLMARINER:35295",
+                    "CBLMARINER:35400",
+                    "CBLMARINER:38040",
+                    "CBLMARINER:42720",
+                    "CBLMARINER:42741",
+                    "CBLMARINER:44127",
+                    "CBLMARINER:61049",
+                    "CBLMARINER:61279"
+                  ]
+                },
+                {
+                  "type": "cgr",
+                  "idList": [
+                    "CHAINGUARD:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "cloudlinux",
+                  "idList": [
+                    "CLSA-2023:1698180806"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202310-1086"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "debian",
+                  "idList": [
+                    "DEBIAN:DLA-3670-1:6749A"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "f5",
+                  "idList": [
+                    "F5:K000149884"
+                  ]
+                },
+                {
+                  "type": "gentoo",
+                  "idList": [
+                    "GLSA-202401-18"
+                  ]
+                },
+                {
+                  "type": "github",
+                  "idList": [
+                    "GHSA-MQ29-J5XF-CJWR",
+                    "GHSA-Q5FM-55C2-V6J9"
+                  ]
+                },
+                {
+                  "type": "hp",
+                  "idList": [
+                    "HPSBPI03995"
+                  ]
+                },
+                {
+                  "type": "ibm",
+                  "idList": [
+                    "0B2F69A144F1461A81B3869DD3D33D19DF5EF530031D5BE43EE526656C85817B",
+                    "0C34D0C9B4D74E71DA380BD00800FFD0C1D3B49C7B2B4257B0BCEBB3E7DAE018",
+                    "154C8CCE208FF879D55BAC1FEA991C25F5010B3A211601479BD69F8476FCDCFB",
+                    "155084C99677911AF8D2CA6EDD46CCC8A3190F6D8AB83B6C92F7D75E742FEA04",
+                    "165D1FD9976920FE2655CBFABD808FB4199179B935E77C3A606C27E1BC7108D8",
+                    "292C00613E199F260025A95631FB264459A8224992DE2C39B9CD1BE58475231C",
+                    "2EEE2187B99AEE33E9737E5928E9C49C6D58E17B9A8843AD35B4C0B3432E3A93",
+                    "586C1A19A49AF757074CCECDB71A46ADFEB4B0B6672DCB20726DA6B8454C428C",
+                    "5886D81177FE3A866919378174BE6E372F8AB5C2D205A53BC8BB94B2200E5632",
+                    "627B380EE3023B5CA8FAE6FC9F02164CE5718777764A5567EFF02CC12B48366D",
+                    "70D23E0E814BCC07751291B0F9D1450627FE0983182E4B947F4EEF9061F1890B",
+                    "92457FA7CF35AAF898FC1A0D46EA275558420B7C4DB3C312D11C6E51A9BF51FB",
+                    "9BC77113548155FF918E250ABFEBE01590D56B94C5FFE3C2FA5CC2F5397A8F9E",
+                    "A3A095E42E7ED23FCC44865CFB2E566039BC9B4A83CC4DEC7D08900ED7B65DAA",
+                    "AD75791C7B0B2B24926B6A7A86F6CEAEB562304C18C1EC8E8130B6EFE0EFE355",
+                    "AFB35CF0ADA814CC9C89F81CCC58FD1355ED70FDA1FC2F70481AC7446575FB7D",
+                    "B679F43C245B03193BC16FF561C78F7C733B3A73B5AAD1212118E16E0EBE46B1",
+                    "D0DC6C673E5E5D3FCE29101EE8CADF4026DFA124F51734A635CA6F516B3EE001",
+                    "D2FFF86174F3475C4235B20A4CD914E2013BDDEFB60F5B3E2F788F984A2C8E12",
+                    "DBEBE86EA32468351B3410ABC22DA58E406C78F8E172CD85D090B58922473A1E",
+                    "F158672018FDC523A5802E40AF1952206917163CC2929C0AC3617DD1862CE57C",
+                    "F4A79818554B818D1338664A66913DD23419EF26B8405691A0DEC962FEB1257B",
+                    "FFE89D8502810C976F7BAFE0A825C06746BC388F9DA7CF5B6128FC9E63BDD49D"
+                  ]
+                },
+                {
+                  "type": "ics",
+                  "idList": [
+                    "ICSA-23-348-10",
+                    "ICSA-25-044-09"
+                  ]
+                },
+                {
+                  "type": "mageia",
+                  "idList": [
+                    "MGASA-2023-0312"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "ncsc",
+                  "idList": [
+                    "NCSC-2024-0154",
+                    "NCSC-2024-0298",
+                    "NCSC-2024-0420",
+                    "NCSC-2025-0051",
+                    "NCSC-2025-0061",
+                    "NCSC-2025-0334"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "AL2023_ALAS2023-2023-410.NASL",
+                    "AL2_ALAS-2023-2320.NASL",
+                    "AZURE_LINUX_CVE-2023-45853.NASL",
+                    "CENTOS9_ZLIB-1_2_11-41_40243.NASL",
+                    "DEBIAN_DLA-3670.NASL",
+                    "EULEROS_SA-2023-3236.NASL",
+                    "EULEROS_SA-2023-3261.NASL",
+                    "EULEROS_SA-2023-3264.NASL",
+                    "EULEROS_SA-2023-3289.NASL",
+                    "EULEROS_SA-2023-3292.NASL",
+                    "EULEROS_SA-2023-3321.NASL",
+                    "EULEROS_SA-2023-3324.NASL",
+                    "EULEROS_SA-2023-3353.NASL",
+                    "EULEROS_SA-2024-1003.NASL",
+                    "EULEROS_SA-2024-1025.NASL",
+                    "EULEROS_SA-2024-1029.NASL",
+                    "EULEROS_SA-2024-1051.NASL",
+                    "EULEROS_SA-2024-1054.NASL",
+                    "EULEROS_SA-2024-1076.NASL",
+                    "EULEROS_SA-2024-1078.NASL",
+                    "EULEROS_SA-2024-1100.NASL",
+                    "EULEROS_SA-2024-1133.NASL",
+                    "EULEROS_SA-2024-1170.NASL",
+                    "EULEROS_SA-2024-1257.NASL",
+                    "EULEROS_SA-2024-1308.NASL",
+                    "EULEROS_SA-2024-1354.NASL",
+                    "EULEROS_SA-2024-1373.NASL",
+                    "EULEROS_SA-2024-1375.NASL",
+                    "EULEROS_SA-2024-1394.NASL",
+                    "EULEROS_SA-2024-1396.NASL",
+                    "EULEROS_SA-2024-1409.NASL",
+                    "EULEROS_SA-2024-1424.NASL",
+                    "EULEROS_SA-2024-1437.NASL",
+                    "EULEROS_SA-2024-1645.NASL",
+                    "EULEROS_SA-2024-1670.NASL",
+                    "EULEROS_SA-2024-1674.NASL",
+                    "EULEROS_SA-2024-1710.NASL",
+                    "F5_BIGIP_SOL000149884.NASL",
+                    "GENTOO_GLSA-202401-18.NASL",
+                    "IBM_DOORS_7238992.NASL",
+                    "MARINER_CVE-2023-45853.NASL",
+                    "NESSUS_TNS-2023-37.NASL",
+                    "NEWSTART_CGSL_NS-SA-2025-0200_ZLIB.NASL",
+                    "ORACLE_HTTP_SERVER_CPU_JUL_2024.NASL",
+                    "ORACLE_MYSQL_CONNECTORS_CPU_OCT_2024.NASL",
+                    "PHOTONOS_PHSA-2023-4_0-0497_ZLIB.NASL",
+                    "PHOTONOS_PHSA-2023-5_0-0126_ZLIB.NASL",
+                    "REDHAT_UNPATCHED-ZLIB-RHEL6.NASL",
+                    "REDHAT_UNPATCHED-ZLIB-RHEL7.NASL",
+                    "SUSE_SU-2023-4215-1.NASL",
+                    "SUSE_SU-2023-4216-1.NASL",
+                    "SUSE_SU-2023-4217-1.NASL",
+                    "TENABLE_NESSUS_AGENT_TNS-2023-38.NASL",
+                    "TENABLE_OT_SIEMENS_CVE-2023-45853.NASL",
+                    "TENCENTOS_TSSA_2024_0805.NASL",
+                    "UBUNTU_USN-7107-1.NASL",
+                    "UNPATCHED_CVE_2023_45853.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "opensuse",
+                  "idList": [
+                    "OPENSUSE-SU-2025:14857-1"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:1361412562310118549",
+                    "OPENVAS:1361412562310833237",
+                    "OPENVAS:1361412562310833727",
+                    "OPENVAS:13614125623111020230312",
+                    "OPENVAS:13614125623111220233670",
+                    "OPENVAS:136141256231112202471071",
+                    "OPENVAS:1361412562311220233236",
+                    "OPENVAS:1361412562311220233261",
+                    "OPENVAS:1361412562311220233264",
+                    "OPENVAS:1361412562311220233289",
+                    "OPENVAS:1361412562311220233292",
+                    "OPENVAS:1361412562311220233321",
+                    "OPENVAS:1361412562311220233324",
+                    "OPENVAS:1361412562311220233353",
+                    "OPENVAS:1361412562311220241003",
+                    "OPENVAS:1361412562311220241025",
+                    "OPENVAS:1361412562311220241029",
+                    "OPENVAS:1361412562311220241051",
+                    "OPENVAS:1361412562311220241054",
+                    "OPENVAS:1361412562311220241076",
+                    "OPENVAS:1361412562311220241078",
+                    "OPENVAS:1361412562311220241100",
+                    "OPENVAS:1361412562311220241133",
+                    "OPENVAS:1361412562311220241170",
+                    "OPENVAS:1361412562311220241257",
+                    "OPENVAS:1361412562311220241308",
+                    "OPENVAS:1361412562311220241354",
+                    "OPENVAS:1361412562311220241373",
+                    "OPENVAS:1361412562311220241375",
+                    "OPENVAS:1361412562311220241394",
+                    "OPENVAS:1361412562311220241396",
+                    "OPENVAS:1361412562311220241409",
+                    "OPENVAS:1361412562311220241424",
+                    "OPENVAS:1361412562311220241437",
+                    "OPENVAS:1361412562311220241645",
+                    "OPENVAS:1361412562311220241670",
+                    "OPENVAS:1361412562311220241674",
+                    "OPENVAS:1361412562311220241710",
+                    "OPENVAS:13614125623114202342161"
+                  ]
+                },
+                {
+                  "type": "oracle",
+                  "idList": [
+                    "ORACLE:CPUJUL2024",
+                    "ORACLE:CPUOCT2024",
+                    "ORACLE:CPUOCT2025"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:ALPINE-CVE-2023-45853",
+                    "OSV:CGA-9342-5WJ4-M9VW",
+                    "OSV:CGA-JQ67-276V-CRW8",
+                    "OSV:CVE-2023-45853",
+                    "OSV:DEBIAN-CVE-2023-45853",
+                    "OSV:DLA-3670-1",
+                    "OSV:ECHO-8ED3-9419-847F",
+                    "OSV:GHSA-MQ29-J5XF-CJWR",
+                    "OSV:GHSA-Q5FM-55C2-V6J9",
+                    "OSV:MGASA-2023-0312",
+                    "OSV:OESA-2023-1751",
+                    "OSV:OPENSUSE-SU-2024:13363-1",
+                    "OSV:OPENSUSE-SU-2024:13462-1",
+                    "OSV:OPENSUSE-SU-2025:14857-1",
+                    "OSV:ROOT-OS-DEBIAN-11-CVE-2023-45853",
+                    "OSV:ROOT-OS-DEBIAN-12-CVE-2023-45853",
+                    "OSV:SUSE-SU-2023:4215-1",
+                    "OSV:SUSE-SU-2023:4216-1",
+                    "OSV:SUSE-SU-2023:4217-1",
+                    "OSV:SUSE-SU-2024:2431-1",
+                    "OSV:UBUNTU-CVE-2023-45853",
+                    "OSV:USN-7107-1"
+                  ]
+                },
+                {
+                  "type": "photon",
+                  "idList": [
+                    "PHSA-2023-3.0-0674",
+                    "PHSA-2023-4.0-0497",
+                    "PHSA-2023-5.0-0126"
+                  ]
+                },
+                {
+                  "type": "prion",
+                  "idList": [
+                    "PRION:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2022-2042",
+                    "PT-2023-6402"
+                  ]
+                },
+                {
+                  "type": "qualysblog",
+                  "idList": [
+                    "QUALYSBLOG:314B40844ECA29B86078FC6FD1CC2F32",
+                    "QUALYSBLOG:FB374FABE636265468B62F0B74FE8C82"
+                  ]
+                },
+                {
+                  "type": "redhat",
+                  "idList": [
+                    "RHSA-2023:7626"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "redos",
+                  "idList": [
+                    "ROS-20231020-01"
+                  ]
+                },
+                {
+                  "type": "rosalinux",
+                  "idList": [
+                    "ROSA-SA-2024-2463"
+                  ]
+                },
+                {
+                  "type": "snyk",
+                  "idList": [
+                    "SNYK:CONAN-ZLIB-10078583"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "ubuntu",
+                  "idList": [
+                    "USN-7107-1"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "veracode",
+                  "idList": [
+                    "VERACODE:43951"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2023-45853"
+                  ]
+                },
+                {
+                  "type": "wolfi",
+                  "idList": [
+                    "WOLFI:CVE-2023-45853"
+                  ]
+                }
+              ]
+            },
+            "short_description": "CVE-2023-45853: Integer overflow in MiniZi",
+            "tags": [
+              "cve-2023-45853",
+              "minizip",
+              "zlib",
+              "integer overflow",
+              "heap-based buffer overflow",
+              "zipopennewfileinzip4_64",
+              "nvd"
+            ],
+            "reddit": {
+              "counter": 2,
+              "posts": [
+                {
+                  "link": "https://www.reddit.com/r/sysadmin/comments/1nok0ze/questions_about_trivy_for_container_image_scans/",
+                  "text": "QuestionsaboutTrivyforcontainerimagescans",
+                  "author": "funy_computer",
+                  "author_photo": "",
+                  "date": "2025-09-23T15:11:31+00:00"
+                },
+                {
+                  "link": "https://www.reddit.com/r/archlinux/comments/1fzl3e2/my_perfectionism_is_screaming_for_this_fix/",
+                  "text": "Myperfectionismisscreamingforthisfix.",
+                  "author": "stnert_",
+                  "author_photo": "https://i.redd.it/snoovatar/avatars/cea49537-3fad-46db-8f75-53f41d4e307d-headshot.png",
+                  "date": "2024-10-09T09:27:20+00:00"
+                }
+              ]
+            },
+            "affected_software": {
+              "major_version": [
+                {
+                  "name": "zlib",
+                  "version": 1
+                }
+              ]
+            },
+            "twitter": {
+              "counter": 1,
+              "tweets": [
+                {
+                  "link": "https://twitter.com/VulmonFeeds/status/1713068421120721057",
+                  "text": "CVE-2023-45853\n\nMiniZip in zlib through 1.3 has an integer overflow and resultant heap-based buffer overflow in zipOpenNewFileInZip4_64 via a long filename, comment, or extra field. NOTE: MiniZip is not a supported...\n\nhttps://t.co/Bh5UTZ78XL",
+                  "author": "VulmonFeeds",
+                  "author_photo": "https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_400x400.jpg"
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": null,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://www.winimage.com/zLibDll/minizip.html",
+            "https://github.com/madler/zlib/pull/843",
+            "https://security.gentoo.org/glsa/202401-18",
+            "https://security.netapp.com/advisory/ntap-20231130-0009/",
+            "https://chromium.googlesource.com/chromium/src/+/de29dd6c7151d3cd37cb4cf0036800ddfb1d8b61",
+            "http://www.openwall.com/lists/oss-security/2023/10/20/9",
+            "http://www.openwall.com/lists/oss-security/2024/01/24/10",
+            "https://chromium.googlesource.com/chromium/src/+/d709fb23806858847131027da95ef4c548813356",
+            "https://pypi.org/project/pyminizip/#history",
+            "https://lists.debian.org/debian-lts-announce/2023/11/msg00026.html",
+            "https://github.com/madler/zlib/blob/ac8f12c97d1afd9bafa9c710f827d40a407d3266/contrib/README.contrib#L1-L4"
+          ],
+          "exploits": [],
+          "cvelist": [
+            "CVE-2023-45853"
+          ]
+        },
+        {
+          "id": "CVE-2026-27171",
+          "type": "cve",
+          "match": "<1.3.2",
+          "title": "CVE-2026-27171",
+          "description": "zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition.",
+          "aiDescription": "CVE-2026-27171 affects zlib up to version before 1.3.2. The issue enables CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can perform right shifts inside a loop that has no termination condition, potentially leading to a local-resource DoS. The CVSS indicates a Low impact to availability with local attack vector and high attack complexity, no privileges required, and no user interaction required. The recommended remediation is to upgrade to zlib 1.3.2 or later (per the linked release note). The connected documents confirm the vulnerability mechanism and the patch release, but do not provide exploit code or in-the-wild exploit details.",
+          "published": "2026-02-18T02:36:19",
+          "epss": [
+            {
+              "cve": "CVE-2026-27171",
+              "epss": 0.00006,
+              "percentile": 0.00363,
+              "date": "2026-02-19"
+            }
+          ],
+          "aiScore": {
+            "value": 5.4,
+            "uncertainty": 1.3
+          },
+          "metrics": {
+            "cvss": {
+              "score": 5.5,
+              "severity": "MEDIUM",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "source": "nvd"
+            },
+            "epss": [
+              "CVE-2026-27171"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "score": {
+              "value": 5.4,
+              "uncertanity": 1.3,
+              "vector": "NONE"
+            },
+            "short_description": "CVE-2026-27171: zlib before version 1.3.2 may cause CPU exhaustion via crc32_combine64 and crc32_combine_gen64 because of an infinite loop.",
+            "tags": [
+              "zlib vulnerability",
+              "infinite loop",
+              "cpu consumption",
+              "older versions"
+            ],
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "attackerkb",
+                  "idList": [
+                    "AKB:7B1DE7BE-82DA-46F2-ACF6-09192876519F"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "UNPATCHED_CVE_2026_27171.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:CVE-2026-27171",
+                    "OSV:DEBIAN-CVE-2026-27171",
+                    "OSV:ECHO-E10B-F259-A98B",
+                    "OSV:MINI-HWJJ-MJ9H-QH5G",
+                    "OSV:UBUNTU-CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2026-20360"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "snyk",
+                  "idList": [
+                    "SNYK:CONAN-ZLIB-15317566"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2026-27171"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-27171"
+                  ]
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": null,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://github.com/madler/zlib/issues/904",
+            "https://github.com/madler/zlib/releases/tag/v1.3.2",
+            "https://7asecurity.com/blog/2026/02/zlib-7asecurity-audit/",
+            "https://7asecurity.com/reports/pentest-report-zlib-RC1.1.pdf",
+            "https://ostif.org/zlib-audit-complete/"
+          ],
+          "exploits": [
+            {
+              "id": "CVE-2026-27171",
+              "href": "https://github.com/madler/zlib/issues/904",
+              "type": "nvd"
+            }
+          ],
+          "cvelist": [
+            "CVE-2026-27171"
+          ]
+        }
+      ]
+    },
+    {
+      "package": "busybox",
+      "version": "1.37.0-r30",
+      "applicableAdvisories": [
+        {
+          "id": "OSV:BELL-CVE-2025-60876",
+          "type": "osv",
+          "match": ">=1.36.1-r1,<1.37.0-r31",
+          "title": "BELL-CVE-2025-60876",
+          "description": "Bulletin has no description",
+          "aiDescription": "",
+          "published": "2025-11-13T06:07:03",
+          "epss": [
+            {
+              "cve": "CVE-2025-60876",
+              "epss": 0.00052,
+              "percentile": 0.16687,
+              "date": "2026-01-18"
+            }
+          ],
+          "aiScore": {
+            "value": 6.9,
+            "uncertainty": 1.3
+          },
+          "metrics": {
+            "cvss": {
+              "score": 6.5,
+              "severity": "MEDIUM",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "source": "osv"
+            },
+            "epss": [
+              "CVE-2025-60876"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "short_description": "Bell 2025-60876 bulletin lacks description for library.",
+            "tags": [
+              "bell bulletin",
+              "2025 vulnerability",
+              "library",
+              "no description"
+            ],
+            "score": {
+              "value": 6.9,
+              "uncertanity": 1.3,
+              "vector": "NONE"
+            },
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "cgr",
+                  "idList": [
+                    "CHAINGUARD:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202511-914"
+                  ]
+                },
+                {
+                  "type": "cve",
+                  "idList": [
+                    "CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2025-50804"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENSUSE-2026-20090-1.NASL",
+                    "SUSE_SU-2026-0235-1.NASL",
+                    "SUSE_SU-2026-0236-1.NASL",
+                    "UNPATCHED_CVE_2025_60876.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "opensuse",
+                  "idList": [
+                    "OPENSUSE-SU-2025:15834-1"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:1361412562311182202602361",
+                    "OPENVAS:13614125623114202602361",
+                    "OPENVAS:136141256231142026201341"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:CGA-HGJV-8VRQ-5JV9",
+                    "OSV:DEBIAN-CVE-2025-60876",
+                    "OSV:MINI-3729-6W87-2929",
+                    "OSV:UBUNTU-CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2025-46190"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "suse",
+                  "idList": [
+                    "SUSE-SU-2026:0235-1",
+                    "SUSE-SU-2026:0236-1"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "wolfi",
+                  "idList": [
+                    "WOLFI:CVE-2025-60876"
+                  ]
+                }
+              ]
+            }
+          },
+          "references": [
+            "https://docs.bell-sw.com/security/cves/CVE-2025-60876"
+          ],
+          "cvelist": [
+            "CVE-2025-60876"
+          ]
+        },
+        {
+          "id": "CVE-2025-46394",
+          "type": "cve",
+          "match": "<=1.37.0",
+          "title": "CVE-2025-46394",
+          "description": "In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.",
+          "aiDescription": "**CVE-2025-46394** affects BusyBox tar up to version 1.37.0. A TAR archive can misuse terminal escape sequences to hide filenames from listings, causing a mismatch between on-disk contents and what is shown to the user. The vulnerability is a UI misinformation issue (CWE-451) with low overall impact in public scoring. Public details in connected advisories note mitigation suggestions such as preventing upload of malicious TAR files and restricting system access, but do not specify a confirmed patch version within the provided documents. Actionable next steps are not defined here beyond the general mitigation guidance; monitor for official fixes or advisories for a concrete remediation version.",
+          "published": "2025-04-23T00:00:00",
+          "epss": [
+            {
+              "cve": "CVE-2025-46394",
+              "epss": 0.00083,
+              "percentile": 0.24111,
+              "date": "2026-02-18"
+            }
+          ],
+          "aiScore": {
+            "value": 4.1,
+            "uncertainty": 0.4
+          },
+          "metrics": {
+            "cvss": {
+              "score": 3.3,
+              "severity": "LOW",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "source": "nvd"
+            },
+            "epss": [
+              "CVE-2025-46394"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "cgr",
+                  "idList": [
+                    "CHAINGUARD:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202504-3449"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2025-11984"
+                  ]
+                },
+                {
+                  "type": "f5",
+                  "idList": [
+                    "F5:K000152678"
+                  ]
+                },
+                {
+                  "type": "ibm",
+                  "idList": [
+                    "61582A067FB7581D3A4C02602C6BC032DCAED12451C0E1DD89220901DDF98514"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "EULEROS_SA-2025-2283.NASL",
+                    "EULEROS_SA-2025-2456.NASL",
+                    "EULEROS_SA-2025-2475.NASL",
+                    "EULEROS_SA-2026-1021.NASL",
+                    "EULEROS_SA-2026-1042.NASL",
+                    "EULEROS_SA-2026-1064.NASL",
+                    "EULEROS_SA-2026-1084.NASL",
+                    "OPENSUSE-2026-20090-1.NASL",
+                    "SUSE_SU-2026-0235-1.NASL",
+                    "SUSE_SU-2026-0236-1.NASL",
+                    "UNITY_LINUX_UTSA-2026-005333.NASL",
+                    "UNPATCHED_CVE_2025_46394.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "opensuse",
+                  "idList": [
+                    "OPENSUSE-SU-2025:15834-1"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:1361412562311182202602361",
+                    "OPENVAS:1361412562311220252283",
+                    "OPENVAS:1361412562311220252456",
+                    "OPENVAS:1361412562311220252475",
+                    "OPENVAS:1361412562311220261021",
+                    "OPENVAS:1361412562311220261042",
+                    "OPENVAS:1361412562311220261064",
+                    "OPENVAS:1361412562311220261084",
+                    "OPENVAS:13614125623114202602361",
+                    "OPENVAS:136141256231142026201341"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:ALPINE-CVE-2025-46394",
+                    "OSV:BELL-CVE-2025-46394",
+                    "OSV:CGA-WJ2C-V25V-C33Q",
+                    "OSV:CLEANSTART-2026-OL25917",
+                    "OSV:CVE-2025-46394",
+                    "OSV:DEBIAN-CVE-2025-46394",
+                    "OSV:ECHO-B00E-22B9-2A35",
+                    "OSV:MINI-7XQ4-37V3-672Q",
+                    "OSV:OESA-2025-1881",
+                    "OSV:OESA-2025-1882",
+                    "OSV:OESA-2025-1883",
+                    "OSV:OESA-2025-1884",
+                    "OSV:OESA-2025-1885",
+                    "OSV:OESA-2025-1886",
+                    "OSV:UBUNTU-CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2025-17645",
+                    "PT-2025-42737"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "suse",
+                  "idList": [
+                    "SUSE-SU-2026:0235-1",
+                    "SUSE-SU-2026:0236-1"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "wolfi",
+                  "idList": [
+                    "WOLFI:CVE-2025-46394"
+                  ]
+                }
+              ]
+            },
+            "short_description": "CVE-2025-46394 exposes TAR archive filename hiding in BusyBox version 1.37.0.",
+            "tags": [
+              "cve-2025-46394",
+              "tar archive",
+              "busybox vulnerability",
+              "filename hiding",
+              "terminal escape sequences"
+            ],
+            "score": {
+              "value": 4.1,
+              "uncertanity": 0.4,
+              "vector": "NONE"
+            },
+            "reddit": {
+              "counter": 1,
+              "posts": [
+                {
+                  "link": "https://www.reddit.com/r/podman/comments/1p3z8ah/minimal_image_security_nginx_vs_hummingbird/",
+                  "text": "MinimalImageSecurity:Nginxvs.Hummingbird",
+                  "author": "kavishgr",
+                  "author_photo": "",
+                  "date": "2025-11-22T17:40:09+00:00"
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": null,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://www.busybox.net/downloads/",
+            "https://bugs.busybox.net/show_bug.cgi?id=16018",
+            "https://www.busybox.net",
+            "http://www.openwall.com/lists/oss-security/2025/04/24/3",
+            "http://www.openwall.com/lists/oss-security/2025/04/23/5"
+          ],
+          "exploits": [],
+          "cvelist": [
+            "CVE-2025-46394"
+          ]
+        },
+        {
+          "id": "CVE-2025-60876",
+          "type": "cve",
+          "match": "<=1.37.0",
+          "title": "CVE-2025-60876",
+          "description": "BusyBox wget thru 1.3.7 accepted raw CR (0x0D)/LF (0x0A) and other C0 control bytes in the HTTP request-target (path/query), allowing the request line to be split and attacker-controlled headers to be injected. To preserve the HTTP/1.1 request-line shape METHOD SP request-target SP HTTP/1.1, a raw space (0x20) in the request-target must also be rejected (clients should use %20).",
+          "aiDescription": "**CVE-2025-60876** affects BusyBox wget up to 1.3.7. The issue stems from accepting raw CR (0x0D)/LF (0x0A) and other C0 control bytes in the HTTP request-target, allowing the request-line to be split and attacker-controlled headers to be injected. To preserve the HTTP/1.1 request-line shape, a raw space (0x20) in the request-target must also be rejected (clients should use %20). Connected sources note this vulnerability in multiple advisories (OpenSUSE/SUSE) and indicate a security update is released, but do not provide a specific patched version in the provided documents. If remediation details or exact patched versions are present in the connected advisories, they are not included here due to the available data.",
+          "published": "2025-11-10T00:00:00",
+          "epss": [
+            {
+              "cve": "CVE-2025-60876",
+              "epss": 0.00052,
+              "percentile": 0.16687,
+              "date": "2026-01-18"
+            }
+          ],
+          "aiScore": {
+            "value": 6.5,
+            "uncertainty": 1.6
+          },
+          "metrics": {
+            "cvss": {
+              "score": 6.5,
+              "severity": "MEDIUM",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "source": "cve"
+            },
+            "epss": [
+              "CVE-2025-60876"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "short_description": "CVE-2025-60876: BusyBox wget 1.3.7 accepts CR/LF in Http request-target, enabling header injection.",
+            "tags": [
+              "BusyBox",
+              "wget",
+              "Http header injection",
+              "Request target",
+              "Raw CRLF",
+              "CVE 2025 60876"
+            ],
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "cgr",
+                  "idList": [
+                    "CHAINGUARD:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202511-914"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2025-50804"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENSUSE-2026-20090-1.NASL",
+                    "SUSE_SU-2026-0235-1.NASL",
+                    "SUSE_SU-2026-0236-1.NASL",
+                    "UNPATCHED_CVE_2025_60876.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "opensuse",
+                  "idList": [
+                    "OPENSUSE-SU-2025:15834-1"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:1361412562311182202602361",
+                    "OPENVAS:13614125623114202602361",
+                    "OPENVAS:136141256231142026201341"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:BELL-CVE-2025-60876",
+                    "OSV:CGA-HGJV-8VRQ-5JV9",
+                    "OSV:DEBIAN-CVE-2025-60876",
+                    "OSV:MINI-3729-6W87-2929",
+                    "OSV:UBUNTU-CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2025-46190"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "suse",
+                  "idList": [
+                    "SUSE-SU-2026:0235-1",
+                    "SUSE-SU-2026:0236-1"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2025-60876"
+                  ]
+                },
+                {
+                  "type": "wolfi",
+                  "idList": [
+                    "WOLFI:CVE-2025-60876"
+                  ]
+                }
+              ]
+            },
+            "score": {
+              "value": 6.5,
+              "uncertanity": 1.6,
+              "vector": "NONE"
+            }
+          },
+          "webApplicability": {
+            "applicable": false,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://lists.busybox.net/pipermail/busybox/attachments/20250828/e7f90492/attachment.htm",
+            "https://lists.busybox.net/pipermail/busybox/attachments/20250823/ccdc96ef/attachment-0001.htm",
+            "https://gist.github.com/subyumatest/41554af6a72aedaacaec026adc311092"
+          ],
+          "exploits": [
+            {
+              "id": "CVE-2025-60876",
+              "href": "https://gist.github.com/subyumatest/41554af6a72aedaacaec026adc311092",
+              "type": "nvd"
+            }
+          ],
+          "cvelist": [
+            "CVE-2025-60876"
+          ]
+        },
+        {
+          "id": "CVE-2024-58251",
+          "type": "cve",
+          "match": ">=0,<=1.37.0",
+          "title": "CVE-2024-58251",
+          "description": "In netstat in BusyBox through 1.37.0, local users can launch of network application with an argv[0] containing an ANSI terminal escape sequence, leading to a denial of service (terminal locked up) when netstat is used by a victim.",
+          "aiDescription": "CVE-2024-58251 affects BusyBox netstat up to version 1.37.0. Local attackers can cause a denial of service by running a network application with argv[0] containing an ANSI terminal escape sequence, which locks the victim’s terminal when netstat is used. The issue is rooted in how netstat handles argv[0]; the security bulletin entries in connected docs corroborate the CVE description. The provided materials do not specify a vendor-provided fix or workaround within BusyBox; remediation details are not publicly detailed in these documents. If exploiting details or patch information exist elsewhere, they are not included here. Monitor for updates from BusyBox and related security advisories to obtain an official fix or recommended mitigations.",
+          "published": "2025-04-23T00:00:00",
+          "epss": [
+            {
+              "cve": "CVE-2024-58251",
+              "epss": 0.00077,
+              "percentile": 0.22915,
+              "date": "2026-02-18"
+            }
+          ],
+          "aiScore": {
+            "value": 3.8,
+            "uncertainty": 0.6
+          },
+          "metrics": {
+            "cvss": {
+              "score": 2.5,
+              "severity": "LOW",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "source": "cve@mitre.org"
+            },
+            "epss": [
+              "CVE-2024-58251"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "cgr",
+                  "idList": [
+                    "CHAINGUARD:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202504-3486"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2025-12151"
+                  ]
+                },
+                {
+                  "type": "f5",
+                  "idList": [
+                    "F5:K000152680"
+                  ]
+                },
+                {
+                  "type": "ibm",
+                  "idList": [
+                    "61582A067FB7581D3A4C02602C6BC032DCAED12451C0E1DD89220901DDF98514"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "EULEROS_SA-2025-2456.NASL",
+                    "EULEROS_SA-2025-2475.NASL",
+                    "EULEROS_SA-2025-2495.NASL",
+                    "EULEROS_SA-2025-2516.NASL",
+                    "EULEROS_SA-2026-1021.NASL",
+                    "EULEROS_SA-2026-1042.NASL",
+                    "EULEROS_SA-2026-1064.NASL",
+                    "EULEROS_SA-2026-1084.NASL",
+                    "UNITY_LINUX_UTSA-2026-005338.NASL",
+                    "UNPATCHED_CVE_2024_58251.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:1361412562311220252456",
+                    "OPENVAS:1361412562311220252475",
+                    "OPENVAS:1361412562311220252495",
+                    "OPENVAS:1361412562311220252516",
+                    "OPENVAS:1361412562311220261021",
+                    "OPENVAS:1361412562311220261042",
+                    "OPENVAS:1361412562311220261064",
+                    "OPENVAS:1361412562311220261084"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:ALPINE-CVE-2024-58251",
+                    "OSV:BELL-CVE-2024-58251",
+                    "OSV:CGA-XFG8-9FG5-CH7X",
+                    "OSV:CVE-2024-58251",
+                    "OSV:DEBIAN-CVE-2024-58251",
+                    "OSV:ECHO-5F56-5DFF-E960",
+                    "OSV:MINI-9W5M-F95V-57HF",
+                    "OSV:OESA-2025-2328",
+                    "OSV:UBUNTU-CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2025-17652"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2024-58251"
+                  ]
+                },
+                {
+                  "type": "wolfi",
+                  "idList": [
+                    "WOLFI:CVE-2024-58251"
+                  ]
+                }
+              ]
+            },
+            "score": {
+              "value": 3.8,
+              "uncertanity": 0.6,
+              "vector": "NONE"
+            },
+            "short_description": "Local users can exploit netstat in BusyBox, causing denial of service via terminal escape sequences.",
+            "tags": [
+              "cve-2024-58251 busybox netstat denial of service security vulnerability terminal escape sequence"
+            ],
+            "reddit": {
+              "counter": 1,
+              "posts": [
+                {
+                  "link": "https://www.reddit.com/r/podman/comments/1p3z8ah/minimal_image_security_nginx_vs_hummingbird/",
+                  "text": "MinimalImageSecurity:Nginxvs.Hummingbird",
+                  "author": "kavishgr",
+                  "author_photo": "",
+                  "date": "2025-11-22T17:40:09+00:00"
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": null,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://bugs.busybox.net/show_bug.cgi?id=15922",
+            "https://www.busybox.net/downloads/",
+            "https://www.busybox.net",
+            "http://www.openwall.com/lists/oss-security/2025/04/23/6"
+          ],
+          "exploits": [],
+          "cvelist": [
+            "CVE-2024-58251"
+          ]
+        },
+        {
+          "id": "CVE-2025-46394",
+          "type": "cve",
+          "match": ">=0,<=1.37.0",
+          "title": "CVE-2025-46394",
+          "description": "In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.",
+          "aiDescription": "**CVE-2025-46394** affects BusyBox tar up to version 1.37.0. A TAR archive can misuse terminal escape sequences to hide filenames from listings, causing a mismatch between on-disk contents and what is shown to the user. The vulnerability is a UI misinformation issue (CWE-451) with low overall impact in public scoring. Public details in connected advisories note mitigation suggestions such as preventing upload of malicious TAR files and restricting system access, but do not specify a confirmed patch version within the provided documents. Actionable next steps are not defined here beyond the general mitigation guidance; monitor for official fixes or advisories for a concrete remediation version.",
+          "published": "2025-04-23T00:00:00",
+          "epss": [
+            {
+              "cve": "CVE-2025-46394",
+              "epss": 0.00083,
+              "percentile": 0.24111,
+              "date": "2026-02-18"
+            }
+          ],
+          "aiScore": {
+            "value": 4.1,
+            "uncertainty": 0.4
+          },
+          "metrics": {
+            "cvss": {
+              "score": 3.3,
+              "severity": "LOW",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "source": "nvd"
+            },
+            "epss": [
+              "CVE-2025-46394"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "cgr",
+                  "idList": [
+                    "CHAINGUARD:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202504-3449"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2025-11984"
+                  ]
+                },
+                {
+                  "type": "f5",
+                  "idList": [
+                    "F5:K000152678"
+                  ]
+                },
+                {
+                  "type": "ibm",
+                  "idList": [
+                    "61582A067FB7581D3A4C02602C6BC032DCAED12451C0E1DD89220901DDF98514"
+                  ]
+                },
+                {
+                  "type": "mscve",
+                  "idList": [
+                    "MS:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "EULEROS_SA-2025-2283.NASL",
+                    "EULEROS_SA-2025-2456.NASL",
+                    "EULEROS_SA-2025-2475.NASL",
+                    "EULEROS_SA-2026-1021.NASL",
+                    "EULEROS_SA-2026-1042.NASL",
+                    "EULEROS_SA-2026-1064.NASL",
+                    "EULEROS_SA-2026-1084.NASL",
+                    "OPENSUSE-2026-20090-1.NASL",
+                    "SUSE_SU-2026-0235-1.NASL",
+                    "SUSE_SU-2026-0236-1.NASL",
+                    "UNITY_LINUX_UTSA-2026-005333.NASL",
+                    "UNPATCHED_CVE_2025_46394.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "opensuse",
+                  "idList": [
+                    "OPENSUSE-SU-2025:15834-1"
+                  ]
+                },
+                {
+                  "type": "openvas",
+                  "idList": [
+                    "OPENVAS:1361412562311182202602361",
+                    "OPENVAS:1361412562311220252283",
+                    "OPENVAS:1361412562311220252456",
+                    "OPENVAS:1361412562311220252475",
+                    "OPENVAS:1361412562311220261021",
+                    "OPENVAS:1361412562311220261042",
+                    "OPENVAS:1361412562311220261064",
+                    "OPENVAS:1361412562311220261084",
+                    "OPENVAS:13614125623114202602361",
+                    "OPENVAS:136141256231142026201341"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:ALPINE-CVE-2025-46394",
+                    "OSV:BELL-CVE-2025-46394",
+                    "OSV:CGA-WJ2C-V25V-C33Q",
+                    "OSV:CLEANSTART-2026-OL25917",
+                    "OSV:CVE-2025-46394",
+                    "OSV:DEBIAN-CVE-2025-46394",
+                    "OSV:ECHO-B00E-22B9-2A35",
+                    "OSV:MINI-7XQ4-37V3-672Q",
+                    "OSV:OESA-2025-1881",
+                    "OSV:OESA-2025-1882",
+                    "OSV:OESA-2025-1883",
+                    "OSV:OESA-2025-1884",
+                    "OSV:OESA-2025-1885",
+                    "OSV:OESA-2025-1886",
+                    "OSV:UBUNTU-CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2025-17645",
+                    "PT-2025-42737"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "suse",
+                  "idList": [
+                    "SUSE-SU-2026:0235-1",
+                    "SUSE-SU-2026:0236-1"
+                  ]
+                },
+                {
+                  "type": "susecve",
+                  "idList": [
+                    "SUSECVE:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2025-46394"
+                  ]
+                },
+                {
+                  "type": "wolfi",
+                  "idList": [
+                    "WOLFI:CVE-2025-46394"
+                  ]
+                }
+              ]
+            },
+            "short_description": "CVE-2025-46394 exposes TAR archive filename hiding in BusyBox version 1.37.0.",
+            "tags": [
+              "cve-2025-46394",
+              "tar archive",
+              "busybox vulnerability",
+              "filename hiding",
+              "terminal escape sequences"
+            ],
+            "score": {
+              "value": 4.1,
+              "uncertanity": 0.4,
+              "vector": "NONE"
+            },
+            "reddit": {
+              "counter": 1,
+              "posts": [
+                {
+                  "link": "https://www.reddit.com/r/podman/comments/1p3z8ah/minimal_image_security_nginx_vs_hummingbird/",
+                  "text": "MinimalImageSecurity:Nginxvs.Hummingbird",
+                  "author": "kavishgr",
+                  "author_photo": "",
+                  "date": "2025-11-22T17:40:09+00:00"
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": null,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://www.busybox.net/downloads/",
+            "https://bugs.busybox.net/show_bug.cgi?id=16018",
+            "https://www.busybox.net",
+            "http://www.openwall.com/lists/oss-security/2025/04/24/3",
+            "http://www.openwall.com/lists/oss-security/2025/04/23/5"
+          ],
+          "exploits": [],
+          "cvelist": [
+            "CVE-2025-46394"
+          ]
+        }
+      ]
+    },
+    {
+      "package": "musl",
+      "version": "1.2.5-r21",
+      "applicableAdvisories": [
+        {
+          "id": "CVE-2025-26519",
+          "type": "cve",
+          "match": ">=0.9.13,<1.2.6",
+          "title": "CVE-2025-26519",
+          "description": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.",
+          "aiDescription": "CVE-2025-26519 affects musl libc versions 0.9.13 through 1.2.5 (before 1.2.6). The vulnerability is an out-of-bounds write triggered when iconv converts untrusted EUC-KR text to UTF-8. The connected IBM/NVD entries confirm the affected range and the trigger via EUC-KR text, but do not provide remediation details within the provided documents.",
+          "published": "2025-02-14T00:00:00",
+          "epss": [
+            {
+              "cve": "CVE-2025-26519",
+              "epss": 0.00022,
+              "percentile": 0.05123,
+              "date": "2025-12-12"
+            }
+          ],
+          "aiScore": {
+            "value": 7.1,
+            "uncertainty": 1.3
+          },
+          "metrics": {
+            "cvss": {
+              "score": 8.1,
+              "severity": "HIGH",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L",
+              "source": "cve@mitre.org"
+            },
+            "epss": [
+              "CVE-2025-26519"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "short_description": "musl libc versions 0.9.13 to 1.2.5 have an out-of-bounds write vulnerability via iconv conversion.",
+            "tags": [
+              "cve-2025-26519 musl libc out-of-bounds write vulnerability iconv conversion euc-kr utf-8"
+            ],
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "astralinux",
+                  "idList": [
+                    "ASTRA:1159995995595811217991718926636611"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202502-1639"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2025-4206"
+                  ]
+                },
+                {
+                  "type": "ibm",
+                  "idList": [
+                    "8C3420B5C61D60844AE3CD708CF09F4A5038F79CA75D207AEF0C43620FF66DFE",
+                    "E65FD28BC4608423ECBA61F5D3B9FE85F23638F6A7E7B84518600F8DBFFD9136"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "UNPATCHED_CVE_2025_26519.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:ALPINE-CVE-2025-26519",
+                    "OSV:BELL-CVE-2025-26519",
+                    "OSV:CVE-2025-26519",
+                    "OSV:DEBIAN-CVE-2025-26519",
+                    "OSV:OESA-2025-1252",
+                    "OSV:OESA-2025-1253",
+                    "OSV:OESA-2025-1254",
+                    "OSV:OESA-2025-1255",
+                    "OSV:UBUNTU-CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2025-7175"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2025-26519"
+                  ]
+                }
+              ]
+            },
+            "score": {
+              "value": 7.1,
+              "uncertanity": 1.3,
+              "vector": "NONE"
+            },
+            "twitter": {
+              "counter": 2,
+              "tweets": [
+                {
+                  "link": "https://twitter.com/masami256/status/1892348491877273716",
+                  "text": "CVE-2025-26519 Exposes Applications Using musl libc to Remote Code Execution",
+                  "author": "masami256",
+                  "author_photo": "https://pbs.twimg.com/profile_images/703967747739234304/oqSrK_z7_400x400.jpg"
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": null,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25ea3b484e10326f933e927c0bc8cded3da",
+            "https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97b5196e29991b524237381a0202a60659",
+            "https://www.openwall.com/lists/oss-security/2025/02/13/2",
+            "http://www.openwall.com/lists/oss-security/2025/02/14/6",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/4",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/5",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/2",
+            "http://www.openwall.com/lists/oss-security/2025/02/14/5",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/3"
+          ],
+          "exploits": [],
+          "cvelist": [
+            "CVE-2025-26519"
+          ]
+        },
+        {
+          "id": "CVE-2025-26519",
+          "type": "cve",
+          "match": ">=0.9.13,<1.2.6",
+          "title": "CVE-2025-26519",
+          "description": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.",
+          "aiDescription": "CVE-2025-26519 affects musl libc versions 0.9.13 through 1.2.5 (before 1.2.6). The vulnerability is an out-of-bounds write triggered when iconv converts untrusted EUC-KR text to UTF-8. The connected IBM/NVD entries confirm the affected range and the trigger via EUC-KR text, but do not provide remediation details within the provided documents.",
+          "published": "2025-02-14T00:00:00",
+          "epss": [
+            {
+              "cve": "CVE-2025-26519",
+              "epss": 0.00022,
+              "percentile": 0.05123,
+              "date": "2025-12-12"
+            }
+          ],
+          "aiScore": {
+            "value": 7.1,
+            "uncertainty": 1.3
+          },
+          "metrics": {
+            "cvss": {
+              "score": 8.1,
+              "severity": "HIGH",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L",
+              "source": "cve@mitre.org"
+            },
+            "epss": [
+              "CVE-2025-26519"
+            ]
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "short_description": "musl libc versions 0.9.13 to 1.2.5 have an out-of-bounds write vulnerability via iconv conversion.",
+            "tags": [
+              "cve-2025-26519 musl libc out-of-bounds write vulnerability iconv conversion euc-kr utf-8"
+            ],
+            "dependencies": {
+              "references": [
+                {
+                  "type": "alpinelinux",
+                  "idList": [
+                    "ALPINE:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "astralinux",
+                  "idList": [
+                    "ASTRA:1159995995595811217991718926636611"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "cnnvd",
+                  "idList": [
+                    "CNNVD-202502-1639"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "euvd",
+                  "idList": [
+                    "EUVD-2025-4206"
+                  ]
+                },
+                {
+                  "type": "ibm",
+                  "idList": [
+                    "8C3420B5C61D60844AE3CD708CF09F4A5038F79CA75D207AEF0C43620FF66DFE",
+                    "E65FD28BC4608423ECBA61F5D3B9FE85F23638F6A7E7B84518600F8DBFFD9136"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "UNPATCHED_CVE_2025_26519.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:ALPINE-CVE-2025-26519",
+                    "OSV:BELL-CVE-2025-26519",
+                    "OSV:CVE-2025-26519",
+                    "OSV:DEBIAN-CVE-2025-26519",
+                    "OSV:OESA-2025-1252",
+                    "OSV:OESA-2025-1253",
+                    "OSV:OESA-2025-1254",
+                    "OSV:OESA-2025-1255",
+                    "OSV:UBUNTU-CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2025-7175"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2025-26519"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2025-26519"
+                  ]
+                }
+              ]
+            },
+            "score": {
+              "value": 7.1,
+              "uncertanity": 1.3,
+              "vector": "NONE"
+            },
+            "twitter": {
+              "counter": 2,
+              "tweets": [
+                {
+                  "link": "https://twitter.com/masami256/status/1892348491877273716",
+                  "text": "CVE-2025-26519 Exposes Applications Using musl libc to Remote Code Execution",
+                  "author": "masami256",
+                  "author_photo": "https://pbs.twimg.com/profile_images/703967747739234304/oqSrK_z7_400x400.jpg"
+                }
+              ]
+            }
+          },
+          "webApplicability": {
+            "applicable": null,
+            "vulnerabilities": []
+          },
+          "references": [
+            "https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25ea3b484e10326f933e927c0bc8cded3da",
+            "https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97b5196e29991b524237381a0202a60659",
+            "https://www.openwall.com/lists/oss-security/2025/02/13/2",
+            "http://www.openwall.com/lists/oss-security/2025/02/14/6",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/4",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/5",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/2",
+            "http://www.openwall.com/lists/oss-security/2025/02/14/5",
+            "http://www.openwall.com/lists/oss-security/2025/02/13/3"
+          ],
+          "exploits": [],
+          "cvelist": [
+            "CVE-2025-26519"
+          ]
+        }
+      ]
+    },
+    {
+      "package": ".python-rundeps",
+      "version": "20260204.200911",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "aiofile",
+      "version": "3.9.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "alpine-baselayout",
+      "version": "3.7.1-r8",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "alpine-baselayout-data",
+      "version": "3.7.1-r8",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "alpine-keys",
+      "version": "2.6-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "alpine-release",
+      "version": "3.23.3-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "annotated-types",
+      "version": "0.7.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "anyio",
+      "version": "4.12.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "apk-tools",
+      "version": "3.0.3-r1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "attrs",
+      "version": "25.4.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "authlib",
+      "version": "1.6.8",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "beartype",
+      "version": "0.22.9",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "busybox-binsh",
+      "version": "1.37.0-r30",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "ca-certificates",
+      "version": "20251003-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "ca-certificates-bundle",
+      "version": "20251003-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "cachetools",
+      "version": "7.0.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "caio",
+      "version": "0.9.25",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "certifi",
+      "version": "2026.1.4",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "cffi",
+      "version": "2.0.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "click",
+      "version": "8.3.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "cryptography",
+      "version": "46.0.5",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "cyclopts",
+      "version": "4.6.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "dnspython",
+      "version": "2.8.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "docstring-parser",
+      "version": "0.17.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "docutils",
+      "version": "0.22.4",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "email-validator",
+      "version": "2.3.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "exceptiongroup",
+      "version": "1.3.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "fastmcp",
+      "version": "3.0.2",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "gdbm",
+      "version": "1.26-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "h11",
+      "version": "0.16.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "httpcore",
+      "version": "1.0.9",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "httpx",
+      "version": "0.28.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "httpx-sse",
+      "version": "0.4.3",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "idna",
+      "version": "3.11",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "importlib-metadata",
+      "version": "8.7.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "jaraco-classes",
+      "version": "3.4.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "jaraco-context",
+      "version": "6.1.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "jaraco-functools",
+      "version": "4.4.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "jeepney",
+      "version": "0.9.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "jsonref",
+      "version": "1.1.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "jsonschema",
+      "version": "4.26.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "jsonschema-path",
+      "version": "0.4.2",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "keyring",
+      "version": "25.7.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "libapk",
+      "version": "3.0.3-r1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "libbz2",
+      "version": "1.0.8-r6",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "libcrypto3",
+      "version": "3.5.5-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "libffi",
+      "version": "3.5.2-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "libncursesw",
+      "version": "6.5_p20251123-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "libpanelw",
+      "version": "6.5_p20251123-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "libssl3",
+      "version": "3.5.5-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "libuuid",
+      "version": "2.41.2-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "markdown-it-py",
+      "version": "4.0.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "mcp",
+      "version": "1.26.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "mdurl",
+      "version": "0.1.2",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "more-itertools",
+      "version": "10.8.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "musl-utils",
+      "version": "1.2.5-r21",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "ncurses-terminfo-base",
+      "version": "6.5_p20251123-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "openapi-pydantic",
+      "version": "0.5.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "opentelemetry-api",
+      "version": "1.39.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "packaging",
+      "version": "26.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pathable",
+      "version": "0.5.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "platformdirs",
+      "version": "4.9.2",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "py-key-value-aio",
+      "version": "0.4.4",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pycparser",
+      "version": "3.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pydantic",
+      "version": "2.12.5",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pydantic-core",
+      "version": "2.41.5",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pydantic-settings",
+      "version": "2.13.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pygments",
+      "version": "2.19.2",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pyjwt",
+      "version": "2.11.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pyperclip",
+      "version": "1.11.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "python-dotenv",
+      "version": "1.2.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "python-multipart",
+      "version": "0.0.22",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "pyyaml",
+      "version": "6.0.3",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "readline",
+      "version": "8.3.1-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "referencing",
+      "version": "0.37.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "rich",
+      "version": "14.3.3",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "rich-rst",
+      "version": "1.3.2",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "rpds-py",
+      "version": "0.30.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "scanelf",
+      "version": "1.3.8-r2",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "secretstorage",
+      "version": "3.5.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "sqlite-libs",
+      "version": "3.51.2-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "sse-starlette",
+      "version": "3.2.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "ssl_client",
+      "version": "1.37.0-r30",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "starlette",
+      "version": "0.52.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "typing-extensions",
+      "version": "4.15.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "typing-inspection",
+      "version": "0.4.2",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "tzdata",
+      "version": "2025c-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "uvicorn",
+      "version": "0.41.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "watchfiles",
+      "version": "1.1.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "websockets",
+      "version": "16.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "xz-libs",
+      "version": "5.8.2-r0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "zipp",
+      "version": "3.23.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "zstd-libs",
+      "version": "1.5.7-r2",
+      "applicableAdvisories": []
+    }
+  ]
+}

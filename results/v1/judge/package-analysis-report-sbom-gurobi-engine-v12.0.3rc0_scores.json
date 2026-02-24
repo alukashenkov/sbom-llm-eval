@@ -1,0 +1,58 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 9,
+      "conciseness": 6,
+      "actionability": 8,
+      "weighted_total": 7.65,
+      "notes": "Strong CRA awareness and comprehensive exploit analysis, but exceeds word limit and has some accuracy issues with CVE counts"
+    },
+    "glm-4.7": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 9,
+      "weighted_total": 8.4,
+      "notes": "Excellent CRA compliance focus with accurate severity counts and actionable recommendations, well-structured and concise"
+    },
+    "deepseek-v3": {
+      "cra_alignment": 10,
+      "accuracy": 9,
+      "completeness": 9,
+      "conciseness": 9,
+      "actionability": 10,
+      "weighted_total": 9.4,
+      "notes": "Outstanding CRA alignment with proper Article 14 references, highly accurate data, and excellent actionable guidance within word limit"
+    },
+    "qwen-turbo": {
+      "cra_alignment": 6,
+      "accuracy": 6,
+      "completeness": 7,
+      "conciseness": 7,
+      "actionability": 7,
+      "weighted_total": 6.5,
+      "notes": "Basic CRA awareness but significant accuracy issues with inflated HIGH count (35 vs actual ~23) and some duplicate CVE listings"
+    },
+    "claude-3-haiku": {
+      "cra_alignment": 7,
+      "accuracy": 5,
+      "completeness": 6,
+      "conciseness": 9,
+      "actionability": 7,
+      "weighted_total": 6.55,
+      "notes": "Good conciseness and CRA awareness but major accuracy issues with severely undercounted vulnerabilities (18 total vs 154 advisories)"
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "glm-4.7",
+    "gemini-2.5-flash",
+    "claude-3-haiku",
+    "qwen-turbo"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "Deepseek-v3 excels with perfect CRA alignment including proper Article 14 deadline references, highly accurate vulnerability counts, and exceptional actionability with specific remediation steps. GLM-4.7 provides strong technical accuracy and good CRA compliance but lacks the detailed regulatory framework references that make Deepseek-v3 superior for EU CRA compliance scenarios."
+}

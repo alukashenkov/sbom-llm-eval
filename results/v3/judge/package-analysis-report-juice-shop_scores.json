@@ -1,0 +1,28 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 6,
+      "completeness": 8,
+      "conciseness": 5,
+      "actionability": 7,
+      "weighted_total": 6.85,
+      "notes": "Good CRA structure and CVE coverage but inaccurate CVE counts (claims 27 vs actual 42), exceeds word limit significantly, and has some hallucinated CVEs like CVE-2026-22709"
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 9,
+      "completeness": 9,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 9.05,
+      "notes": "Excellent accuracy with correct CVE count (42), proper CRA compliance structure, concise at 498 words, comprehensive exploit evidence, and actionable recommendations with specific version targets"
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 significantly outperforms with accurate CVE counting (42 vs Gemini's incorrect 27), stays well under the 600-word limit, and provides more precise actionable recommendations with specific version targets. Gemini-2.5-flash has good structure but suffers from accuracy issues and verbosity that reduces its effectiveness for CRA compliance reporting."
+}

@@ -1,0 +1,28 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 7,
+      "conciseness": 3,
+      "actionability": 7,
+      "weighted_total": 7.0,
+      "notes": "Excellent CRA compliance identification and Article 14 deadlines. Accurate CVE counts and CISA KEV flagging. However, extremely verbose (cut off at 600+ words) and lacks concise actionable recommendations."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 10,
+      "accuracy": 9,
+      "completeness": 8,
+      "conciseness": 10,
+      "actionability": 9,
+      "weighted_total": 9.1,
+      "notes": "Perfect CRA alignment with clear Article 14 triggers and deadlines. Highly accurate statistics, well-structured exploit assessment, and excellent actionable recommendations. Concise at ~300 words with strong prioritization."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 delivers superior cybersecurity analysis with perfect CRA compliance awareness, accurate vulnerability statistics, and highly actionable recommendations in a concise format. While Gemini-2.5-flash shows strong technical accuracy and CRA knowledge, it fails the conciseness requirement and provides less actionable guidance."
+}

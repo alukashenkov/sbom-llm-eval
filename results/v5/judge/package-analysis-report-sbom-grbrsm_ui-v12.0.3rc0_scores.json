@@ -1,0 +1,38 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 6,
+      "completeness": 7,
+      "conciseness": 6,
+      "actionability": 7,
+      "weighted_total": 6.85,
+      "notes": "Good CRA structure but contains accuracy errors (duplicate CVE-2025-7783 with different severities, incorrect exploit count). Comprehensive but verbose."
+    },
+    "gemini-3-flash": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 7.65,
+      "notes": "Strong CRA compliance focus with accurate CVE details and EPSS values. Well-structured with specific version recommendations and clear prioritization."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 9,
+      "completeness": 9,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 9.0,
+      "notes": "Excellent CRA alignment with precise Article references. Highly accurate CVE counts and EPSS values. Concise yet complete with specific version targets and clear prioritization."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-3-flash",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 delivers the most accurate and CRA-compliant summary with precise CVE counts, correct EPSS values, and specific Article 10 references. Gemini-3-flash provides solid analysis but lacks the regulatory precision, while Gemini-2.5-flash contains accuracy errors including duplicate CVE entries with conflicting severities."
+}

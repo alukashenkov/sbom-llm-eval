@@ -1,0 +1,28 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 7,
+      "accuracy": 3,
+      "completeness": 2,
+      "conciseness": 8,
+      "actionability": 4,
+      "weighted_total": 4.65,
+      "notes": "Correctly identifies no CRA triggers but summary is incomplete/truncated. Major accuracy issues with CVE counts (claims 48 vs actual 38) and severity distribution. Missing critical vulnerability details."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 8,
+      "accuracy": 9,
+      "completeness": 9,
+      "conciseness": 8,
+      "actionability": 9,
+      "weighted_total": 8.65,
+      "notes": "Excellent accuracy with correct CVE counts and severity breakdown. Comprehensive coverage of critical/high CVEs with exploit details. Strong actionable recommendations prioritized correctly. Minor issue with some potentially hallucinated CVE details."
+    }
+  },
+  "ranking": [
+    "deepseek-v3",
+    "gemini-2.5-flash"
+  ],
+  "winner": "deepseek-v3",
+  "analysis": "Deepseek-v3 provides a comprehensive, accurate summary with correct CVE counts (38 vs Gemini's incorrect 48), proper severity breakdown, and detailed exploit information. Gemini's summary appears truncated and contains significant accuracy issues. Deepseek's actionable recommendations are well-prioritized and CRA-compliant."
+}

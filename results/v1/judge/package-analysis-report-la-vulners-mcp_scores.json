@@ -1,0 +1,58 @@
+{
+  "scores": {
+    "gemini-2.5-flash": {
+      "cra_alignment": 8,
+      "accuracy": 6,
+      "completeness": 9,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 7.45,
+      "notes": "Good CRA structure and completeness, but inaccurate severity counts (claims 4 CRITICAL vs actual 13 total advisories). Strong actionability with specific patching guidance."
+    },
+    "glm-4.7": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 8,
+      "conciseness": 9,
+      "actionability": 9,
+      "weighted_total": 8.5,
+      "notes": "Excellent CRA compliance focus, accurate CVE counts (6 unique), concise format. Strong actionability with immediate/urgent/planned prioritization."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 7,
+      "completeness": 9,
+      "conciseness": 8,
+      "actionability": 9,
+      "weighted_total": 8.4,
+      "notes": "Strong CRA alignment and structure. Good completeness with specific PoC links. Minor accuracy issues with severity distribution but excellent actionability."
+    },
+    "qwen-turbo": {
+      "cra_alignment": 8,
+      "accuracy": 5,
+      "completeness": 7,
+      "conciseness": 9,
+      "actionability": 7,
+      "weighted_total": 7.0,
+      "notes": "Good CRA compliance structure but major accuracy issues (claims 10 CRITICAL vs source data). Very concise but lacks detail on exploit sources."
+    },
+    "claude-3-haiku": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 6,
+      "actionability": 7,
+      "weighted_total": 7.3,
+      "notes": "Solid CRA structure and good completeness. Some accuracy issues with package counts and version formatting. Less concise than others but actionable."
+    }
+  },
+  "ranking": [
+    "glm-4.7",
+    "deepseek-v3",
+    "gemini-2.5-flash",
+    "claude-3-haiku",
+    "qwen-turbo"
+  ],
+  "winner": "glm-4.7",
+  "analysis": "GLM-4.7 wins with superior accuracy (correctly identifying 6 unique CVEs vs inflated counts by others) and excellent CRA compliance structure with clear immediate/urgent/planned action prioritization. DeepSeek-v3 follows closely with strong completeness and specific PoC documentation, while other models suffered from significant accuracy issues in vulnerability counting."
+}
