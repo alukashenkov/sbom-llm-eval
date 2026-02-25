@@ -432,6 +432,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_1.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-25474"
@@ -941,6 +947,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_3.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-24764"
@@ -1330,6 +1342,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_13.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26316"
@@ -1660,6 +1678,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26327"
@@ -1719,9 +1743,9 @@
           "epss": [
             {
               "cve": "CVE-2026-27487",
-              "epss": 0.00054,
-              "percentile": 0.16791,
-              "date": "2026-02-22"
+              "epss": 0.00051,
+              "percentile": 0.15806,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -1820,6 +1844,12 @@
                   "type": "snyk",
                   "idList": [
                     "SNYK:JS-OPENCLAW-15317315"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-27487"
                   ]
                 }
               ]
@@ -1998,6 +2028,12 @@
                   "idList": [
                     "SNYK:JS-OPENCLAW-15323210"
                   ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-27486"
+                  ]
                 }
               ]
             }
@@ -2077,9 +2113,9 @@
           "epss": [
             {
               "cve": "CVE-2026-26326",
-              "epss": 0.00014,
-              "percentile": 0.02439,
-              "date": "2026-02-21"
+              "epss": 0.00009,
+              "percentile": 0.00845,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -2141,6 +2177,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-8MH7-PHF8-XGFM"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
                   ]
                 },
                 {
@@ -2276,6 +2318,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26322"
@@ -2335,9 +2383,9 @@
           "epss": [
             {
               "cve": "CVE-2026-26325",
-              "epss": 0.00018,
-              "percentile": 0.04376,
-              "date": "2026-02-21"
+              "epss": 0.00024,
+              "percentile": 0.06135,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -2405,6 +2453,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-H3F9-MJWJ-W476"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
                   ]
                 },
                 {
@@ -2539,6 +2593,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26324"
@@ -2667,6 +2727,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-8JPQ-5H99-FF5R"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
                   ]
                 },
                 {
@@ -2956,6 +3022,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26323"
@@ -3076,6 +3148,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-G34W-4XQQ-H79M"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
                   ]
                 },
                 {
@@ -3205,6 +3283,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26319"
@@ -3329,6 +3413,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-3FQR-4CG8-H96Q"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
                   ]
                 },
                 {
@@ -3508,6 +3598,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26329"
@@ -3607,23 +3703,23 @@
           "cvelist": []
         },
         {
-          "id": "OSV:GHSA-JQPQ-MGVM-F9R6",
+          "id": "OSV:GHSA-W2CG-VXX6-5XJG",
           "type": "osv",
           "match": ">=0,<2026.2.14",
-          "title": "GHSA-JQPQ-MGVM-F9R6 OpenClaw: Command hijacking via unsafe PATH handling (bootstrapping + node-host PATH overrides)",
-          "description": "# Command hijacking via PATH handling\n\n**Discovered:** 2026-02-04\n**Reporter:** @akhmittra\n\n## Summary\n\nOpenClaw previously accepted untrusted PATH sources in limited situations. In affected versions, this could cause OpenClaw to resolve and execute an unintended binary (\"command hijacking\") when running host commands.\n\nThis issue primarily matters when OpenClaw is relying on allowlist/safe-bin protections and expects `PATH` to be trustworthy.\n\n## Affected Packages / Versions\n\n- Package: `openclaw` (npm)\n- Affected: `< 2026.2.14`\n- Patched: `>= 2026.2.14` (planned next release)\n\n## What Is Required To Trigger This\n\n### A) Node Host PATH override (remote command hijack)\n\nAn attacker needs all of the following:\n\n- Authenticated/authorized access to an execution surface that can invoke node-host execution (for example, a compromised gateway or a caller that can issue `system.run`).\n- A node host connected and exposing `system.run`.\n- A configuration where allowlist/safe-bins are expected to restrict execution (this is not meaningful if full arbitrary exec is already allowed).\n- The ability to pass request-scoped environment overrides (specifically `PATH`) into `system.run`.\n- A way to place an attacker-controlled executable earlier in `PATH` (for example, a writable directory on the node host), with a name that matches an allowlisted/safe-bin command that OpenClaw will run.\n\nNotes:\n\n- OpenClaw deployments commonly require a gateway token/password (or equivalent transport authentication). This should not be treated as unauthenticated Internet RCE.\n- This scenario typically depends on **non-standard / misconfigured deployments** (for example, granting untrusted parties access to invoke node-host execution or otherwise exposing a privileged execution surface beyond the intended trust boundary).\n\n### B) Project-local PATH bootstrapping (local command hijack)\n\nAn attacker needs all of the following:\n\n- The victim runs OpenClaw from within an attacker-controlled working directory (for example, cloning and running inside a malicious repository).\n- That directory contains a `node_modules/.bin/openclaw` and additional attacker-controlled executables in the same directory.\n- OpenClaw subsequently executes a command by name (resolved via `PATH`) that matches one of those attacker-controlled executables.\n\n## Fix\n\n- Project-local `node_modules/.bin` PATH bootstrapping is now **disabled by default**. If explicitly enabled, it is **append-only** (never prepended) via `OPENCLAW_ALLOW_PROJECT_LOCAL_BIN=1`.\n- Node Host now ignores request-scoped `PATH` overrides.\n\n## Fix Commit(s)\n\n- 013e8f6b3be3333a229a066eef26a45fec47ffcc\n\nThanks @akhmittra for reporting.",
-          "published": "2026-02-18T00:55:50",
+          "title": "GHSA-W2CG-VXX6-5XJG OpenClaw: denial of service through large base64 media files allocating large buffers before limit checks",
+          "description": "## Summary\n\nBase64-backed media inputs could be decoded into Buffers before enforcing decoded-size budgets. An attacker supplying oversized base64 payloads can force large allocations, causing memory pressure and denial of service.\n\n## Attack Scenario Notes\n\n- Recommended deployments bind the gateway to loopback by default and require gateway auth for HTTP endpoints. In that configuration, this is best modeled as a local/authorized DoS.\n- If an operator exposes the gateway to untrusted networks (or disables/weakens auth and rate limits), treat this as a higher-severity network DoS risk.\n\n## Affected Packages / Versions\n\n- openclaw (npm): <= 2026.2.13\n- clawdbot (npm): <= 2026.1.24-3\n\n## Fixed In\n\n- openclaw (npm): 2026.2.14 (planned)\n- clawdbot (npm): no patched release planned; migrate to openclaw\n\n## Fix Commit(s)\n\n- 31791233d60495725fa012745dde8d6ee69e9595\n\n## Credits\nThanks @vincentkoc for reporting.",
+          "published": "2026-02-18T00:52:36",
           "epss": [],
           "aiScore": {
-            "value": 6.1,
-            "uncertainty": 1.5
+            "value": 5.6,
+            "uncertainty": 1.4
           },
           "metrics": {
             "cvss": {
-              "score": 8.8,
-              "severity": "HIGH",
+              "score": 5.5,
+              "severity": "MEDIUM",
               "version": "3.1",
-              "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
               "source": "osv"
             },
             "epss": []
@@ -3633,47 +3729,47 @@
             "wildExploitedSources": []
           },
           "enchantments": {
-            "short_description": "OpenClaw before 2026.2.14 can hijack commands via untrusted PATH in node-host or PATH bootstrapping.",
+            "short_description": "OpenClaw DoS via oversized base64 media by causing large buffer allocations before limit checks.",
             "tags": [
+              "denial of service",
+              "encoded media",
+              "memory allocation",
+              "size checks",
               "openclaw",
-              "command hijack",
-              "untrusted path",
-              "node host",
-              "path bootstrapping",
-              "npm advisory"
+              "memory pressure"
             ],
             "score": {
-              "value": 6.1,
-              "uncertanity": 1.5,
+              "value": 5.6,
+              "uncertanity": 1.4,
               "vector": "NONE"
             }
           },
           "references": [
-            "https://github.com/openclaw/openclaw/security/advisories/GHSA-jqpq-mgvm-f9r6",
-            "https://github.com/openclaw/openclaw/commit/013e8f6b3be3333a229a066eef26a45fec47ffcc",
+            "https://github.com/openclaw/openclaw/security/advisories/GHSA-w2cg-vxx6-5xjg",
+            "https://github.com/openclaw/openclaw/commit/31791233d60495725fa012745dde8d6ee69e9595",
             "https://github.com/openclaw/openclaw",
             "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
           ],
           "cvelist": []
         },
         {
-          "id": "OSV:GHSA-MJ5R-HH7J-4GXF",
+          "id": "OSV:GHSA-PG2V-8XWH-QHCC",
           "type": "osv",
           "match": ">=0,<2026.2.14",
-          "title": "GHSA-MJ5R-HH7J-4GXF OpenClaw Telegram allowlist authorization accepted mutable usernames",
-          "description": "## Summary\nTelegram allowlist authorization could match on `@username` (mutable/recyclable) instead of immutable numeric sender IDs.\n\n## Impact\nOperators who treat Telegram allowlists as strict identity controls could unintentionally grant access if a username changes hands (identity rebinding/spoof risk). This can allow an unauthorized sender to interact with the bot in allowlist mode.\n\n## Affected Packages / Versions\n- npm `openclaw`: <= 2026.2.13\n- npm `clawdbot`: <= 2026.1.24-3\n\n## Fix\nTelegram allowlist authorization now requires numeric Telegram sender IDs only. `@username` allowlist principals are rejected.\n\nA security audit warning was added to flag legacy configs that still contain non-numeric Telegram allowlist entries.\n\n`openclaw doctor --fix` now attempts to resolve `@username` allowFrom entries to numeric IDs (best-effort; requires a Telegram bot token).\n\n## Fix Commit(s)\n- e3b432e481a96b8fd41b91273818e514074e05c3\n- 9e147f00b48e63e7be6964e0e2a97f2980854128\n\nThanks @vincentkoc for reporting.",
-          "published": "2026-02-18T00:54:32",
+          "title": "GHSA-PG2V-8XWH-QHCC OpenClaw affected by SSRF in optional Tlon (Urbit) extension authentication",
+          "description": "## Summary\nThe optional Tlon (Urbit) extension previously accepted a user-provided base URL for authentication and used it to construct an outbound HTTP request, enabling server-side request forgery (SSRF) in affected deployments.\n\n## Impact\nThis only affects deployments that have installed and configured the Tlon (Urbit) extension, and where an attacker can influence the configured Urbit URL. Under those conditions, the gateway could be induced to make HTTP requests to attacker-chosen hosts (including internal addresses).\n\nDeployments that do not use the Tlon extension, or where untrusted users cannot change the Urbit URL, are not impacted.\n\n## Affected Packages / Versions\n- Package: `openclaw` (npm)\n- Affected versions: `<= 2026.2.13`\n\n## Fixed Versions\n- `2026.2.14` (planned next release)\n\n## Fix Commit(s)\n- `bfa7d21e997baa8e3437657d59b1e296815cc1b1`\n\n## Details\nUrbit authentication now validates and normalizes the base URL and uses an SSRF guard that blocks private/internal hosts by default (opt-in: `channels.tlon.allowPrivateNetwork`).\n\n## Release Process Note\nThis advisory is pre-populated with the planned patched version (`2026.2.14`). After `openclaw@2026.2.14` is published to npm, publish this advisory without further edits.\n\nThanks @p80n-sec for reporting.",
+          "published": "2026-02-18T00:55:00",
           "epss": [],
           "aiScore": {
-            "value": 5.5,
+            "value": 5.7,
             "uncertainty": 1.5
           },
           "metrics": {
             "cvss": {
-              "score": 5.9,
+              "score": 6.5,
               "severity": "MEDIUM",
               "version": "3.1",
-              "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
               "source": "osv"
             },
             "epss": []
@@ -3683,26 +3779,24 @@
             "wildExploitedSources": []
           },
           "enchantments": {
+            "short_description": "OpenClaw SSRF due to Urbit extension base URL; the fix validates the URL and blocks private hosts.",
+            "tags": [
+              "openclaw",
+              "server request forgery",
+              "urbit extension",
+              "url validation",
+              "private host block",
+              "affected versions"
+            ],
             "score": {
-              "value": 5.5,
+              "value": 5.7,
               "uncertanity": 1.5,
               "vector": "NONE"
-            },
-            "short_description": "Telegram allowlist now requires numeric sender IDs; username based allowlists are rejected.",
-            "tags": [
-              "telegram",
-              "allowlist",
-              "numeric sender id",
-              "username allowlist",
-              "security audit",
-              "openclaw",
-              "bot"
-            ]
+            }
           },
           "references": [
-            "https://github.com/openclaw/openclaw/security/advisories/GHSA-mj5r-hh7j-4gxf",
-            "https://github.com/openclaw/openclaw/commit/9e147f00b48e63e7be6964e0e2a97f2980854128",
-            "https://github.com/openclaw/openclaw/commit/e3b432e481a96b8fd41b91273818e514074e05c3",
+            "https://github.com/openclaw/openclaw/security/advisories/GHSA-pg2v-8xwh-qhcc",
+            "https://github.com/openclaw/openclaw/commit/bfa7d21e997baa8e3437657d59b1e296815cc1b1",
             "https://github.com/openclaw/openclaw",
             "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
           ],
@@ -3863,6 +3957,108 @@
           "cvelist": []
         },
         {
+          "id": "OSV:GHSA-JQPQ-MGVM-F9R6",
+          "type": "osv",
+          "match": ">=0,<2026.2.14",
+          "title": "GHSA-JQPQ-MGVM-F9R6 OpenClaw: Command hijacking via unsafe PATH handling (bootstrapping + node-host PATH overrides)",
+          "description": "# Command hijacking via PATH handling\n\n**Discovered:** 2026-02-04\n**Reporter:** @akhmittra\n\n## Summary\n\nOpenClaw previously accepted untrusted PATH sources in limited situations. In affected versions, this could cause OpenClaw to resolve and execute an unintended binary (\"command hijacking\") when running host commands.\n\nThis issue primarily matters when OpenClaw is relying on allowlist/safe-bin protections and expects `PATH` to be trustworthy.\n\n## Affected Packages / Versions\n\n- Package: `openclaw` (npm)\n- Affected: `< 2026.2.14`\n- Patched: `>= 2026.2.14` (planned next release)\n\n## What Is Required To Trigger This\n\n### A) Node Host PATH override (remote command hijack)\n\nAn attacker needs all of the following:\n\n- Authenticated/authorized access to an execution surface that can invoke node-host execution (for example, a compromised gateway or a caller that can issue `system.run`).\n- A node host connected and exposing `system.run`.\n- A configuration where allowlist/safe-bins are expected to restrict execution (this is not meaningful if full arbitrary exec is already allowed).\n- The ability to pass request-scoped environment overrides (specifically `PATH`) into `system.run`.\n- A way to place an attacker-controlled executable earlier in `PATH` (for example, a writable directory on the node host), with a name that matches an allowlisted/safe-bin command that OpenClaw will run.\n\nNotes:\n\n- OpenClaw deployments commonly require a gateway token/password (or equivalent transport authentication). This should not be treated as unauthenticated Internet RCE.\n- This scenario typically depends on **non-standard / misconfigured deployments** (for example, granting untrusted parties access to invoke node-host execution or otherwise exposing a privileged execution surface beyond the intended trust boundary).\n\n### B) Project-local PATH bootstrapping (local command hijack)\n\nAn attacker needs all of the following:\n\n- The victim runs OpenClaw from within an attacker-controlled working directory (for example, cloning and running inside a malicious repository).\n- That directory contains a `node_modules/.bin/openclaw` and additional attacker-controlled executables in the same directory.\n- OpenClaw subsequently executes a command by name (resolved via `PATH`) that matches one of those attacker-controlled executables.\n\n## Fix\n\n- Project-local `node_modules/.bin` PATH bootstrapping is now **disabled by default**. If explicitly enabled, it is **append-only** (never prepended) via `OPENCLAW_ALLOW_PROJECT_LOCAL_BIN=1`.\n- Node Host now ignores request-scoped `PATH` overrides.\n\n## Fix Commit(s)\n\n- 013e8f6b3be3333a229a066eef26a45fec47ffcc\n\nThanks @akhmittra for reporting.",
+          "published": "2026-02-18T00:55:50",
+          "epss": [],
+          "aiScore": {
+            "value": 6.1,
+            "uncertainty": 1.5
+          },
+          "metrics": {
+            "cvss": {
+              "score": 8.8,
+              "severity": "HIGH",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "source": "osv"
+            },
+            "epss": []
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "short_description": "OpenClaw before 2026.2.14 can hijack commands via untrusted PATH in node-host or PATH bootstrapping.",
+            "tags": [
+              "openclaw",
+              "command hijack",
+              "untrusted path",
+              "node host",
+              "path bootstrapping",
+              "npm advisory"
+            ],
+            "score": {
+              "value": 6.1,
+              "uncertanity": 1.5,
+              "vector": "NONE"
+            }
+          },
+          "references": [
+            "https://github.com/openclaw/openclaw/security/advisories/GHSA-jqpq-mgvm-f9r6",
+            "https://github.com/openclaw/openclaw/commit/013e8f6b3be3333a229a066eef26a45fec47ffcc",
+            "https://github.com/openclaw/openclaw",
+            "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+          ],
+          "cvelist": []
+        },
+        {
+          "id": "OSV:GHSA-MJ5R-HH7J-4GXF",
+          "type": "osv",
+          "match": ">=0,<2026.2.14",
+          "title": "GHSA-MJ5R-HH7J-4GXF OpenClaw Telegram allowlist authorization accepted mutable usernames",
+          "description": "## Summary\nTelegram allowlist authorization could match on `@username` (mutable/recyclable) instead of immutable numeric sender IDs.\n\n## Impact\nOperators who treat Telegram allowlists as strict identity controls could unintentionally grant access if a username changes hands (identity rebinding/spoof risk). This can allow an unauthorized sender to interact with the bot in allowlist mode.\n\n## Affected Packages / Versions\n- npm `openclaw`: <= 2026.2.13\n- npm `clawdbot`: <= 2026.1.24-3\n\n## Fix\nTelegram allowlist authorization now requires numeric Telegram sender IDs only. `@username` allowlist principals are rejected.\n\nA security audit warning was added to flag legacy configs that still contain non-numeric Telegram allowlist entries.\n\n`openclaw doctor --fix` now attempts to resolve `@username` allowFrom entries to numeric IDs (best-effort; requires a Telegram bot token).\n\n## Fix Commit(s)\n- e3b432e481a96b8fd41b91273818e514074e05c3\n- 9e147f00b48e63e7be6964e0e2a97f2980854128\n\nThanks @vincentkoc for reporting.",
+          "published": "2026-02-18T00:54:32",
+          "epss": [],
+          "aiScore": {
+            "value": 5.5,
+            "uncertainty": 1.5
+          },
+          "metrics": {
+            "cvss": {
+              "score": 5.9,
+              "severity": "MEDIUM",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N",
+              "source": "osv"
+            },
+            "epss": []
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "score": {
+              "value": 5.5,
+              "uncertanity": 1.5,
+              "vector": "NONE"
+            },
+            "short_description": "Telegram allowlist now requires numeric sender IDs; username based allowlists are rejected.",
+            "tags": [
+              "telegram",
+              "allowlist",
+              "numeric sender id",
+              "username allowlist",
+              "security audit",
+              "openclaw",
+              "bot"
+            ]
+          },
+          "references": [
+            "https://github.com/openclaw/openclaw/security/advisories/GHSA-mj5r-hh7j-4gxf",
+            "https://github.com/openclaw/openclaw/commit/9e147f00b48e63e7be6964e0e2a97f2980854128",
+            "https://github.com/openclaw/openclaw/commit/e3b432e481a96b8fd41b91273818e514074e05c3",
+            "https://github.com/openclaw/openclaw",
+            "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+          ],
+          "cvelist": []
+        },
+        {
           "id": "OSV:GHSA-XVHF-X56F-2HPP",
           "type": "osv",
           "match": ">=0,<2026.2.14",
@@ -3916,56 +4112,6 @@
           "cvelist": []
         },
         {
-          "id": "OSV:GHSA-PG2V-8XWH-QHCC",
-          "type": "osv",
-          "match": ">=0,<2026.2.14",
-          "title": "GHSA-PG2V-8XWH-QHCC OpenClaw affected by SSRF in optional Tlon (Urbit) extension authentication",
-          "description": "## Summary\nThe optional Tlon (Urbit) extension previously accepted a user-provided base URL for authentication and used it to construct an outbound HTTP request, enabling server-side request forgery (SSRF) in affected deployments.\n\n## Impact\nThis only affects deployments that have installed and configured the Tlon (Urbit) extension, and where an attacker can influence the configured Urbit URL. Under those conditions, the gateway could be induced to make HTTP requests to attacker-chosen hosts (including internal addresses).\n\nDeployments that do not use the Tlon extension, or where untrusted users cannot change the Urbit URL, are not impacted.\n\n## Affected Packages / Versions\n- Package: `openclaw` (npm)\n- Affected versions: `<= 2026.2.13`\n\n## Fixed Versions\n- `2026.2.14` (planned next release)\n\n## Fix Commit(s)\n- `bfa7d21e997baa8e3437657d59b1e296815cc1b1`\n\n## Details\nUrbit authentication now validates and normalizes the base URL and uses an SSRF guard that blocks private/internal hosts by default (opt-in: `channels.tlon.allowPrivateNetwork`).\n\n## Release Process Note\nThis advisory is pre-populated with the planned patched version (`2026.2.14`). After `openclaw@2026.2.14` is published to npm, publish this advisory without further edits.\n\nThanks @p80n-sec for reporting.",
-          "published": "2026-02-18T00:55:00",
-          "epss": [],
-          "aiScore": {
-            "value": 5.7,
-            "uncertainty": 1.5
-          },
-          "metrics": {
-            "cvss": {
-              "score": 6.5,
-              "severity": "MEDIUM",
-              "version": "3.1",
-              "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-              "source": "osv"
-            },
-            "epss": []
-          },
-          "exploitation": {
-            "wildExploited": false,
-            "wildExploitedSources": []
-          },
-          "enchantments": {
-            "short_description": "OpenClaw SSRF due to Urbit extension base URL; the fix validates the URL and blocks private hosts.",
-            "tags": [
-              "openclaw",
-              "server request forgery",
-              "urbit extension",
-              "url validation",
-              "private host block",
-              "affected versions"
-            ],
-            "score": {
-              "value": 5.7,
-              "uncertanity": 1.5,
-              "vector": "NONE"
-            }
-          },
-          "references": [
-            "https://github.com/openclaw/openclaw/security/advisories/GHSA-pg2v-8xwh-qhcc",
-            "https://github.com/openclaw/openclaw/commit/bfa7d21e997baa8e3437657d59b1e296815cc1b1",
-            "https://github.com/openclaw/openclaw",
-            "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
-          ],
-          "cvelist": []
-        },
-        {
           "id": "OSV:GHSA-V773-R54F-Q32W",
           "type": "osv",
           "match": ">=0,<2026.2.14",
@@ -4009,56 +4155,6 @@
           "references": [
             "https://github.com/openclaw/openclaw/security/advisories/GHSA-v773-r54f-q32w",
             "https://github.com/openclaw/openclaw/commit/f19eabee54c49e9a2e264b4965edf28a2f92e657",
-            "https://github.com/openclaw/openclaw",
-            "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
-          ],
-          "cvelist": []
-        },
-        {
-          "id": "OSV:GHSA-W2CG-VXX6-5XJG",
-          "type": "osv",
-          "match": ">=0,<2026.2.14",
-          "title": "GHSA-W2CG-VXX6-5XJG OpenClaw: denial of service through large base64 media files allocating large buffers before limit checks",
-          "description": "## Summary\n\nBase64-backed media inputs could be decoded into Buffers before enforcing decoded-size budgets. An attacker supplying oversized base64 payloads can force large allocations, causing memory pressure and denial of service.\n\n## Attack Scenario Notes\n\n- Recommended deployments bind the gateway to loopback by default and require gateway auth for HTTP endpoints. In that configuration, this is best modeled as a local/authorized DoS.\n- If an operator exposes the gateway to untrusted networks (or disables/weakens auth and rate limits), treat this as a higher-severity network DoS risk.\n\n## Affected Packages / Versions\n\n- openclaw (npm): <= 2026.2.13\n- clawdbot (npm): <= 2026.1.24-3\n\n## Fixed In\n\n- openclaw (npm): 2026.2.14 (planned)\n- clawdbot (npm): no patched release planned; migrate to openclaw\n\n## Fix Commit(s)\n\n- 31791233d60495725fa012745dde8d6ee69e9595\n\n## Credits\nThanks @vincentkoc for reporting.",
-          "published": "2026-02-18T00:52:36",
-          "epss": [],
-          "aiScore": {
-            "value": 5.6,
-            "uncertainty": 1.4
-          },
-          "metrics": {
-            "cvss": {
-              "score": 5.5,
-              "severity": "MEDIUM",
-              "version": "3.1",
-              "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "source": "osv"
-            },
-            "epss": []
-          },
-          "exploitation": {
-            "wildExploited": false,
-            "wildExploitedSources": []
-          },
-          "enchantments": {
-            "short_description": "OpenClaw DoS via oversized base64 media by causing large buffer allocations before limit checks.",
-            "tags": [
-              "denial of service",
-              "encoded media",
-              "memory allocation",
-              "size checks",
-              "openclaw",
-              "memory pressure"
-            ],
-            "score": {
-              "value": 5.6,
-              "uncertanity": 1.4,
-              "vector": "NONE"
-            }
-          },
-          "references": [
-            "https://github.com/openclaw/openclaw/security/advisories/GHSA-w2cg-vxx6-5xjg",
-            "https://github.com/openclaw/openclaw/commit/31791233d60495725fa012745dde8d6ee69e9595",
             "https://github.com/openclaw/openclaw",
             "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
           ],
@@ -4137,6 +4233,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-CHF7-JQ6G-QRWV"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_15.NASL"
                   ]
                 },
                 {
@@ -4267,6 +4369,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_15.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-27008"
@@ -4393,6 +4501,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_15.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-27004"
@@ -4515,6 +4629,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-XXVH-5HWJ-42PP"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_15.NASL"
                   ]
                 },
                 {
@@ -4651,6 +4771,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_15.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-27002"
@@ -4779,6 +4905,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-2QJ5-GWG2-XWC4"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_15.NASL"
                   ]
                 },
                 {
@@ -5009,6 +5141,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_15.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-27009"
@@ -5069,9 +5207,9 @@
           "epss": [
             {
               "cve": "CVE-2026-27484",
-              "epss": 0.0003,
-              "percentile": 0.08521,
-              "date": "2026-02-22"
+              "epss": 0.00022,
+              "percentile": 0.05448,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -5150,6 +5288,18 @@
                   "type": "redhatcve",
                   "idList": [
                     "RH:CVE-2026-27484"
+                  ]
+                },
+                {
+                  "type": "snyk",
+                  "idList": [
+                    "SNYK:JS-OPENCLAW-15325675"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-27484"
                   ]
                 }
               ]
@@ -5299,9 +5449,9 @@
           "epss": [
             {
               "cve": "CVE-2026-27485",
-              "epss": 0.00007,
-              "percentile": 0.00441,
-              "date": "2026-02-22"
+              "epss": 0.00005,
+              "percentile": 0.00205,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -5381,6 +5531,18 @@
                   "idList": [
                     "RH:CVE-2026-27485"
                   ]
+                },
+                {
+                  "type": "snyk",
+                  "idList": [
+                    "SNYK:JS-OPENCLAW-15325647"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-27485"
+                  ]
                 }
               ]
             },
@@ -5422,9 +5584,9 @@
           "epss": [
             {
               "cve": "CVE-2026-27488",
-              "epss": 0.00013,
-              "percentile": 0.01954,
-              "date": "2026-02-23"
+              "epss": 0.00012,
+              "percentile": 0.01732,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -5504,6 +5666,12 @@
                   "idList": [
                     "RH:CVE-2026-27488"
                   ]
+                },
+                {
+                  "type": "snyk",
+                  "idList": [
+                    "SNYK:JS-OPENCLAW-15325674"
+                  ]
                 }
               ]
             },
@@ -5540,7 +5708,14 @@
           "title": "GHSA-CXPW-2G23-2VGW OpenClaw: ACP prompt-size checks missing in local stdio bridge could reduce responsiveness with very large inputs",
           "description": "## Vulnerability\n\nThe ACP bridge accepted very large prompt text blocks and could assemble oversized prompt payloads before forwarding them to `chat.send`.\n\nBecause ACP runs over local stdio, this mainly affects local ACP clients (for example IDE integrations) that send unusually large inputs.\n\n## Affected Packages / Versions\n\n- Package: `openclaw` (npm)\n- Affected versions: `<= 2026.2.17`\n- Patched version: `2026.2.18` (planned next release)\n\n## Impact\n\n- Local ACP sessions may become less responsive when very large prompts are submitted\n- Larger-than-expected model usage/cost when oversized text is forwarded\n- No privilege escalation and no direct remote attack path in the default ACP model\n\n## Affected Components\n\n- `src/acp/event-mapper.ts`\n- `src/acp/translator.ts`\n\n## Remediation\n\n- Enforce a 2 MiB prompt-text limit before concatenation\n- Count inter-block newline separator bytes during pre-concatenation size checks\n- Keep final outbound message-size validation before `chat.send`\n- Avoid stale active-run session state when oversized prompts are rejected\n- Add regression tests for oversize rejection and active-run cleanup\n\n## Fix Commit(s)\n\n- `732e53151e8fbdfc0501182ddb0e900878bdc1e3`\n- `ebcf19746f5c500a41817e03abecadea8655654a`\n- `63e39d7f57ac4ad4a5e38d17e7394ae7c4dd0b9c`\n\nThanks @aether-ai-agent for reporting.",
           "published": "2026-02-20T21:52:44",
-          "epss": [],
+          "epss": [
+            {
+              "cve": "CVE-2026-27576",
+              "epss": 0.00005,
+              "percentile": 0.00188,
+              "date": "2026-02-25"
+            }
+          ],
           "aiScore": {
             "value": 5.5,
             "uncertainty": 1.7
@@ -5553,7 +5728,9 @@
               "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/SC:N/VI:N/SI:N/VA:L/SA:N",
               "source": "osv"
             },
-            "epss": []
+            "epss": [
+              "CVE-2026-27576"
+            ]
           },
           "exploitation": {
             "wildExploited": false,
@@ -5615,6 +5792,12 @@
                   "type": "redhatcve",
                   "idList": [
                     "RH:CVE-2026-27576"
+                  ]
+                },
+                {
+                  "type": "snyk",
+                  "idList": [
+                    "SNYK:JS-OPENCLAW-15325673"
                   ]
                 }
               ]
@@ -5734,6 +5917,12 @@
                   ]
                 },
                 {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
+                  ]
+                },
+                {
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26317"
@@ -5834,6 +6023,58 @@
           "cvelist": []
         },
         {
+          "id": "OSV:GHSA-MJ5R-HH7J-4GXF",
+          "type": "osv",
+          "match": ">=0,<=2026.1.24-3",
+          "title": "GHSA-MJ5R-HH7J-4GXF OpenClaw Telegram allowlist authorization accepted mutable usernames",
+          "description": "## Summary\nTelegram allowlist authorization could match on `@username` (mutable/recyclable) instead of immutable numeric sender IDs.\n\n## Impact\nOperators who treat Telegram allowlists as strict identity controls could unintentionally grant access if a username changes hands (identity rebinding/spoof risk). This can allow an unauthorized sender to interact with the bot in allowlist mode.\n\n## Affected Packages / Versions\n- npm `openclaw`: <= 2026.2.13\n- npm `clawdbot`: <= 2026.1.24-3\n\n## Fix\nTelegram allowlist authorization now requires numeric Telegram sender IDs only. `@username` allowlist principals are rejected.\n\nA security audit warning was added to flag legacy configs that still contain non-numeric Telegram allowlist entries.\n\n`openclaw doctor --fix` now attempts to resolve `@username` allowFrom entries to numeric IDs (best-effort; requires a Telegram bot token).\n\n## Fix Commit(s)\n- e3b432e481a96b8fd41b91273818e514074e05c3\n- 9e147f00b48e63e7be6964e0e2a97f2980854128\n\nThanks @vincentkoc for reporting.",
+          "published": "2026-02-18T00:54:32",
+          "epss": [],
+          "aiScore": {
+            "value": 5.5,
+            "uncertainty": 1.5
+          },
+          "metrics": {
+            "cvss": {
+              "score": 5.9,
+              "severity": "MEDIUM",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N",
+              "source": "osv"
+            },
+            "epss": []
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "score": {
+              "value": 5.5,
+              "uncertanity": 1.5,
+              "vector": "NONE"
+            },
+            "short_description": "Telegram allowlist now requires numeric sender IDs; username based allowlists are rejected.",
+            "tags": [
+              "telegram",
+              "allowlist",
+              "numeric sender id",
+              "username allowlist",
+              "security audit",
+              "openclaw",
+              "bot"
+            ]
+          },
+          "references": [
+            "https://github.com/openclaw/openclaw/security/advisories/GHSA-mj5r-hh7j-4gxf",
+            "https://github.com/openclaw/openclaw/commit/9e147f00b48e63e7be6964e0e2a97f2980854128",
+            "https://github.com/openclaw/openclaw/commit/e3b432e481a96b8fd41b91273818e514074e05c3",
+            "https://github.com/openclaw/openclaw",
+            "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+          ],
+          "cvelist": []
+        },
+        {
           "id": "OSV:GHSA-W2CG-VXX6-5XJG",
           "type": "osv",
           "match": ">=0,<=2026.1.24-3",
@@ -5880,6 +6121,55 @@
             "https://github.com/openclaw/openclaw/commit/31791233d60495725fa012745dde8d6ee69e9595",
             "https://github.com/openclaw/openclaw",
             "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
+          ],
+          "cvelist": []
+        },
+        {
+          "id": "OSV:GHSA-Q447-RJ3R-2CGH",
+          "type": "osv",
+          "match": ">=0,<=2026.1.24-3",
+          "title": "GHSA-Q447-RJ3R-2CGH OpenClaw affected by denial of service via unbounded webhook request body buffering",
+          "description": "### Summary\nMultiple webhook handlers accepted and buffered request bodies without a strict unified byte/time limit. A remote unauthenticated attacker could send oversized payloads and cause memory pressure, degrading availability.\n\n### Details\nAffected packages:\n- `openclaw` (npm): `<2026.2.12`\n- `clawdbot` (npm): `<=2026.1.24-3`\n\nRoot cause:\n- Webhook code paths buffered request payloads without consistent `maxBytes` + `timeoutMs` enforcement.\n- Some SDK-backed handlers parse request bodies internally and needed stream-level guards.\n\nAttack shape:\n- Send very large JSON payloads or slow/incomplete uploads to webhook endpoints.\n- Observe elevated memory usage and request handler pressure.\n\n### Impact\nRemote unauthenticated availability impact (DoS) via request body amplification/memory pressure.\n\n### Patch details (implemented)\n- Added shared bounded request-body helper in `src/infra/http-body.ts`.\n- Exported helper in `src/plugin-sdk/index.ts` for extension reuse.\n- Migrated webhook body readers to shared helper for:\n  - LINE\n  - Nextcloud Talk\n  - Google Chat\n  - Zalo\n  - BlueBubbles\n  - Nostr profile HTTP\n  - Voice-call\n  - Gateway hooks\n- Added stream guards for SDK handlers that parse request bodies internally:\n  - Slack\n  - Telegram\n  - Feishu\n- Added explicit Express JSON body limit handling for MS Teams webhook path.\n- Standardized failure responses:\n  - `413 Payload Too Large`\n  - `408 Request Timeout`\n\n### Tests\n- Added regression tests:\n  - `src/infra/http-body.test.ts`\n  - `src/line/monitor.read-body.test.ts`\n  - `extensions/nextcloud-talk/src/monitor.read-body.test.ts`\n- Focused webhook/security test suite passes for patched paths.\n\n### Remediation\nUpgrade to the first release containing this patch.\n\n## Credits\nThanks @vincentkoc for reporting.",
+          "published": "2026-02-18T00:53:07",
+          "epss": [],
+          "aiScore": {
+            "value": 5.8,
+            "uncertainty": 1.5
+          },
+          "metrics": {
+            "cvss": {
+              "score": 7.5,
+              "severity": "HIGH",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "source": "osv"
+            },
+            "epss": []
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "score": {
+              "value": 5.8,
+              "uncertanity": 1.5,
+              "vector": "NONE"
+            },
+            "short_description": "OpenClaw and Clawdbot DoS via unbounded webhook body buffering; patch adds bounded readers and guards.",
+            "tags": [
+              "OpenClaw",
+              "Clawdbot",
+              "Webhook buffering",
+              "Bounded request bodies",
+              "Memory pressure",
+              "Patch release",
+              "Denial of service"
+            ]
+          },
+          "references": [
+            "https://github.com/openclaw/openclaw/security/advisories/GHSA-q447-rj3r-2cgh",
+            "https://github.com/openclaw/openclaw"
           ],
           "cvelist": []
         },
@@ -5934,107 +6224,6 @@
             "https://github.com/openclaw/openclaw/commit/61d59a802869177d9cef52204767cd83357ab79e",
             "https://github.com/openclaw/openclaw",
             "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
-          ],
-          "cvelist": []
-        },
-        {
-          "id": "OSV:GHSA-MJ5R-HH7J-4GXF",
-          "type": "osv",
-          "match": ">=0,<=2026.1.24-3",
-          "title": "GHSA-MJ5R-HH7J-4GXF OpenClaw Telegram allowlist authorization accepted mutable usernames",
-          "description": "## Summary\nTelegram allowlist authorization could match on `@username` (mutable/recyclable) instead of immutable numeric sender IDs.\n\n## Impact\nOperators who treat Telegram allowlists as strict identity controls could unintentionally grant access if a username changes hands (identity rebinding/spoof risk). This can allow an unauthorized sender to interact with the bot in allowlist mode.\n\n## Affected Packages / Versions\n- npm `openclaw`: <= 2026.2.13\n- npm `clawdbot`: <= 2026.1.24-3\n\n## Fix\nTelegram allowlist authorization now requires numeric Telegram sender IDs only. `@username` allowlist principals are rejected.\n\nA security audit warning was added to flag legacy configs that still contain non-numeric Telegram allowlist entries.\n\n`openclaw doctor --fix` now attempts to resolve `@username` allowFrom entries to numeric IDs (best-effort; requires a Telegram bot token).\n\n## Fix Commit(s)\n- e3b432e481a96b8fd41b91273818e514074e05c3\n- 9e147f00b48e63e7be6964e0e2a97f2980854128\n\nThanks @vincentkoc for reporting.",
-          "published": "2026-02-18T00:54:32",
-          "epss": [],
-          "aiScore": {
-            "value": 5.5,
-            "uncertainty": 1.5
-          },
-          "metrics": {
-            "cvss": {
-              "score": 5.9,
-              "severity": "MEDIUM",
-              "version": "3.1",
-              "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N",
-              "source": "osv"
-            },
-            "epss": []
-          },
-          "exploitation": {
-            "wildExploited": false,
-            "wildExploitedSources": []
-          },
-          "enchantments": {
-            "score": {
-              "value": 5.5,
-              "uncertanity": 1.5,
-              "vector": "NONE"
-            },
-            "short_description": "Telegram allowlist now requires numeric sender IDs; username based allowlists are rejected.",
-            "tags": [
-              "telegram",
-              "allowlist",
-              "numeric sender id",
-              "username allowlist",
-              "security audit",
-              "openclaw",
-              "bot"
-            ]
-          },
-          "references": [
-            "https://github.com/openclaw/openclaw/security/advisories/GHSA-mj5r-hh7j-4gxf",
-            "https://github.com/openclaw/openclaw/commit/9e147f00b48e63e7be6964e0e2a97f2980854128",
-            "https://github.com/openclaw/openclaw/commit/e3b432e481a96b8fd41b91273818e514074e05c3",
-            "https://github.com/openclaw/openclaw",
-            "https://github.com/openclaw/openclaw/releases/tag/v2026.2.14"
-          ],
-          "cvelist": []
-        },
-        {
-          "id": "OSV:GHSA-Q447-RJ3R-2CGH",
-          "type": "osv",
-          "match": ">=0,<=2026.1.24-3",
-          "title": "GHSA-Q447-RJ3R-2CGH OpenClaw affected by denial of service via unbounded webhook request body buffering",
-          "description": "### Summary\nMultiple webhook handlers accepted and buffered request bodies without a strict unified byte/time limit. A remote unauthenticated attacker could send oversized payloads and cause memory pressure, degrading availability.\n\n### Details\nAffected packages:\n- `openclaw` (npm): `<2026.2.12`\n- `clawdbot` (npm): `<=2026.1.24-3`\n\nRoot cause:\n- Webhook code paths buffered request payloads without consistent `maxBytes` + `timeoutMs` enforcement.\n- Some SDK-backed handlers parse request bodies internally and needed stream-level guards.\n\nAttack shape:\n- Send very large JSON payloads or slow/incomplete uploads to webhook endpoints.\n- Observe elevated memory usage and request handler pressure.\n\n### Impact\nRemote unauthenticated availability impact (DoS) via request body amplification/memory pressure.\n\n### Patch details (implemented)\n- Added shared bounded request-body helper in `src/infra/http-body.ts`.\n- Exported helper in `src/plugin-sdk/index.ts` for extension reuse.\n- Migrated webhook body readers to shared helper for:\n  - LINE\n  - Nextcloud Talk\n  - Google Chat\n  - Zalo\n  - BlueBubbles\n  - Nostr profile HTTP\n  - Voice-call\n  - Gateway hooks\n- Added stream guards for SDK handlers that parse request bodies internally:\n  - Slack\n  - Telegram\n  - Feishu\n- Added explicit Express JSON body limit handling for MS Teams webhook path.\n- Standardized failure responses:\n  - `413 Payload Too Large`\n  - `408 Request Timeout`\n\n### Tests\n- Added regression tests:\n  - `src/infra/http-body.test.ts`\n  - `src/line/monitor.read-body.test.ts`\n  - `extensions/nextcloud-talk/src/monitor.read-body.test.ts`\n- Focused webhook/security test suite passes for patched paths.\n\n### Remediation\nUpgrade to the first release containing this patch.\n\n## Credits\nThanks @vincentkoc for reporting.",
-          "published": "2026-02-18T00:53:07",
-          "epss": [],
-          "aiScore": {
-            "value": 5.8,
-            "uncertainty": 1.5
-          },
-          "metrics": {
-            "cvss": {
-              "score": 7.5,
-              "severity": "HIGH",
-              "version": "3.1",
-              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-              "source": "osv"
-            },
-            "epss": []
-          },
-          "exploitation": {
-            "wildExploited": false,
-            "wildExploitedSources": []
-          },
-          "enchantments": {
-            "score": {
-              "value": 5.8,
-              "uncertanity": 1.5,
-              "vector": "NONE"
-            },
-            "short_description": "OpenClaw and Clawdbot DoS via unbounded webhook body buffering; patch adds bounded readers and guards.",
-            "tags": [
-              "OpenClaw",
-              "Clawdbot",
-              "Webhook buffering",
-              "Bounded request bodies",
-              "Memory pressure",
-              "Patch release",
-              "Denial of service"
-            ]
-          },
-          "references": [
-            "https://github.com/openclaw/openclaw/security/advisories/GHSA-q447-rj3r-2cgh",
-            "https://github.com/openclaw/openclaw"
           ],
           "cvelist": []
         },
@@ -6789,6 +6978,12 @@
                   "type": "github",
                   "idList": [
                     "GHSA-G34W-4XQQ-H79M"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "OPENCLAW_2026_2_14.NASL"
                   ]
                 },
                 {
@@ -8523,6 +8718,12 @@
                   ]
                 },
                 {
+                  "type": "opensuse",
+                  "idList": [
+                    "OPENSUSE-SU-2026:10236-1"
+                  ]
+                },
+                {
                   "type": "osv",
                   "idList": [
                     "OSV:CGA-P55M-GRJF-6FCF",
@@ -8688,6 +8889,12 @@
                   "type": "nvd",
                   "idList": [
                     "NVD:CVE-2026-26278"
+                  ]
+                },
+                {
+                  "type": "opensuse",
+                  "idList": [
+                    "OPENSUSE-SU-2026:10236-1"
                   ]
                 },
                 {
@@ -9650,6 +9857,7 @@
                   "idList": [
                     "0263CF85DEFDD348065E33558B758A0AC7126BCEA27B5C134AEFCAB6D48F42F4",
                     "106645591C519CF8FA742A6F771EC12D3C8DD31547391BD944BCB0E6AA843303",
+                    "13F665FAB9BA0758EC536508E1339F00FE87FDDA7E6DFFF53D3E63FB1BC440C9",
                     "14B0E683ED3257A3FEFAC009F5F00831C02D625542BDC7B4F7A3B980A7D059AE",
                     "15D5A71FA2079B93F931F6DB416069568C014A8E4F6AE1608F33995064201A24",
                     "25BEE4827DEB31C715568247F48361542EC34B98CED2BE3E0C4065C5A8DF93DF",
@@ -9952,6 +10160,7 @@
                   "idList": [
                     "0263CF85DEFDD348065E33558B758A0AC7126BCEA27B5C134AEFCAB6D48F42F4",
                     "106645591C519CF8FA742A6F771EC12D3C8DD31547391BD944BCB0E6AA843303",
+                    "13F665FAB9BA0758EC536508E1339F00FE87FDDA7E6DFFF53D3E63FB1BC440C9",
                     "14B0E683ED3257A3FEFAC009F5F00831C02D625542BDC7B4F7A3B980A7D059AE",
                     "15D5A71FA2079B93F931F6DB416069568C014A8E4F6AE1608F33995064201A24",
                     "25BEE4827DEB31C715568247F48361542EC34B98CED2BE3E0C4065C5A8DF93DF",
@@ -10016,20 +10225,24 @@
                     "OSV:MINI-59HW-W574-3CWQ",
                     "OSV:MINI-5M3R-M39Q-V7JG",
                     "OSV:MINI-65P2-M2XQ-GJV2",
+                    "OSV:MINI-66CP-JV38-H2WM",
                     "OSV:MINI-73J9-Q3F7-WX3M",
                     "OSV:MINI-7M5M-C7W3-HM3Q",
+                    "OSV:MINI-8V5M-49MJ-6J9J",
                     "OSV:MINI-9CWV-G765-FCW6",
                     "OSV:MINI-9G82-6GHP-7PC5",
                     "OSV:MINI-C9GJ-H97C-9HQM",
                     "OSV:MINI-GQWV-8R9G-8W5C",
                     "OSV:MINI-HPQW-72X2-G6JV",
                     "OSV:MINI-HX84-P2G2-85H6",
+                    "OSV:MINI-J45G-8HF7-HRV8",
                     "OSV:MINI-J65H-9MW7-778R",
                     "OSV:MINI-JHQP-Q5RH-3VGW",
                     "OSV:MINI-M8VR-H9H6-WJ2X",
                     "OSV:MINI-MX53-6GX4-HXMJ",
                     "OSV:MINI-QGJ5-JHR3-PG47",
                     "OSV:MINI-R352-XWWV-7W5H",
+                    "OSV:MINI-RC9G-46WH-49FF",
                     "OSV:MINI-V26J-4XP8-852F",
                     "OSV:ROOT-APP-NPM-CVE-2025-15284",
                     "OSV:UBUNTU-CVE-2025-15284",
@@ -10152,10 +10365,10 @@
           },
           "metrics": {
             "cvss": {
-              "score": 6.3,
-              "severity": "MEDIUM",
-              "version": "4.0",
-              "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/SC:N/VI:N/SI:N/VA:L/SA:N/E:P",
+              "score": 7.5,
+              "severity": "HIGH",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "source": "snyk"
             },
             "epss": [
@@ -10245,12 +10458,16 @@
                     "OSV:GHSA-W7FW-MJWX-W883",
                     "OSV:MINI-328J-W6PW-P8VV",
                     "OSV:MINI-59HW-W574-3CWQ",
+                    "OSV:MINI-66CP-JV38-H2WM",
                     "OSV:MINI-73J9-Q3F7-WX3M",
                     "OSV:MINI-7M5M-C7W3-HM3Q",
+                    "OSV:MINI-8V5M-49MJ-6J9J",
                     "OSV:MINI-HPQW-72X2-G6JV",
+                    "OSV:MINI-J45G-8HF7-HRV8",
                     "OSV:MINI-J65H-9MW7-778R",
                     "OSV:MINI-JHQP-Q5RH-3VGW",
                     "OSV:MINI-R352-XWWV-7W5H",
+                    "OSV:MINI-RC9G-46WH-49FF",
                     "OSV:UBUNTU-CVE-2026-2391"
                   ]
                 },
@@ -10300,8 +10517,8 @@
             }
           },
           "references": [
-            "https://security.snyk.io/vuln/SNYK-JS-QS-15268416",
-            "https://cwe.mitre.org/data/definitions/CWE-770.html"
+            "https://cwe.mitre.org/data/definitions/CWE-770.html",
+            "https://security.snyk.io/vuln/SNYK-JS-QS-15268416"
           ],
           "cvelist": [
             "CVE-2026-2391"
@@ -10443,6 +10660,7 @@
                   "idList": [
                     "0263CF85DEFDD348065E33558B758A0AC7126BCEA27B5C134AEFCAB6D48F42F4",
                     "106645591C519CF8FA742A6F771EC12D3C8DD31547391BD944BCB0E6AA843303",
+                    "13F665FAB9BA0758EC536508E1339F00FE87FDDA7E6DFFF53D3E63FB1BC440C9",
                     "14B0E683ED3257A3FEFAC009F5F00831C02D625542BDC7B4F7A3B980A7D059AE",
                     "15D5A71FA2079B93F931F6DB416069568C014A8E4F6AE1608F33995064201A24",
                     "25BEE4827DEB31C715568247F48361542EC34B98CED2BE3E0C4065C5A8DF93DF",
@@ -10745,6 +10963,7 @@
                   "idList": [
                     "0263CF85DEFDD348065E33558B758A0AC7126BCEA27B5C134AEFCAB6D48F42F4",
                     "106645591C519CF8FA742A6F771EC12D3C8DD31547391BD944BCB0E6AA843303",
+                    "13F665FAB9BA0758EC536508E1339F00FE87FDDA7E6DFFF53D3E63FB1BC440C9",
                     "14B0E683ED3257A3FEFAC009F5F00831C02D625542BDC7B4F7A3B980A7D059AE",
                     "15D5A71FA2079B93F931F6DB416069568C014A8E4F6AE1608F33995064201A24",
                     "25BEE4827DEB31C715568247F48361542EC34B98CED2BE3E0C4065C5A8DF93DF",
@@ -10809,20 +11028,24 @@
                     "OSV:MINI-59HW-W574-3CWQ",
                     "OSV:MINI-5M3R-M39Q-V7JG",
                     "OSV:MINI-65P2-M2XQ-GJV2",
+                    "OSV:MINI-66CP-JV38-H2WM",
                     "OSV:MINI-73J9-Q3F7-WX3M",
                     "OSV:MINI-7M5M-C7W3-HM3Q",
+                    "OSV:MINI-8V5M-49MJ-6J9J",
                     "OSV:MINI-9CWV-G765-FCW6",
                     "OSV:MINI-9G82-6GHP-7PC5",
                     "OSV:MINI-C9GJ-H97C-9HQM",
                     "OSV:MINI-GQWV-8R9G-8W5C",
                     "OSV:MINI-HPQW-72X2-G6JV",
                     "OSV:MINI-HX84-P2G2-85H6",
+                    "OSV:MINI-J45G-8HF7-HRV8",
                     "OSV:MINI-J65H-9MW7-778R",
                     "OSV:MINI-JHQP-Q5RH-3VGW",
                     "OSV:MINI-M8VR-H9H6-WJ2X",
                     "OSV:MINI-MX53-6GX4-HXMJ",
                     "OSV:MINI-QGJ5-JHR3-PG47",
                     "OSV:MINI-R352-XWWV-7W5H",
+                    "OSV:MINI-RC9G-46WH-49FF",
                     "OSV:MINI-V26J-4XP8-852F",
                     "OSV:ROOT-APP-NPM-CVE-2025-15284",
                     "OSV:UBUNTU-CVE-2025-15284",
@@ -10945,10 +11168,10 @@
           },
           "metrics": {
             "cvss": {
-              "score": 6.3,
-              "severity": "MEDIUM",
-              "version": "4.0",
-              "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/SC:N/VI:N/SI:N/VA:L/SA:N/E:P",
+              "score": 7.5,
+              "severity": "HIGH",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "source": "snyk"
             },
             "epss": [
@@ -11038,12 +11261,16 @@
                     "OSV:GHSA-W7FW-MJWX-W883",
                     "OSV:MINI-328J-W6PW-P8VV",
                     "OSV:MINI-59HW-W574-3CWQ",
+                    "OSV:MINI-66CP-JV38-H2WM",
                     "OSV:MINI-73J9-Q3F7-WX3M",
                     "OSV:MINI-7M5M-C7W3-HM3Q",
+                    "OSV:MINI-8V5M-49MJ-6J9J",
                     "OSV:MINI-HPQW-72X2-G6JV",
+                    "OSV:MINI-J45G-8HF7-HRV8",
                     "OSV:MINI-J65H-9MW7-778R",
                     "OSV:MINI-JHQP-Q5RH-3VGW",
                     "OSV:MINI-R352-XWWV-7W5H",
+                    "OSV:MINI-RC9G-46WH-49FF",
                     "OSV:UBUNTU-CVE-2026-2391"
                   ]
                 },
@@ -11093,8 +11320,8 @@
             }
           },
           "references": [
-            "https://security.snyk.io/vuln/SNYK-JS-QS-15268416",
-            "https://cwe.mitre.org/data/definitions/CWE-770.html"
+            "https://cwe.mitre.org/data/definitions/CWE-770.html",
+            "https://security.snyk.io/vuln/SNYK-JS-QS-15268416"
           ],
           "cvelist": [
             "CVE-2026-2391"
@@ -11117,9 +11344,9 @@
           "epss": [
             {
               "cve": "CVE-2026-22610",
-              "epss": 0.00021,
-              "percentile": 0.04852,
-              "date": "2026-02-12"
+              "epss": 0.00014,
+              "percentile": 0.02367,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -11300,9 +11527,9 @@
           "epss": [
             {
               "cve": "CVE-2026-22610",
-              "epss": 0.00021,
-              "percentile": 0.04852,
-              "date": "2026-02-12"
+              "epss": 0.00014,
+              "percentile": 0.02367,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -11487,9 +11714,9 @@
           "epss": [
             {
               "cve": "CVE-2026-22610",
-              "epss": 0.00021,
-              "percentile": 0.04852,
-              "date": "2026-02-12"
+              "epss": 0.00014,
+              "percentile": 0.02367,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -11670,9 +11897,9 @@
           "epss": [
             {
               "cve": "CVE-2026-22610",
-              "epss": 0.00021,
-              "percentile": 0.04852,
-              "date": "2026-02-12"
+              "epss": 0.00014,
+              "percentile": 0.02367,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -11957,11 +12184,13 @@
                   "idList": [
                     "OSV:CGA-PJX7-R22P-CR2C",
                     "OSV:DEBIAN-CVE-2025-69873",
+                    "OSV:MINI-2GWC-JXV7-H24V",
                     "OSV:MINI-6C7M-QXJ8-5PCR",
                     "OSV:MINI-6XR3-26QW-Q3MG",
                     "OSV:MINI-747G-RW5M-WPM5",
                     "OSV:MINI-7V47-CP6C-6Q28",
                     "OSV:MINI-7VXW-945H-56CG",
+                    "OSV:MINI-C5HP-X8PJ-G848",
                     "OSV:MINI-C7WG-797G-5Q9Q",
                     "OSV:MINI-CPJW-97VR-8V5F",
                     "OSV:MINI-HC68-49VJ-V2MR",
@@ -12143,11 +12372,13 @@
                     "OSV:CGA-PJX7-R22P-CR2C",
                     "OSV:DEBIAN-CVE-2025-69873",
                     "OSV:GHSA-2G4F-4PWH-QVX6",
+                    "OSV:MINI-2GWC-JXV7-H24V",
                     "OSV:MINI-6C7M-QXJ8-5PCR",
                     "OSV:MINI-6XR3-26QW-Q3MG",
                     "OSV:MINI-747G-RW5M-WPM5",
                     "OSV:MINI-7V47-CP6C-6Q28",
                     "OSV:MINI-7VXW-945H-56CG",
+                    "OSV:MINI-C5HP-X8PJ-G848",
                     "OSV:MINI-C7WG-797G-5Q9Q",
                     "OSV:MINI-CPJW-97VR-8V5F",
                     "OSV:MINI-HC68-49VJ-V2MR",
@@ -14130,9 +14361,9 @@
           "epss": [
             {
               "cve": "CVE-2026-2327",
-              "epss": 0.00016,
-              "percentile": 0.03557,
-              "date": "2026-02-19"
+              "epss": 0.00018,
+              "percentile": 0.04482,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -14302,9 +14533,9 @@
           "epss": [
             {
               "cve": "CVE-2026-2327",
-              "epss": 0.00016,
-              "percentile": 0.03557,
-              "date": "2026-02-19"
+              "epss": 0.00018,
+              "percentile": 0.04482,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -14471,175 +14702,6 @@
       "fixedVersion": "10.2.1",
       "applicableAdvisories": [
         {
-          "id": "OSV:GHSA-3PPC-4F35-3M26",
-          "type": "osv",
-          "match": ">=0,<10.2.1",
-          "title": "GHSA-3PPC-4F35-3M26 minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
-          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input",
-          "published": "2026-02-18T22:38:11",
-          "epss": [],
-          "aiScore": {
-            "value": 5.6,
-            "uncertainty": 1.3
-          },
-          "metrics": {
-            "cvss": {
-              "score": 8.7,
-              "severity": "HIGH",
-              "version": "4.0",
-              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/SC:N/VI:N/SI:N/VA:H/SA:N",
-              "source": "osv"
-            },
-            "epss": []
-          },
-          "exploitation": {
-            "wildExploited": false,
-            "wildExploitedSources": []
-          },
-          "enchantments": {
-            "score": {
-              "value": 5.6,
-              "uncertanity": 1.3,
-              "vector": "NONE"
-            },
-            "dependencies": {
-              "references": [
-                {
-                  "type": "attackerkb",
-                  "idList": [
-                    "AKB:A8343F97-FC11-45C4-A7EC-1E247E0B9BC8"
-                  ]
-                },
-                {
-                  "type": "cgr",
-                  "idList": [
-                    "CHAINGUARD:CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "circl",
-                  "idList": [
-                    "CIRCL:CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "cve",
-                  "idList": [
-                    "CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "cvelist",
-                  "idList": [
-                    "CVELIST:CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "debiancve",
-                  "idList": [
-                    "DEBIANCVE:CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "github",
-                  "idList": [
-                    "GHSA-3PPC-4F35-3M26"
-                  ]
-                },
-                {
-                  "type": "nessus",
-                  "idList": [
-                    "UNPATCHED_CVE_2026_26996.NASL"
-                  ]
-                },
-                {
-                  "type": "nvd",
-                  "idList": [
-                    "NVD:CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "osv",
-                  "idList": [
-                    "OSV:CGA-4MRR-CGVH-9W95",
-                    "OSV:CVE-2026-26996",
-                    "OSV:DEBIAN-CVE-2026-26996",
-                    "OSV:MINI-64XP-6XMW-WPQM",
-                    "OSV:MINI-6PM7-MH76-25RF",
-                    "OSV:MINI-7GFH-WJF8-J349",
-                    "OSV:MINI-86HG-5J62-FXHJ",
-                    "OSV:MINI-9W7H-3R25-WQVX",
-                    "OSV:MINI-C4RH-GFCP-9XGF",
-                    "OSV:MINI-CQCR-M7F7-9V4G",
-                    "OSV:MINI-H6P5-V2Q7-4V4F",
-                    "OSV:MINI-H7CW-Q4HG-MXFG",
-                    "OSV:MINI-J57H-WPFR-FV8W",
-                    "OSV:MINI-X5VM-34F5-542R",
-                    "OSV:MINI-X7R8-P7R7-X24P",
-                    "OSV:ROOT-APP-NPM-CVE-2026-26996",
-                    "OSV:UBUNTU-CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "ptsecurity",
-                  "idList": [
-                    "PT-2026-20994"
-                  ]
-                },
-                {
-                  "type": "redhatcve",
-                  "idList": [
-                    "RH:CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "snyk",
-                  "idList": [
-                    "SNYK:JAVA-ORGWEBJARSNPM-15309439",
-                    "SNYK:JS-MINIMATCH-15309438"
-                  ]
-                },
-                {
-                  "type": "ubuntucve",
-                  "idList": [
-                    "UB:CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "vulnrichment",
-                  "idList": [
-                    "VULNRICHMENT:CVE-2026-26996"
-                  ]
-                },
-                {
-                  "type": "wolfi",
-                  "idList": [
-                    "WOLFI:CVE-2026-26996"
-                  ]
-                }
-              ]
-            },
-            "short_description": "minimatch ReDoS: many consecutive wildcards with absent literal cause exponential backtracking and DoS.",
-            "tags": [
-              "minimatch vulnerability",
-              "regular expression denial",
-              "exponential backtracking",
-              "glob patterns",
-              "user input risk",
-              "security impact"
-            ]
-          },
-          "references": [
-            "https://github.com/isaacs/minimatch/security/advisories/GHSA-3ppc-4f35-3m26",
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-26996",
-            "https://github.com/isaacs/minimatch/commit/2e111f3a79abc00fa73110195de2c0f2351904f5",
-            "https://github.com/isaacs/minimatch"
-          ],
-          "cvelist": [
-            "CVE-2026-26996"
-          ]
-        },
-        {
           "id": "SNYK:JS-MINIMATCH-15309438",
           "type": "snyk",
           "match": ">=10.0.0,<10.2.1",
@@ -14738,8 +14800,11 @@
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
                     "OSV:GHSA-3PPC-4F35-3M26",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -14813,13 +14878,185 @@
           "cvelist": [
             "CVE-2026-26996"
           ]
+        },
+        {
+          "id": "OSV:GHSA-3PPC-4F35-3M26",
+          "type": "osv",
+          "match": ">=10.0.0,<10.2.1",
+          "title": "GHSA-3PPC-4F35-3M26 minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input\n\n----\n\nThanks to @ljharb for back-porting the fix to legacy versions of minimatch.",
+          "published": "2026-02-18T22:38:11",
+          "epss": [],
+          "aiScore": {
+            "value": 5.5,
+            "uncertainty": 2.3
+          },
+          "metrics": {
+            "cvss": {
+              "score": 8.7,
+              "severity": "HIGH",
+              "version": "4.0",
+              "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/SC:N/VI:N/SI:N/VA:H/SA:N",
+              "source": "osv"
+            },
+            "epss": []
+          },
+          "exploitation": {
+            "wildExploited": false,
+            "wildExploitedSources": []
+          },
+          "enchantments": {
+            "score": {
+              "value": 5.5,
+              "uncertanity": 2.3,
+              "vector": "NONE"
+            },
+            "dependencies": {
+              "references": [
+                {
+                  "type": "attackerkb",
+                  "idList": [
+                    "AKB:A8343F97-FC11-45C4-A7EC-1E247E0B9BC8"
+                  ]
+                },
+                {
+                  "type": "cgr",
+                  "idList": [
+                    "CHAINGUARD:CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "cve",
+                  "idList": [
+                    "CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "cvelist",
+                  "idList": [
+                    "CVELIST:CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "debiancve",
+                  "idList": [
+                    "DEBIANCVE:CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "github",
+                  "idList": [
+                    "GHSA-3PPC-4F35-3M26"
+                  ]
+                },
+                {
+                  "type": "nessus",
+                  "idList": [
+                    "UNPATCHED_CVE_2026_26996.NASL"
+                  ]
+                },
+                {
+                  "type": "nvd",
+                  "idList": [
+                    "NVD:CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "osv",
+                  "idList": [
+                    "OSV:CGA-4MRR-CGVH-9W95",
+                    "OSV:CVE-2026-26996",
+                    "OSV:DEBIAN-CVE-2026-26996",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
+                    "OSV:MINI-64XP-6XMW-WPQM",
+                    "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
+                    "OSV:MINI-7GFH-WJF8-J349",
+                    "OSV:MINI-86HG-5J62-FXHJ",
+                    "OSV:MINI-9W7H-3R25-WQVX",
+                    "OSV:MINI-C4RH-GFCP-9XGF",
+                    "OSV:MINI-CQCR-M7F7-9V4G",
+                    "OSV:MINI-H6P5-V2Q7-4V4F",
+                    "OSV:MINI-H7CW-Q4HG-MXFG",
+                    "OSV:MINI-J57H-WPFR-FV8W",
+                    "OSV:MINI-X5VM-34F5-542R",
+                    "OSV:MINI-X7R8-P7R7-X24P",
+                    "OSV:ROOT-APP-NPM-CVE-2026-26996",
+                    "OSV:UBUNTU-CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "ptsecurity",
+                  "idList": [
+                    "PT-2026-20994"
+                  ]
+                },
+                {
+                  "type": "redhatcve",
+                  "idList": [
+                    "RH:CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "snyk",
+                  "idList": [
+                    "SNYK:JAVA-ORGWEBJARSNPM-15309439",
+                    "SNYK:JS-MINIMATCH-15309438"
+                  ]
+                },
+                {
+                  "type": "ubuntucve",
+                  "idList": [
+                    "UB:CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "vulnrichment",
+                  "idList": [
+                    "VULNRICHMENT:CVE-2026-26996"
+                  ]
+                },
+                {
+                  "type": "wolfi",
+                  "idList": [
+                    "WOLFI:CVE-2026-26996"
+                  ]
+                }
+              ]
+            },
+            "short_description": "minimatch ReDoS: many consecutive wildcards with absent literal cause exponential backtracking and DoS.",
+            "tags": [
+              "minimatch vulnerability",
+              "regular expression denial",
+              "exponential backtracking",
+              "glob patterns",
+              "user input risk",
+              "security impact"
+            ]
+          },
+          "references": [
+            "https://github.com/isaacs/minimatch/security/advisories/GHSA-3ppc-4f35-3m26",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-26996",
+            "https://github.com/isaacs/minimatch/commit/2e111f3a79abc00fa73110195de2c0f2351904f5",
+            "https://github.com/isaacs/minimatch"
+          ],
+          "cvelist": [
+            "CVE-2026-26996"
+          ]
         }
       ]
     },
     {
       "package": "minimatch",
       "version": "9.0.5",
-      "fixedVersion": "10.2.1",
+      "fixedVersion": "9.0.6",
       "applicableAdvisories": [
         {
           "id": "SNYK:JS-MINIMATCH-15309438",
@@ -14920,8 +15157,11 @@
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
                     "OSV:GHSA-3PPC-4F35-3M26",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -14999,14 +15239,14 @@
         {
           "id": "OSV:GHSA-3PPC-4F35-3M26",
           "type": "osv",
-          "match": ">=0,<10.2.1",
+          "match": ">=9.0.0,<9.0.6",
           "title": "GHSA-3PPC-4F35-3M26 minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
-          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input",
+          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input\n\n----\n\nThanks to @ljharb for back-porting the fix to legacy versions of minimatch.",
           "published": "2026-02-18T22:38:11",
           "epss": [],
           "aiScore": {
-            "value": 5.6,
-            "uncertainty": 1.3
+            "value": 5.5,
+            "uncertainty": 2.3
           },
           "metrics": {
             "cvss": {
@@ -15024,8 +15264,8 @@
           },
           "enchantments": {
             "score": {
-              "value": 5.6,
-              "uncertanity": 1.3,
+              "value": 5.5,
+              "uncertanity": 2.3,
               "vector": "NONE"
             },
             "dependencies": {
@@ -15090,8 +15330,11 @@
                     "OSV:CGA-4MRR-CGVH-9W95",
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -15309,6 +15552,7 @@
                   "idList": [
                     "0263CF85DEFDD348065E33558B758A0AC7126BCEA27B5C134AEFCAB6D48F42F4",
                     "106645591C519CF8FA742A6F771EC12D3C8DD31547391BD944BCB0E6AA843303",
+                    "13F665FAB9BA0758EC536508E1339F00FE87FDDA7E6DFFF53D3E63FB1BC440C9",
                     "14B0E683ED3257A3FEFAC009F5F00831C02D625542BDC7B4F7A3B980A7D059AE",
                     "15D5A71FA2079B93F931F6DB416069568C014A8E4F6AE1608F33995064201A24",
                     "25BEE4827DEB31C715568247F48361542EC34B98CED2BE3E0C4065C5A8DF93DF",
@@ -15373,20 +15617,24 @@
                     "OSV:MINI-59HW-W574-3CWQ",
                     "OSV:MINI-5M3R-M39Q-V7JG",
                     "OSV:MINI-65P2-M2XQ-GJV2",
+                    "OSV:MINI-66CP-JV38-H2WM",
                     "OSV:MINI-73J9-Q3F7-WX3M",
                     "OSV:MINI-7M5M-C7W3-HM3Q",
+                    "OSV:MINI-8V5M-49MJ-6J9J",
                     "OSV:MINI-9CWV-G765-FCW6",
                     "OSV:MINI-9G82-6GHP-7PC5",
                     "OSV:MINI-C9GJ-H97C-9HQM",
                     "OSV:MINI-GQWV-8R9G-8W5C",
                     "OSV:MINI-HPQW-72X2-G6JV",
                     "OSV:MINI-HX84-P2G2-85H6",
+                    "OSV:MINI-J45G-8HF7-HRV8",
                     "OSV:MINI-J65H-9MW7-778R",
                     "OSV:MINI-JHQP-Q5RH-3VGW",
                     "OSV:MINI-M8VR-H9H6-WJ2X",
                     "OSV:MINI-MX53-6GX4-HXMJ",
                     "OSV:MINI-QGJ5-JHR3-PG47",
                     "OSV:MINI-R352-XWWV-7W5H",
+                    "OSV:MINI-RC9G-46WH-49FF",
                     "OSV:MINI-V26J-4XP8-852F",
                     "OSV:ROOT-APP-NPM-CVE-2025-15284",
                     "OSV:UBUNTU-CVE-2025-15284",
@@ -15509,10 +15757,10 @@
           },
           "metrics": {
             "cvss": {
-              "score": 6.3,
-              "severity": "MEDIUM",
-              "version": "4.0",
-              "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/SC:N/VI:N/SI:N/VA:L/SA:N/E:P",
+              "score": 7.5,
+              "severity": "HIGH",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "source": "snyk"
             },
             "epss": [
@@ -15602,12 +15850,16 @@
                     "OSV:GHSA-W7FW-MJWX-W883",
                     "OSV:MINI-328J-W6PW-P8VV",
                     "OSV:MINI-59HW-W574-3CWQ",
+                    "OSV:MINI-66CP-JV38-H2WM",
                     "OSV:MINI-73J9-Q3F7-WX3M",
                     "OSV:MINI-7M5M-C7W3-HM3Q",
+                    "OSV:MINI-8V5M-49MJ-6J9J",
                     "OSV:MINI-HPQW-72X2-G6JV",
+                    "OSV:MINI-J45G-8HF7-HRV8",
                     "OSV:MINI-J65H-9MW7-778R",
                     "OSV:MINI-JHQP-Q5RH-3VGW",
                     "OSV:MINI-R352-XWWV-7W5H",
+                    "OSV:MINI-RC9G-46WH-49FF",
                     "OSV:UBUNTU-CVE-2026-2391"
                   ]
                 },
@@ -15657,8 +15909,8 @@
             }
           },
           "references": [
-            "https://security.snyk.io/vuln/SNYK-JS-QS-15268416",
-            "https://cwe.mitre.org/data/definitions/CWE-770.html"
+            "https://cwe.mitre.org/data/definitions/CWE-770.html",
+            "https://security.snyk.io/vuln/SNYK-JS-QS-15268416"
           ],
           "cvelist": [
             "CVE-2026-2391"
@@ -15784,8 +16036,11 @@
                 {
                   "type": "opensuse",
                   "idList": [
+                    "OPENSUSE-SU-2026:0060-1",
                     "OPENSUSE-SU-2026:10168-1",
-                    "OPENSUSE-SU-2026:20239-1"
+                    "OPENSUSE-SU-2026:10236-1",
+                    "OPENSUSE-SU-2026:20239-1",
+                    "OPENSUSE-SU-2026:20261-1"
                   ]
                 },
                 {
@@ -16514,12 +16769,12 @@
     },
     {
       "package": "@esbuild/darwin-x64",
-      "version": "0.27.2",
+      "version": "0.25.12",
       "applicableAdvisories": []
     },
     {
       "package": "@esbuild/darwin-x64",
-      "version": "0.25.12",
+      "version": "0.27.2",
       "applicableAdvisories": []
     },
     {
@@ -16794,12 +17049,12 @@
     },
     {
       "package": "@genkit-ai/core",
-      "version": "1.24.0",
+      "version": "0.9.12",
       "applicableAdvisories": []
     },
     {
       "package": "@genkit-ai/core",
-      "version": "0.9.12",
+      "version": "1.24.0",
       "applicableAdvisories": []
     },
     {
@@ -17154,12 +17409,12 @@
     },
     {
       "package": "@lit/reactive-element",
-      "version": "2.1.2",
+      "version": "2.1.1",
       "applicableAdvisories": []
     },
     {
       "package": "@lit/reactive-element",
-      "version": "2.1.1",
+      "version": "2.1.2",
       "applicableAdvisories": []
     },
     {
@@ -17659,17 +17914,17 @@
     },
     {
       "package": "@opentelemetry/semantic-conventions",
+      "version": "1.25.1",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "@opentelemetry/semantic-conventions",
       "version": "1.28.0",
       "applicableAdvisories": []
     },
     {
       "package": "@opentelemetry/semantic-conventions",
       "version": "1.38.0",
-      "applicableAdvisories": []
-    },
-    {
-      "package": "@opentelemetry/semantic-conventions",
-      "version": "1.25.1",
       "applicableAdvisories": []
     },
     {
@@ -18514,12 +18769,12 @@
     },
     {
       "package": "actions/checkout",
-      "version": "v4",
+      "version": "v3",
       "applicableAdvisories": []
     },
     {
       "package": "actions/checkout",
-      "version": "v3",
+      "version": "v4",
       "applicableAdvisories": []
     },
     {
@@ -18529,12 +18784,12 @@
     },
     {
       "package": "actions/setup-java",
-      "version": "v4",
+      "version": "v3",
       "applicableAdvisories": []
     },
     {
       "package": "actions/setup-java",
-      "version": "v3",
+      "version": "v4",
       "applicableAdvisories": []
     },
     {
@@ -18554,12 +18809,12 @@
     },
     {
       "package": "agent-base",
-      "version": "7.1.4",
+      "version": "6.0.2",
       "applicableAdvisories": []
     },
     {
       "package": "agent-base",
-      "version": "6.0.2",
+      "version": "7.1.4",
       "applicableAdvisories": []
     },
     {
@@ -18589,12 +18844,12 @@
     },
     {
       "package": "ansi-regex",
-      "version": "6.2.2",
+      "version": "5.0.1",
       "applicableAdvisories": []
     },
     {
       "package": "ansi-regex",
-      "version": "5.0.1",
+      "version": "6.2.2",
       "applicableAdvisories": []
     },
     {
@@ -18604,12 +18859,12 @@
     },
     {
       "package": "ansi-styles",
-      "version": "6.2.3",
+      "version": "5.2.0",
       "applicableAdvisories": []
     },
     {
       "package": "ansi-styles",
-      "version": "5.2.0",
+      "version": "6.2.3",
       "applicableAdvisories": []
     },
     {
@@ -18744,12 +18999,12 @@
     },
     {
       "package": "brace-expansion",
-      "version": "4.0.1",
+      "version": "2.0.2",
       "applicableAdvisories": []
     },
     {
       "package": "brace-expansion",
-      "version": "2.0.2",
+      "version": "4.0.1",
       "applicableAdvisories": []
     },
     {
@@ -18934,12 +19189,12 @@
     },
     {
       "package": "content-disposition",
-      "version": "1.0.1",
+      "version": "0.5.4",
       "applicableAdvisories": []
     },
     {
       "package": "content-disposition",
-      "version": "0.5.4",
+      "version": "1.0.1",
       "applicableAdvisories": []
     },
     {
@@ -19124,17 +19379,17 @@
     },
     {
       "package": "emoji-regex",
+      "version": "10.6.0",
+      "applicableAdvisories": []
+    },
+    {
+      "package": "emoji-regex",
       "version": "8.0.0",
       "applicableAdvisories": []
     },
     {
       "package": "emoji-regex",
       "version": "9.2.2",
-      "applicableAdvisories": []
-    },
-    {
-      "package": "emoji-regex",
-      "version": "10.6.0",
       "applicableAdvisories": []
     },
     {
@@ -19429,12 +19684,12 @@
     },
     {
       "package": "gcp-metadata",
-      "version": "8.1.2",
+      "version": "6.1.1",
       "applicableAdvisories": []
     },
     {
       "package": "gcp-metadata",
-      "version": "6.1.1",
+      "version": "8.1.2",
       "applicableAdvisories": []
     },
     {
@@ -19759,12 +20014,12 @@
     },
     {
       "package": "iconv-lite",
-      "version": "0.7.2",
+      "version": "0.4.24",
       "applicableAdvisories": []
     },
     {
       "package": "iconv-lite",
-      "version": "0.4.24",
+      "version": "0.7.2",
       "applicableAdvisories": []
     },
     {
@@ -19914,12 +20169,12 @@
     },
     {
       "package": "js-tokens",
-      "version": "9.0.1",
+      "version": "4.0.0",
       "applicableAdvisories": []
     },
     {
       "package": "js-tokens",
-      "version": "4.0.0",
+      "version": "9.0.1",
       "applicableAdvisories": []
     },
     {
@@ -20254,12 +20509,12 @@
     },
     {
       "package": "marked",
-      "version": "17.0.1",
+      "version": "16.4.2",
       "applicableAdvisories": []
     },
     {
       "package": "marked",
-      "version": "16.4.2",
+      "version": "17.0.1",
       "applicableAdvisories": []
     },
     {
@@ -20319,12 +20574,12 @@
     },
     {
       "package": "mime-db",
-      "version": "1.54.0",
+      "version": "1.52.0",
       "applicableAdvisories": []
     },
     {
       "package": "mime-db",
-      "version": "1.52.0",
+      "version": "1.54.0",
       "applicableAdvisories": []
     },
     {
@@ -20564,12 +20819,12 @@
     },
     {
       "package": "p-timeout",
-      "version": "7.0.1",
+      "version": "3.2.0",
       "applicableAdvisories": []
     },
     {
       "package": "p-timeout",
-      "version": "3.2.0",
+      "version": "7.0.1",
       "applicableAdvisories": []
     },
     {

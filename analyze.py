@@ -6,7 +6,7 @@ Preprocesses an SBOM audit JSON, sends it to an LLM via OpenRouter,
 and prints a CRA-aligned vulnerability summary to the console.
 
 Usage:
-    python3 analyze.py sample_data/package-analysis-report-juice-shop.json
+    python3 analyze.py vulners_results/package-analysis-report-juice-shop.json
     python3 analyze.py report.json --model deepseek-v3 --prompt prompts/v4.txt
 """
 
@@ -104,6 +104,11 @@ def compute_cve_analytics(processed_data: list) -> dict:
 
         for adv in pkg["advisories"]:
             cve_ids = adv.get("cvelist", [])
+            if not cve_ids:
+                # Use advisory ID for non-CVE advisories (e.g. GHSA)
+                adv_id = adv.get("id", "")
+                if adv_id:
+                    cve_ids = [adv_id]
             poc = adv.get("pocSources") or {}
             exploitation = adv.get("exploitation") or {}
             metrics = adv.get("metrics") or {}

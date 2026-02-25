@@ -10490,6 +10490,7 @@
                   "idList": [
                     "0263CF85DEFDD348065E33558B758A0AC7126BCEA27B5C134AEFCAB6D48F42F4",
                     "106645591C519CF8FA742A6F771EC12D3C8DD31547391BD944BCB0E6AA843303",
+                    "13F665FAB9BA0758EC536508E1339F00FE87FDDA7E6DFFF53D3E63FB1BC440C9",
                     "14B0E683ED3257A3FEFAC009F5F00831C02D625542BDC7B4F7A3B980A7D059AE",
                     "15D5A71FA2079B93F931F6DB416069568C014A8E4F6AE1608F33995064201A24",
                     "25BEE4827DEB31C715568247F48361542EC34B98CED2BE3E0C4065C5A8DF93DF",
@@ -10792,6 +10793,7 @@
                   "idList": [
                     "0263CF85DEFDD348065E33558B758A0AC7126BCEA27B5C134AEFCAB6D48F42F4",
                     "106645591C519CF8FA742A6F771EC12D3C8DD31547391BD944BCB0E6AA843303",
+                    "13F665FAB9BA0758EC536508E1339F00FE87FDDA7E6DFFF53D3E63FB1BC440C9",
                     "14B0E683ED3257A3FEFAC009F5F00831C02D625542BDC7B4F7A3B980A7D059AE",
                     "15D5A71FA2079B93F931F6DB416069568C014A8E4F6AE1608F33995064201A24",
                     "25BEE4827DEB31C715568247F48361542EC34B98CED2BE3E0C4065C5A8DF93DF",
@@ -10856,20 +10858,24 @@
                     "OSV:MINI-59HW-W574-3CWQ",
                     "OSV:MINI-5M3R-M39Q-V7JG",
                     "OSV:MINI-65P2-M2XQ-GJV2",
+                    "OSV:MINI-66CP-JV38-H2WM",
                     "OSV:MINI-73J9-Q3F7-WX3M",
                     "OSV:MINI-7M5M-C7W3-HM3Q",
+                    "OSV:MINI-8V5M-49MJ-6J9J",
                     "OSV:MINI-9CWV-G765-FCW6",
                     "OSV:MINI-9G82-6GHP-7PC5",
                     "OSV:MINI-C9GJ-H97C-9HQM",
                     "OSV:MINI-GQWV-8R9G-8W5C",
                     "OSV:MINI-HPQW-72X2-G6JV",
                     "OSV:MINI-HX84-P2G2-85H6",
+                    "OSV:MINI-J45G-8HF7-HRV8",
                     "OSV:MINI-J65H-9MW7-778R",
                     "OSV:MINI-JHQP-Q5RH-3VGW",
                     "OSV:MINI-M8VR-H9H6-WJ2X",
                     "OSV:MINI-MX53-6GX4-HXMJ",
                     "OSV:MINI-QGJ5-JHR3-PG47",
                     "OSV:MINI-R352-XWWV-7W5H",
+                    "OSV:MINI-RC9G-46WH-49FF",
                     "OSV:MINI-V26J-4XP8-852F",
                     "OSV:ROOT-APP-NPM-CVE-2025-15284",
                     "OSV:UBUNTU-CVE-2025-15284",
@@ -10992,10 +10998,10 @@
           },
           "metrics": {
             "cvss": {
-              "score": 6.3,
-              "severity": "MEDIUM",
-              "version": "4.0",
-              "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/SC:N/VI:N/SI:N/VA:L/SA:N/E:P",
+              "score": 7.5,
+              "severity": "HIGH",
+              "version": "3.1",
+              "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "source": "snyk"
             },
             "epss": [
@@ -11085,12 +11091,16 @@
                     "OSV:GHSA-W7FW-MJWX-W883",
                     "OSV:MINI-328J-W6PW-P8VV",
                     "OSV:MINI-59HW-W574-3CWQ",
+                    "OSV:MINI-66CP-JV38-H2WM",
                     "OSV:MINI-73J9-Q3F7-WX3M",
                     "OSV:MINI-7M5M-C7W3-HM3Q",
+                    "OSV:MINI-8V5M-49MJ-6J9J",
                     "OSV:MINI-HPQW-72X2-G6JV",
+                    "OSV:MINI-J45G-8HF7-HRV8",
                     "OSV:MINI-J65H-9MW7-778R",
                     "OSV:MINI-JHQP-Q5RH-3VGW",
                     "OSV:MINI-R352-XWWV-7W5H",
+                    "OSV:MINI-RC9G-46WH-49FF",
                     "OSV:UBUNTU-CVE-2026-2391"
                   ]
                 },
@@ -11140,8 +11150,8 @@
             }
           },
           "references": [
-            "https://security.snyk.io/vuln/SNYK-JS-QS-15268416",
-            "https://cwe.mitre.org/data/definitions/CWE-770.html"
+            "https://cwe.mitre.org/data/definitions/CWE-770.html",
+            "https://security.snyk.io/vuln/SNYK-JS-QS-15268416"
           ],
           "cvelist": [
             "CVE-2026-2391"
@@ -12559,7 +12569,7 @@
     {
       "package": "minimatch",
       "version": "5.1.6",
-      "fixedVersion": "10.2.1",
+      "fixedVersion": "5.1.7",
       "applicableAdvisories": [
         {
           "id": "SNYK:JS-MINIMATCH-15309438",
@@ -12660,8 +12670,11 @@
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
                     "OSV:GHSA-3PPC-4F35-3M26",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -12739,14 +12752,14 @@
         {
           "id": "OSV:GHSA-3PPC-4F35-3M26",
           "type": "osv",
-          "match": ">=0,<10.2.1",
+          "match": ">=5.0.0,<5.1.7",
           "title": "GHSA-3PPC-4F35-3M26 minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
-          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input",
+          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input\n\n----\n\nThanks to @ljharb for back-porting the fix to legacy versions of minimatch.",
           "published": "2026-02-18T22:38:11",
           "epss": [],
           "aiScore": {
-            "value": 5.6,
-            "uncertainty": 1.3
+            "value": 5.5,
+            "uncertainty": 2.3
           },
           "metrics": {
             "cvss": {
@@ -12764,8 +12777,8 @@
           },
           "enchantments": {
             "score": {
-              "value": 5.6,
-              "uncertanity": 1.3,
+              "value": 5.5,
+              "uncertanity": 2.3,
               "vector": "NONE"
             },
             "dependencies": {
@@ -12830,8 +12843,11 @@
                     "OSV:CGA-4MRR-CGVH-9W95",
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -12910,7 +12926,7 @@
     {
       "package": "minimatch",
       "version": "9.0.5",
-      "fixedVersion": "10.2.1",
+      "fixedVersion": "9.0.6",
       "applicableAdvisories": [
         {
           "id": "SNYK:JS-MINIMATCH-15309438",
@@ -13011,8 +13027,11 @@
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
                     "OSV:GHSA-3PPC-4F35-3M26",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -13090,14 +13109,14 @@
         {
           "id": "OSV:GHSA-3PPC-4F35-3M26",
           "type": "osv",
-          "match": ">=0,<10.2.1",
+          "match": ">=9.0.0,<9.0.6",
           "title": "GHSA-3PPC-4F35-3M26 minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
-          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input",
+          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input\n\n----\n\nThanks to @ljharb for back-porting the fix to legacy versions of minimatch.",
           "published": "2026-02-18T22:38:11",
           "epss": [],
           "aiScore": {
-            "value": 5.6,
-            "uncertainty": 1.3
+            "value": 5.5,
+            "uncertainty": 2.3
           },
           "metrics": {
             "cvss": {
@@ -13115,8 +13134,8 @@
           },
           "enchantments": {
             "score": {
-              "value": 5.6,
-              "uncertanity": 1.3,
+              "value": 5.5,
+              "uncertanity": 2.3,
               "vector": "NONE"
             },
             "dependencies": {
@@ -13181,8 +13200,11 @@
                     "OSV:CGA-4MRR-CGVH-9W95",
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -15862,6 +15884,7 @@
                     "37309E7184790E64860EB9BAB69D177E303D9ED78E3BC090693739CCD4B43198",
                     "3E35CDD14B23D039AB15F08736E731BD366FBD1EB32DC37626EDE57513995137",
                     "4A9D5B57FD3316FD05BBB83F21EB8AEF2A1B5071057AF16CBE822CE9E736F812",
+                    "54C06EA703EF70D364EF90A425D56D7DE2E93C08EB398A785F113AA68D3E25D1",
                     "5C5F512B36CBDCD9363F4A6FCA8DDE73A73995F138B179F125C9FBDF13956654",
                     "9B3292F4D5254F01F972C3B1CE6488DFB891F866E4CF75EE0F43021555C94A42",
                     "BAFB230801A5F2E8B613D6B27CBFCC39E7D738533EAE5BAF7983A320140B9ABE",
@@ -16039,9 +16062,9 @@
           "epss": [
             {
               "cve": "CVE-2020-8203",
-              "epss": 0.02615,
-              "percentile": 0.85329,
-              "date": "2026-02-16"
+              "epss": 0.02546,
+              "percentile": 0.85207,
+              "date": "2026-02-25"
             }
           ],
           "aiScore": {
@@ -16866,19 +16889,19 @@
     {
       "package": "minimatch",
       "version": "3.0.5",
-      "fixedVersion": "10.2.1",
+      "fixedVersion": "3.1.3",
       "applicableAdvisories": [
         {
           "id": "OSV:GHSA-3PPC-4F35-3M26",
           "type": "osv",
-          "match": ">=0,<10.2.1",
+          "match": ">=0,<3.1.3",
           "title": "GHSA-3PPC-4F35-3M26 minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
-          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input",
+          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input\n\n----\n\nThanks to @ljharb for back-porting the fix to legacy versions of minimatch.",
           "published": "2026-02-18T22:38:11",
           "epss": [],
           "aiScore": {
-            "value": 5.6,
-            "uncertainty": 1.3
+            "value": 5.5,
+            "uncertainty": 2.3
           },
           "metrics": {
             "cvss": {
@@ -16896,8 +16919,8 @@
           },
           "enchantments": {
             "score": {
-              "value": 5.6,
-              "uncertanity": 1.3,
+              "value": 5.5,
+              "uncertanity": 2.3,
               "vector": "NONE"
             },
             "dependencies": {
@@ -16962,8 +16985,11 @@
                     "OSV:CGA-4MRR-CGVH-9W95",
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -17042,19 +17068,19 @@
     {
       "package": "minimatch",
       "version": "3.0.8",
-      "fixedVersion": "10.2.1",
+      "fixedVersion": "3.1.3",
       "applicableAdvisories": [
         {
           "id": "OSV:GHSA-3PPC-4F35-3M26",
           "type": "osv",
-          "match": ">=0,<10.2.1",
+          "match": ">=0,<3.1.3",
           "title": "GHSA-3PPC-4F35-3M26 minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
-          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input",
+          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input\n\n----\n\nThanks to @ljharb for back-porting the fix to legacy versions of minimatch.",
           "published": "2026-02-18T22:38:11",
           "epss": [],
           "aiScore": {
-            "value": 5.6,
-            "uncertainty": 1.3
+            "value": 5.5,
+            "uncertainty": 2.3
           },
           "metrics": {
             "cvss": {
@@ -17072,8 +17098,8 @@
           },
           "enchantments": {
             "score": {
-              "value": 5.6,
-              "uncertanity": 1.3,
+              "value": 5.5,
+              "uncertanity": 2.3,
               "vector": "NONE"
             },
             "dependencies": {
@@ -17138,8 +17164,11 @@
                     "OSV:CGA-4MRR-CGVH-9W95",
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -17218,19 +17247,19 @@
     {
       "package": "minimatch",
       "version": "3.1.2",
-      "fixedVersion": "10.2.1",
+      "fixedVersion": "3.1.3",
       "applicableAdvisories": [
         {
           "id": "OSV:GHSA-3PPC-4F35-3M26",
           "type": "osv",
-          "match": ">=0,<10.2.1",
+          "match": ">=0,<3.1.3",
           "title": "GHSA-3PPC-4F35-3M26 minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
-          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input",
+          "description": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that exposes glob matching to untrusted input\n\n----\n\nThanks to @ljharb for back-porting the fix to legacy versions of minimatch.",
           "published": "2026-02-18T22:38:11",
           "epss": [],
           "aiScore": {
-            "value": 5.6,
-            "uncertainty": 1.3
+            "value": 5.5,
+            "uncertainty": 2.3
           },
           "metrics": {
             "cvss": {
@@ -17248,8 +17277,8 @@
           },
           "enchantments": {
             "score": {
-              "value": 5.6,
-              "uncertanity": 1.3,
+              "value": 5.5,
+              "uncertanity": 2.3,
               "vector": "NONE"
             },
             "dependencies": {
@@ -17314,8 +17343,11 @@
                     "OSV:CGA-4MRR-CGVH-9W95",
                     "OSV:CVE-2026-26996",
                     "OSV:DEBIAN-CVE-2026-26996",
+                    "OSV:MINI-4JW5-C4R6-4MX7",
+                    "OSV:MINI-637W-6GG8-H8H6",
                     "OSV:MINI-64XP-6XMW-WPQM",
                     "OSV:MINI-6PM7-MH76-25RF",
+                    "OSV:MINI-6VFH-882G-MFF5",
                     "OSV:MINI-7GFH-WJF8-J349",
                     "OSV:MINI-86HG-5J62-FXHJ",
                     "OSV:MINI-9W7H-3R25-WQVX",
@@ -18929,12 +18961,12 @@
     },
     {
       "package": "ansi-styles",
-      "version": "3.2.1",
+      "version": "4.3.0",
       "applicableAdvisories": []
     },
     {
       "package": "ansi-styles",
-      "version": "4.3.0",
+      "version": "3.2.1",
       "applicableAdvisories": []
     },
     {
@@ -20369,12 +20401,12 @@
     },
     {
       "package": "glob",
-      "version": "10.5.0",
+      "version": "7.1.7",
       "applicableAdvisories": []
     },
     {
       "package": "glob",
-      "version": "7.1.7",
+      "version": "10.5.0",
       "applicableAdvisories": []
     },
     {

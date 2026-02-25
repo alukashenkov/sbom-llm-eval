@@ -3,29 +3,29 @@
     "gemini-3-flash": {
       "cra_alignment": 8,
       "accuracy": 6,
-      "completeness": 7,
+      "completeness": 8,
       "conciseness": 7,
-      "actionability": 8,
-      "weighted_total": 7.05,
-      "notes": "Good CRA alignment and actionability, but contains hallucinated CVEs (2026-26996, 2026-25639) and duplicate CVE-2025-7783 entries with different packages"
+      "actionability": 7,
+      "weighted_total": 7.15,
+      "notes": "Good CRA structure but has CVSS inaccuracies (CVE-2025-13465 shown as 8.2 vs actual 7.9/6.5, CVE-2025-7783 axios CVSS wrong). Covers all high-risk CVEs well."
     },
     "gpt-4.1-mini": {
-      "cra_alignment": 8,
+      "cra_alignment": 7,
       "accuracy": 5,
-      "completeness": 6,
+      "completeness": 7,
       "conciseness": 6,
-      "actionability": 8,
-      "weighted_total": 6.55,
-      "notes": "Strong CRA compliance focus but significant accuracy issues with hallucinated CVEs and incorrect severity counts. Good structure but verbose"
+      "actionability": 6,
+      "weighted_total": 6.25,
+      "notes": "Multiple CVSS errors (CVE-2025-13465 as 8.2, CVE-2025-64718 as 6.9 vs 5.3). Claims 4 additional PoCs without evidence. Verbose with some inaccuracies."
     },
     "deepseek-v3": {
       "cra_alignment": 8,
-      "accuracy": 7,
-      "completeness": 8,
+      "accuracy": 8,
+      "completeness": 7,
       "conciseness": 9,
       "actionability": 8,
-      "weighted_total": 7.8,
-      "notes": "Most concise and accurate summary with proper EPSS formatting. Contains one hallucinated CVE but overall best balance of accuracy and completeness"
+      "weighted_total": 7.9,
+      "notes": "Most accurate CVSS values, concise format, good CRA alignment. Minor issue with claiming CVE-2025-13465 as 8.2 instead of 7.9, but overall very solid."
     }
   },
   "ranking": [
@@ -34,5 +34,5 @@
     "gpt-4.1-mini"
   ],
   "winner": "deepseek-v3",
-  "analysis": "DeepSeek-v3 provides the most accurate and concise summary with proper EPSS formatting and minimal hallucinations. While all models correctly identify no CRA mandatory reporting triggers, DeepSeek-v3 best balances completeness with accuracy and maintains strong actionability."
+  "analysis": "Deepseek-v3 wins with the most accurate CVSS reporting and excellent conciseness while maintaining CRA compliance structure. Gemini-3-flash provides comprehensive coverage but has several CVSS inaccuracies. GPT-4.1-mini suffers from multiple factual errors and unsupported PoC claims."
 }

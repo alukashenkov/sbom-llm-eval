@@ -6,8 +6,8 @@ Evaluates multiple LLM models against SBOM audit JSONs to find the optimal
 prompt + model combination for CRA-aligned vulnerability summaries.
 
 Usage:
-    python summarize_sbom.py --evaluate --prompt prompts/v1.txt --data sample_data/
-    python summarize_sbom.py --summarize --model gemini-2.5-flash --prompt prompts/v1.txt --data sample_data/
+    python summarize_sbom.py --evaluate --prompt prompts/v1.txt --data vulners_results/
+    python summarize_sbom.py --summarize --model gemini-2.5-flash --prompt prompts/v1.txt --data vulners_results/
 """
 
 import argparse
@@ -125,16 +125,39 @@ def call_openrouter(
 # Evaluate Mode
 # ---------------------------------------------------------------------------
 JUDGE_PROMPT = """You are an expert evaluator of cybersecurity vulnerability summaries.
-You will receive a preprocessed SBOM JSON (source data) and {n_models} candidate summaries
-produced by different LLM models. Score each summary on these criteria (1-10 scale):
+You will receive a CROSS-REFERENCED VULNERABILITY COMPARISON from two scan sources
+and {n_models} candidate summaries produced by different LLM models.
+
+GROUND TRUTH — source_comparison contains:
+- **overview**: total CVEs per source, overlap percentage
+- **packages**: which packages were found by each source vs both
+- **cves_in_both**: CVEs confirmed by BOTH Vulners (weight 70%) and Grype (weight 30%),
+  with side-by-side severity, CVSS, EPSS, and risk_score from each source
+- **cves_vulners_only**: CVEs found only by Vulners (primary source, weight 70%)
+- **cves_grype_only**: CVEs found only by Grype (cross-check, weight 30%)
+
+Each CVE entry includes a computed risk_score (0-10) based on CVSS, EPSS, exploit
+evidence, and fix availability.
+
+EVALUATION RULES:
+- A CVE in cves_in_both is CONFIRMED — penalise any summary that misses it or gets
+  its severity/scores wrong.
+- A CVE in cves_vulners_only is LEGITIMATE (70% weight) — do NOT penalise summaries
+  that reference these.
+- A CVE in cves_grype_only is LEGITIMATE (30% weight) — do NOT penalise, but summaries
+  are not expected to include all of these.
+- ONLY penalise CVEs found in NEITHER source (true hallucinations).
+- Use risk_score values to assess whether summaries prioritise the right CVEs.
+
+Score each summary on these criteria (1-10 scale):
 
 | Criterion | Weight | Description |
 |-----------|--------|-------------|
-| CRA Alignment | 30% | Correctly flags wildExploited CVEs, mentions Article 14 deadlines (24h/72h/14d), surfaces CISA KEV entries |
-| Accuracy | 25% | CVE counts, severity labels, EPSS values match the source JSON |
-| Completeness | 20% | All CRITICAL/HIGH CVEs present, exploit/PoC sources surfaced |
+| CRA Alignment | 30% | Correctly flags exploited CVEs, mentions Article 14 deadlines (24h/72h/14d), surfaces CISA KEV entries |
+| Accuracy | 25% | CVE IDs, counts, severity, CVSS/EPSS match source_comparison. Penalise true hallucinations heavily. |
+| Completeness | 20% | All high-risk CVEs (risk_score >= 7) covered, fix versions mentioned where available |
 | Conciseness | 15% | Under 600 words, no filler, no hallucinated CVEs |
-| Actionability | 10% | Priority actions are specific, correctly ordered by CRA obligation then severity |
+| Actionability | 10% | Priority actions reference correct fix versions, ordered by risk_score then CRA obligation |
 
 Output a JSON object with this structure:
 {{
@@ -157,7 +180,26 @@ Output a JSON object with this structure:
 IMPORTANT: Return ONLY valid JSON, no markdown fencing."""
 
 
-def run_evaluation(data_dir: str, prompt_path: str, results_dir: str):
+def find_comparison_file(comparisons_dir: Path, sample_fname: str):
+    """Map a vulners_results filename to its comparison JSON.
+
+    e.g. 'package-analysis-report-juice-shop' -> 'comparisons/juice-shop/comparison.json'
+    """
+    key = sample_fname
+    prefix = "package-analysis-report-"
+    if key.startswith(prefix):
+        key = key[len(prefix) :]
+
+    comp_path = comparisons_dir / key / "comparison.json"
+    return comp_path if comp_path.exists() else None
+
+
+def run_evaluation(
+    data_dir: str,
+    prompt_path: str,
+    results_dir: str,
+    comparisons_dir: str = "comparisons",
+):
     """Run all candidate models on all files, then judge."""
     prompt_text = Path(prompt_path).read_text()
     prompt_version = get_prompt_version(prompt_path)
@@ -302,7 +344,22 @@ def run_evaluation(data_dir: str, prompt_path: str, results_dir: str):
             continue
 
         print(f"\n  Judging: {fname}")
-        preprocessed = preprocess_file(str(jf))
+
+        # Load precomputed source comparison
+        comp_path = find_comparison_file(Path(comparisons_dir), fname)
+        if comp_path:
+            with open(comp_path) as f:
+                source_comparison = json.load(f)
+            overview = source_comparison.get("overview", {})
+            print(
+                f"    Comparison: {overview.get('total_unique', '?')} CVEs "
+                f"(overlap {overview.get('overlap_pct', '?')}%, "
+                f"vulners {overview.get('vulners_cves', '?')}, "
+                f"grype {overview.get('grype_cves', '?')})"
+            )
+        else:
+            print(f"    WARNING: No comparison file for {fname}, skipping")
+            continue
 
         # Build judge input
         model_outputs = {}
@@ -318,10 +375,7 @@ def run_evaluation(data_dir: str, prompt_path: str, results_dir: str):
 
         judge_user = json.dumps(
             {
-                "source_data_summary": {
-                    "meta": preprocessed["meta"],
-                    "stats": preprocessed["stats"],
-                },
+                "source_comparison": source_comparison,
                 "candidate_summaries": model_outputs,
             },
             indent=None,
@@ -591,6 +645,11 @@ def main():
         help="Directory to store results (default: results/)",
     )
     parser.add_argument(
+        "--comparisons",
+        default="comparisons",
+        help="Directory with source comparison results (default: comparisons/)",
+    )
+    parser.add_argument(
         "--judge",
         default=CONFIG["judge_model"],
         help=f"Judge model ID (default: {CONFIG['judge_model']})",
@@ -607,7 +666,7 @@ def main():
     CONFIG["judge_model"] = args.judge
 
     if args.evaluate:
-        run_evaluation(args.data, args.prompt, args.results)
+        run_evaluation(args.data, args.prompt, args.results, args.comparisons)
     elif args.summarize:
         run_summarize(args.data, args.prompt, args.model, args.results)
 

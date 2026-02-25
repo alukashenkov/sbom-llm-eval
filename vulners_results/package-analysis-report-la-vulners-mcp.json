@@ -757,6 +757,12 @@
                   ]
                 },
                 {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2026-27171"
+                  ]
+                },
+                {
                   "type": "cvelist",
                   "idList": [
                     "CVELIST:CVE-2026-27171"
@@ -777,6 +783,7 @@
                 {
                   "type": "nessus",
                   "idList": [
+                    "AZURE_LINUX_CVE-2026-27171.NASL",
                     "UNPATCHED_CVE_2026_27171.NASL"
                   ]
                 },
@@ -1650,6 +1657,12 @@
                   ]
                 },
                 {
+                  "type": "circl",
+                  "idList": [
+                    "CIRCL:CVE-2026-27171"
+                  ]
+                },
+                {
                   "type": "cvelist",
                   "idList": [
                     "CVELIST:CVE-2026-27171"
@@ -1670,6 +1683,7 @@
                 {
                   "type": "nessus",
                   "idList": [
+                    "AZURE_LINUX_CVE-2026-27171.NASL",
                     "UNPATCHED_CVE_2026_27171.NASL"
                   ]
                 },
@@ -2113,7 +2127,8 @@
                   "type": "ptsecurity",
                   "idList": [
                     "PT-2025-17645",
-                    "PT-2025-42737"
+                    "PT-2025-42737",
+                    "PT-2025-48769"
                   ]
                 },
                 {
@@ -2792,7 +2807,8 @@
                   "type": "ptsecurity",
                   "idList": [
                     "PT-2025-17645",
-                    "PT-2025-42737"
+                    "PT-2025-42737",
+                    "PT-2025-48769"
                   ]
                 },
                 {

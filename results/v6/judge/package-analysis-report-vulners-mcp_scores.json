@@ -1,38 +1,38 @@
 {
   "scores": {
     "gemini-3-flash": {
-      "cra_alignment": 9,
-      "accuracy": 8,
-      "completeness": 9,
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 8,
       "conciseness": 7,
       "actionability": 8,
-      "weighted_total": 8.35,
-      "notes": "Excellent CRA compliance coverage with correct Article 14 identification and timeline. Minor accuracy issues with some CVE details but comprehensive coverage of critical findings."
+      "weighted_total": 7.6,
+      "notes": "Strong CRA alignment with correct Article 14 identification. Good coverage of high-risk CVEs but some minor inaccuracies in CVE counts and severity distributions."
     },
     "gpt-4.1-mini": {
       "cra_alignment": 9,
       "accuracy": 9,
-      "completeness": 8,
-      "conciseness": 9,
+      "completeness": 9,
+      "conciseness": 6,
       "actionability": 9,
-      "weighted_total": 8.75,
-      "notes": "Strong CRA alignment and accuracy. Well-structured with clear prioritization. Good balance of completeness and conciseness with actionable recommendations."
+      "weighted_total": 8.4,
+      "notes": "Excellent accuracy and completeness with precise CVE counts and severity breakdowns. Comprehensive CRA compliance section but slightly verbose at 600+ words."
     },
     "deepseek-v3": {
       "cra_alignment": 9,
-      "accuracy": 9,
-      "completeness": 7,
+      "accuracy": 8,
+      "completeness": 8,
       "conciseness": 9,
-      "actionability": 8,
-      "weighted_total": 8.45,
-      "notes": "Excellent CRA compliance and accuracy. Most concise format with clear structure. Slightly less comprehensive in critical findings coverage but maintains focus on key issues."
+      "actionability": 9,
+      "weighted_total": 8.5,
+      "notes": "Outstanding conciseness while maintaining accuracy. Excellent CRA alignment and actionable recommendations. Minor gaps in detailed CVE coverage but prioritizes correctly."
     }
   },
   "ranking": [
-    "gpt-4.1-mini",
     "deepseek-v3",
+    "gpt-4.1-mini",
     "gemini-3-flash"
   ],
-  "winner": "gpt-4.1-mini",
-  "analysis": "All three summaries correctly identify the CRA Article 14 mandatory reporting requirement for CVE-2025-48384. GPT-4.1-mini provides the best balance of accuracy, completeness, and actionability with clear prioritization and comprehensive coverage. DeepSeek-v3 offers excellent conciseness while maintaining accuracy, though with slightly less detail on critical findings."
+  "winner": "deepseek-v3",
+  "analysis": "DeepSeek-v3 wins by achieving the best balance of conciseness and accuracy while maintaining excellent CRA compliance coverage. GPT-4.1-mini provides the most comprehensive analysis but is slightly verbose, while Gemini-3-Flash offers good coverage but has minor accuracy issues in CVE counting and severity distributions."
 }

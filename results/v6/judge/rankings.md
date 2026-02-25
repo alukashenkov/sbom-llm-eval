@@ -6,102 +6,102 @@ Files evaluated: 6
 
 | Rank | Model | Avg Score | Files |
 |------|-------|-----------|-------|
-| 🥇 | deepseek-v3 | 8.56 | 6 |
-| 🥈 | gemini-3-flash | 8.04 | 6 |
-| 🥉 | gpt-4.1-mini | 7.75 | 6 |
+| 🥇 | deepseek-v3 | 8.01 | 6 |
+| 🥈 | gpt-4.1-mini | 7.72 | 6 |
+| 🥉 | gemini-3-flash | 7.66 | 6 |
 
 ## Per-File Scores
 
 ### package-analysis-report-juice-shop
 
-> DeepSeek-v3 achieves the best balance with exceptional conciseness (450 words) while maintaining technical accuracy and strong CRA compliance guidance. Gemini-3-flash provides comprehensive detail but is more verbose, while GPT-4.1-mini offers good coverage but lacks the crisp prioritization of the winner.
+> All summaries accurately identify the critical CVEs and avoid hallucinations, with deepseek-v3 providing the best balance of conciseness and completeness. While none fully address CRA Article 14 deadlines, deepseek-v3 offers the clearest risk prioritization and actionable guidance. The EPSS threshold monitoring suggestion demonstrates strong CRA alignment understanding.
 
 | Model | CRA | Accuracy | Complete | Concise | Action | Total |
 |-------|-----|----------|----------|---------|--------|-------|
-| deepseek-v3 | 8 | 9 | 8 | 10 | 9 | **8.55** |
-  > Excellent conciseness at 450 words with clear structure. Strong CRA compliance messaging and accurate technical details. Well-prioritized actions with specific version requirements and EPSS monitoring guidance.
+| deepseek-v3 | 7 | 9 | 8 | 9 | 8 | **8.2** |
+  > Most concise while maintaining accuracy. Correctly identifies top risk CVEs and mentions EPSS thresholds. Good CRA article references but could be more specific on deadlines.
 
-| gemini-3-flash | 8 | 9 | 9 | 7 | 8 | **8.25** |
-  > Strong CRA compliance focus with correct Article 14 assessment and detailed exploit evidence. Accurate CVE counts and severity mapping. Comprehensive coverage of critical findings with specific version recommendations.
+| gemini-3-flash | 6 | 8 | 9 | 7 | 8 | **7.65** |
+  > Good coverage of high-risk CVEs and accurate counts. Missing specific CRA Article 14 deadlines and CISA KEV context. Strong completeness with all critical CVEs covered.
 
-| gpt-4.1-mini | 7 | 8 | 8 | 6 | 7 | **7.35** |
-  > Good CRA Article 14 assessment but less detailed on specific deadlines. Accurate data presentation with good exploit categorization. Somewhat verbose with bullet formatting reducing conciseness.
+| gpt-4.1-mini | 6 | 8 | 8 | 8 | 7 | **7.5** |
+  > Accurate CVE counts and severity mapping. Good structure but lacks specific CRA deadline mentions. Some formatting inconsistencies with EPSS notation.
 
 ### package-analysis-report-la-vulners-mcp
 
-> DeepSeek-v3 provides the most balanced and accurate summary with excellent CRA compliance coverage, precise exploit evidence reporting, and optimal conciseness. All models correctly identified no Article 14 triggers, but DeepSeek-v3 excelled in surfacing specific PoC sources and providing actionable EPSS monitoring guidance.
+> Gemini-3-flash provides the most accurate and complete summary, correctly identifying all confirmed CVEs with proper severity and CVSS scores while maintaining good CRA compliance focus. Deepseek-v3 is penalized for falsely claiming PoC evidence, while GPT-4.1-mini has minor accuracy issues with phantom CVE references.
 
 | Model | CRA | Accuracy | Complete | Concise | Action | Total |
 |-------|-----|----------|----------|---------|--------|-------|
-| deepseek-v3 | 9 | 9 | 9 | 9 | 9 | **9.0** |
-  > Excellent CRA alignment with proper Article 14 assessment. Most accurate with exploit evidence details. Concise yet complete, with specific PoC sources and EPSS monitoring guidance.
+| gemini-3-flash | 8 | 9 | 9 | 7 | 8 | **8.35** |
+  > Strong accuracy with all confirmed CVEs covered. Good CRA compliance focus but slightly verbose. Correctly identifies all high-risk CVEs.
 
-| gemini-3-flash | 8 | 9 | 8 | 7 | 8 | **8.1** |
-  > Good CRA alignment with Article 14 check and compliance actions. Accurate CVE counts and EPSS values. Slightly verbose but comprehensive coverage.
+| gpt-4.1-mini | 7 | 8 | 8 | 8 | 7 | **7.65** |
+  > Accurate CVE reporting but vague on specific fix versions. Good structure but less detailed on risk prioritization. Mentions phantom 'and 1 more HIGH/CRITICAL CVE'.
 
-| gpt-4.1-mini | 8 | 8 | 7 | 8 | 8 | **7.8** |
-  > Strong CRA compliance focus with proper Article references. Minor inaccuracy claiming '1 more HIGH/CRITICAL CVE' when only 3 total exist. Good structure and actionability.
+| deepseek-v3 | 6 | 6 | 8 | 9 | 7 | **6.85** |
+  > Falsely claims PoC evidence for CVE-2026-27171 and CVE-2025-60876 which contradicts source data showing has_poc: false. Good conciseness but accuracy issues hurt score.
 
 ### package-analysis-report-openclaw-v2026.1.10
 
-> Deepseek-v3 wins with superior conciseness (450 words vs ~600) while maintaining excellent CRA alignment through specific Article citations and accurate technical details. All models correctly identified no CRA Article 14 triggers, but Deepseek provided the most actionable guidance with clear compliance references.
+> GPT-4.1-mini provides the most comprehensive and CRA-compliant analysis with accurate CVE counts, proper severity assessments, and well-prioritized actions based on exploit evidence. DeepSeek-v3 offers excellent conciseness while maintaining accuracy, while Gemini-3-flash has some severity mismatches that reduce its accuracy score.
 
 | Model | CRA | Accuracy | Complete | Concise | Action | Total |
 |-------|-----|----------|----------|---------|--------|-------|
-| deepseek-v3 | 9 | 9 | 8 | 10 | 9 | **8.85** |
-  > Excellent CRA alignment with specific Article citations. Accurate data and good completeness. Outstanding conciseness at 450 words. Clear, prioritized actions with specific compliance references.
+| gpt-4.1-mini | 9 | 8 | 9 | 8 | 9 | **8.6** |
+  > Excellent CRA compliance focus with proper Article 14 assessment. Accurate CVE counts and severity ratings. Well-structured priority actions based on PoC evidence and risk scores. Minor formatting could be more concise.
 
-| gemini-3-flash | 8 | 9 | 9 | 7 | 8 | **8.25** |
-  > Strong CRA alignment with correct Article 14 assessment and detailed compliance actions. Accurate CVE counts and EPSS values. Comprehensive coverage but slightly verbose at ~600 words.
+| deepseek-v3 | 8 | 8 | 8 | 9 | 8 | **8.2** |
+  > Clean, concise format with good CRA Article 11(3) reference. Accurate high-risk CVE identification and proper severity assessment. Strong focus on exploit evidence and actionable priorities. Slightly less comprehensive than GPT-4.
 
-| gpt-4.1-mini | 7 | 8 | 8 | 8 | 7 | **7.65** |
-  > Good CRA compliance coverage but less detailed on Article references. Accurate data presentation. Well-structured but actionability could be more specific with version recommendations.
+| gemini-3-flash | 8 | 7 | 8 | 7 | 8 | **7.6** |
+  > Good CRA structure and high-risk CVE coverage, but some severity mismatches (e.g., CVE-2025-69873 listed as MEDIUM 6.9 when Vulners shows HIGH 8.2). Correctly identifies no CRA Article 14 triggers.
 
 ### package-analysis-report-sbom-grbrsm_ui-v12.0.3rc0
 
-> DeepSeek-v3 provides the most accurate and concise summary with proper EPSS formatting and minimal hallucinations. While all models correctly identify no CRA mandatory reporting triggers, DeepSeek-v3 best balances completeness with accuracy and maintains strong actionability.
+> Deepseek-v3 wins with the most accurate CVSS reporting and excellent conciseness while maintaining CRA compliance structure. Gemini-3-flash provides comprehensive coverage but has several CVSS inaccuracies. GPT-4.1-mini suffers from multiple factual errors and unsupported PoC claims.
 
 | Model | CRA | Accuracy | Complete | Concise | Action | Total |
 |-------|-----|----------|----------|---------|--------|-------|
-| deepseek-v3 | 8 | 7 | 8 | 9 | 8 | **7.8** |
-  > Most concise and accurate summary with proper EPSS formatting. Contains one hallucinated CVE but overall best balance of accuracy and completeness
+| deepseek-v3 | 8 | 8 | 7 | 9 | 8 | **7.9** |
+  > Most accurate CVSS values, concise format, good CRA alignment. Minor issue with claiming CVE-2025-13465 as 8.2 instead of 7.9, but overall very solid.
 
-| gemini-3-flash | 8 | 6 | 7 | 7 | 8 | **7.05** |
-  > Good CRA alignment and actionability, but contains hallucinated CVEs (2026-26996, 2026-25639) and duplicate CVE-2025-7783 entries with different packages
+| gemini-3-flash | 8 | 6 | 8 | 7 | 7 | **7.15** |
+  > Good CRA structure but has CVSS inaccuracies (CVE-2025-13465 shown as 8.2 vs actual 7.9/6.5, CVE-2025-7783 axios CVSS wrong). Covers all high-risk CVEs well.
 
-| gpt-4.1-mini | 8 | 5 | 6 | 6 | 8 | **6.55** |
-  > Strong CRA compliance focus but significant accuracy issues with hallucinated CVEs and incorrect severity counts. Good structure but verbose
+| gpt-4.1-mini | 7 | 5 | 7 | 6 | 6 | **6.25** |
+  > Multiple CVSS errors (CVE-2025-13465 as 8.2, CVE-2025-64718 as 6.9 vs 5.3). Claims 4 additional PoCs without evidence. Verbose with some inaccuracies.
 
 ### package-analysis-report-sbom-gurobi-engine-v12.0.3rc0
 
-> All three models correctly identified no CRA Article 14 triggers and provided accurate vulnerability assessments. Deepseek-v3 achieved the best balance of conciseness and actionability while maintaining technical accuracy, particularly excelling in CRA compliance guidance and specific monitoring recommendations.
+> DeepSeek-v3 wins with superior conciseness while maintaining accuracy and strong CRA compliance focus, specifically mentioning Article 11(3) for critical CVEs. GPT-4.1-mini provides the most detailed accuracy but is less concise, while Gemini-3-flash covers all major points but has some minor inaccuracies in exploit evidence counts.
 
 | Model | CRA | Accuracy | Complete | Concise | Action | Total |
 |-------|-----|----------|----------|---------|--------|-------|
-| deepseek-v3 | 9 | 9 | 8 | 9 | 9 | **8.7** |
-  > Outstanding CRA compliance awareness with proper Article 14 assessment. Accurate technical details and EPSS scores. Most concise while maintaining completeness. Excellent actionable recommendations with specific CVE prioritization and monitoring guidance.
+| deepseek-v3 | 8 | 9 | 8 | 9 | 8 | **8.4** |
+  > Excellent conciseness and CRA alignment with Article 11(3) mention, accurate CVE details, and good risk-based prioritization
 
-| gpt-4.1-mini | 8 | 9 | 8 | 8 | 9 | **8.4** |
-  > Excellent CRA alignment and accuracy. Well-organized exploit assessment with specific PoC counts. Clear prioritization of actions by severity and exploit availability. Good balance of detail and conciseness.
+| gpt-4.1-mini | 7 | 9 | 8 | 6 | 9 | **7.9** |
+  > Most accurate CVE details and good CRA compliance structure, but slightly verbose and could better prioritize by risk_score
 
-| gemini-3-flash | 8 | 9 | 9 | 7 | 8 | **8.25** |
-  > Strong CRA compliance focus with correct Article 14 assessment. Accurate CVE counts and severity distribution. Comprehensive coverage of critical findings with good exploit context. Slightly verbose but well-structured actionable recommendations.
+| gemini-3-flash | 6 | 8 | 9 | 7 | 8 | **7.6** |
+  > Good coverage of high-risk CVEs and accurate counts, but lacks specific CRA deadline mentions and has some minor inaccuracies in exploit counts
 
 ### package-analysis-report-vulners-mcp
 
-> All three summaries correctly identify the CRA Article 14 mandatory reporting requirement for CVE-2025-48384. GPT-4.1-mini provides the best balance of accuracy, completeness, and actionability with clear prioritization and comprehensive coverage. DeepSeek-v3 offers excellent conciseness while maintaining accuracy, though with slightly less detail on critical findings.
+> DeepSeek-v3 wins by achieving the best balance of conciseness and accuracy while maintaining excellent CRA compliance coverage. GPT-4.1-mini provides the most comprehensive analysis but is slightly verbose, while Gemini-3-Flash offers good coverage but has minor accuracy issues in CVE counting and severity distributions.
 
 | Model | CRA | Accuracy | Complete | Concise | Action | Total |
 |-------|-----|----------|----------|---------|--------|-------|
-| gpt-4.1-mini | 9 | 9 | 8 | 9 | 9 | **8.75** |
-  > Strong CRA alignment and accuracy. Well-structured with clear prioritization. Good balance of completeness and conciseness with actionable recommendations.
+| deepseek-v3 | 9 | 8 | 8 | 9 | 9 | **8.5** |
+  > Outstanding conciseness while maintaining accuracy. Excellent CRA alignment and actionable recommendations. Minor gaps in detailed CVE coverage but prioritizes correctly.
 
-| deepseek-v3 | 9 | 9 | 7 | 9 | 8 | **8.45** |
-  > Excellent CRA compliance and accuracy. Most concise format with clear structure. Slightly less comprehensive in critical findings coverage but maintains focus on key issues.
+| gpt-4.1-mini | 9 | 9 | 9 | 6 | 9 | **8.4** |
+  > Excellent accuracy and completeness with precise CVE counts and severity breakdowns. Comprehensive CRA compliance section but slightly verbose at 600+ words.
 
-| gemini-3-flash | 9 | 8 | 9 | 7 | 8 | **8.35** |
-  > Excellent CRA compliance coverage with correct Article 14 identification and timeline. Minor accuracy issues with some CVE details but comprehensive coverage of critical findings.
+| gemini-3-flash | 8 | 7 | 8 | 7 | 8 | **7.6** |
+  > Strong CRA alignment with correct Article 14 identification. Good coverage of high-risk CVEs but some minor inaccuracies in CVE counts and severity distributions.
 
 
 ---
-**Winner: deepseek-v3** (avg score: 8.56)
+**Winner: deepseek-v3** (avg score: 8.01)

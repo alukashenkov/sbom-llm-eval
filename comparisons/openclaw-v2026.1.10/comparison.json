@@ -1,0 +1,2900 @@
+{
+  "overview": {
+    "vulners_cves": 96,
+    "grype_cves": 93,
+    "total_unique": 96,
+    "overlap": 93,
+    "overlap_pct": 96.9
+  },
+  "packages": {
+    "both": [
+      "@angular/compiler@21.0.3",
+      "@angular/core@21.0.3",
+      "@isaacs/brace-expansion@5.0.0",
+      "ajv@8.17.1",
+      "axios@1.13.2",
+      "clawdbot@2026.1.10",
+      "diff@8.0.2",
+      "fast-xml-parser@4.5.3",
+      "hono@4.11.3",
+      "jws@3.2.2",
+      "jws@4.0.0",
+      "lodash@4.17.21",
+      "markdown-it@14.1.0",
+      "minimatch@10.1.1",
+      "minimatch@9.0.5",
+      "node-forge@1.3.1",
+      "openclaw@2026.1.10",
+      "qs@6.13.0",
+      "qs@6.14.0",
+      "qs@6.14.1"
+    ],
+    "vulners_only": [
+      "express@4.21.2"
+    ],
+    "grype_only": []
+  },
+  "cves_in_both": [
+    {
+      "cve": "CVE-2025-12816",
+      "vulners": {
+        "cve": "CVE-2025-12816",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00059,
+        "packages": [
+          "node-forge@1.3.1"
+        ],
+        "risk_score": 9.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-12816",
+        "severity": "HIGH",
+        "cvss": 8.6,
+        "epss": 0.00059,
+        "packages": [
+          "node-forge@1.3.1"
+        ],
+        "risk_score": 8.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-13465",
+      "vulners": {
+        "cve": "CVE-2025-13465",
+        "severity": "HIGH",
+        "cvss": 7.9,
+        "epss": 0.00025,
+        "packages": [
+          "lodash@4.17.21"
+        ],
+        "risk_score": 8.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-13465",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": 0.00025,
+        "packages": [
+          "lodash@4.17.21"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2025-15284",
+      "vulners": {
+        "cve": "CVE-2025-15284",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00085,
+        "packages": [
+          "qs@6.13.0",
+          "qs@6.14.0",
+          "qs@6.14.1"
+        ],
+        "risk_score": 9.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-15284",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00085,
+        "packages": [
+          "qs@6.13.0",
+          "qs@6.14.0"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-65945",
+      "vulners": {
+        "cve": "CVE-2025-65945",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 9e-05,
+        "packages": [
+          "jws@3.2.2",
+          "jws@4.0.0"
+        ],
+        "risk_score": 9.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-65945",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 9e-05,
+        "packages": [
+          "jws@3.2.2",
+          "jws@4.0.0"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-66030",
+      "vulners": {
+        "cve": "CVE-2025-66030",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": 0.00042,
+        "packages": [
+          "node-forge@1.3.1"
+        ],
+        "risk_score": 6.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-66030",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": 0.00042,
+        "packages": [
+          "node-forge@1.3.1"
+        ],
+        "risk_score": 6.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-66031",
+      "vulners": {
+        "cve": "CVE-2025-66031",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00115,
+        "packages": [
+          "node-forge@1.3.1"
+        ],
+        "risk_score": 9.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-66031",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00115,
+        "packages": [
+          "node-forge@1.3.1"
+        ],
+        "risk_score": 8.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-69873",
+      "vulners": {
+        "cve": "CVE-2025-69873",
+        "severity": "HIGH",
+        "cvss": 8.2,
+        "epss": 0.00069,
+        "packages": [
+          "ajv@8.17.1"
+        ],
+        "risk_score": 9.7,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-69873",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": 0.00069,
+        "packages": [
+          "ajv@8.17.1"
+        ],
+        "risk_score": 5.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2026-22610",
+      "vulners": {
+        "cve": "CVE-2026-22610",
+        "severity": "HIGH",
+        "cvss": 8.5,
+        "epss": 0.00014,
+        "packages": [
+          "@angular/compiler@21.0.3",
+          "@angular/core@21.0.3"
+        ],
+        "risk_score": 10.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-22610",
+        "severity": "HIGH",
+        "cvss": 8.5,
+        "epss": 0.00014,
+        "packages": [
+          "@angular/compiler@21.0.3",
+          "@angular/core@21.0.3"
+        ],
+        "risk_score": 8.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-22817",
+      "vulners": {
+        "cve": "CVE-2026-22817",
+        "severity": "HIGH",
+        "cvss": 8.2,
+        "epss": 0.00017,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 8.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-22817",
+        "severity": "HIGH",
+        "cvss": 8.2,
+        "epss": 0.00017,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 8.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-22818",
+      "vulners": {
+        "cve": "CVE-2026-22818",
+        "severity": "HIGH",
+        "cvss": 8.2,
+        "epss": 0.00017,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 8.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-22818",
+        "severity": "HIGH",
+        "cvss": 8.2,
+        "epss": 0.00017,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 8.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-2327",
+      "vulners": {
+        "cve": "CVE-2026-2327",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00018,
+        "packages": [
+          "markdown-it@14.1.0"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-2327",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00018,
+        "packages": [
+          "markdown-it@14.1.0"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2026-2391",
+      "vulners": {
+        "cve": "CVE-2026-2391",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00085,
+        "packages": [
+          "qs@6.13.0",
+          "qs@6.14.0",
+          "qs@6.14.1"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-2391",
+        "severity": "LOW",
+        "cvss": 3.7,
+        "epss": 0.00019,
+        "packages": [
+          "qs@6.13.0",
+          "qs@6.14.0",
+          "qs@6.14.1"
+        ],
+        "risk_score": 3.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2026-24001",
+      "vulners": {
+        "cve": "CVE-2026-24001",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.0002,
+        "packages": [
+          "diff@8.0.2"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-24001",
+        "severity": "LOW",
+        "cvss": 2.7,
+        "epss": 0.0002,
+        "packages": [
+          "diff@8.0.2"
+        ],
+        "risk_score": 2.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2026-24398",
+      "vulners": {
+        "cve": "CVE-2026-24398",
+        "severity": "MEDIUM",
+        "cvss": 4.8,
+        "epss": 0.00012,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-24398",
+        "severity": "MEDIUM",
+        "cvss": 4.8,
+        "epss": 0.00012,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 4.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-24472",
+      "vulners": {
+        "cve": "CVE-2026-24472",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00013,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 5.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-24472",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00013,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-24473",
+      "vulners": {
+        "cve": "CVE-2026-24473",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": 0.00013,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 6.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-24473",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00013,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-24763",
+      "vulners": {
+        "cve": "CVE-2026-24763",
+        "severity": "HIGH",
+        "cvss": 8.8,
+        "epss": 0.00083,
+        "packages": [
+          "clawdbot@2026.1.10"
+        ],
+        "risk_score": 10.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-24763",
+        "severity": "HIGH",
+        "cvss": 8.8,
+        "epss": 0.00083,
+        "packages": [
+          "clawdbot@2026.1.10"
+        ],
+        "risk_score": 8.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-24764",
+      "vulners": {
+        "cve": "CVE-2026-24764",
+        "severity": "LOW",
+        "cvss": 3.7,
+        "epss": 0.00029,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-24764",
+        "severity": "LOW",
+        "cvss": 3.7,
+        "epss": 0.00029,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 3.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-24771",
+      "vulners": {
+        "cve": "CVE-2026-24771",
+        "severity": "MEDIUM",
+        "cvss": 4.7,
+        "epss": 0.00041,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 5.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-24771",
+        "severity": "MEDIUM",
+        "cvss": 4.7,
+        "epss": 0.00041,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 4.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-25157",
+      "vulners": {
+        "cve": "CVE-2026-25157",
+        "severity": "HIGH",
+        "cvss": 7.7,
+        "epss": 6e-05,
+        "packages": [
+          "clawdbot@2026.1.10"
+        ],
+        "risk_score": 9.2,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-25157",
+        "severity": "HIGH",
+        "cvss": 7.7,
+        "epss": 6e-05,
+        "packages": [
+          "clawdbot@2026.1.10"
+        ],
+        "risk_score": 7.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-25253",
+      "vulners": {
+        "cve": "CVE-2026-25253",
+        "severity": "HIGH",
+        "cvss": 8.8,
+        "epss": 0.00049,
+        "packages": [
+          "clawdbot@2026.1.10"
+        ],
+        "risk_score": 10.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-25253",
+        "severity": "HIGH",
+        "cvss": 8.8,
+        "epss": 0.00049,
+        "packages": [
+          "clawdbot@2026.1.10"
+        ],
+        "risk_score": 8.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-25474",
+      "vulners": {
+        "cve": "CVE-2026-25474",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00015,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-25474",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00015,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-25475",
+      "vulners": {
+        "cve": "CVE-2026-25475",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": 0.00093,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-25475",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": 0.00093,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-25547",
+      "vulners": {
+        "cve": "CVE-2026-25547",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00018,
+        "packages": [
+          "@isaacs/brace-expansion@5.0.0"
+        ],
+        "risk_score": 9.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-25547",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00018,
+        "packages": [
+          "@isaacs/brace-expansion@5.0.0"
+        ],
+        "risk_score": 8.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-25593",
+      "vulners": {
+        "cve": "CVE-2026-25593",
+        "severity": "HIGH",
+        "cvss": 8.4,
+        "epss": 0.00023,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-25593",
+        "severity": "HIGH",
+        "cvss": 8.4,
+        "epss": 0.00023,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-25639",
+      "vulners": {
+        "cve": "CVE-2026-25639",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00033,
+        "packages": [
+          "axios@1.13.2"
+        ],
+        "risk_score": 9.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-25639",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00033,
+        "packages": [
+          "axios@1.13.2"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-25896",
+      "vulners": {
+        "cve": "CVE-2026-25896",
+        "severity": "CRITICAL",
+        "cvss": 9.3,
+        "epss": 0.00273,
+        "packages": [
+          "fast-xml-parser@4.5.3"
+        ],
+        "risk_score": 9.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-25896",
+        "severity": "CRITICAL",
+        "cvss": 9.3,
+        "epss": 0.00029,
+        "packages": [
+          "fast-xml-parser@4.5.3"
+        ],
+        "risk_score": 9.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26278",
+      "vulners": {
+        "cve": "CVE-2026-26278",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00049,
+        "packages": [
+          "fast-xml-parser@4.5.3"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26278",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00049,
+        "packages": [
+          "fast-xml-parser@4.5.3"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26316",
+      "vulners": {
+        "cve": "CVE-2026-26316",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00061,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26316",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00061,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26317",
+      "vulners": {
+        "cve": "CVE-2026-26317",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": 0.00014,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26317",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": 0.00014,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26319",
+      "vulners": {
+        "cve": "CVE-2026-26319",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00031,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26319",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00031,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26321",
+      "vulners": {
+        "cve": "CVE-2026-26321",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.0006,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26321",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.0006,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26322",
+      "vulners": {
+        "cve": "CVE-2026-26322",
+        "severity": "HIGH",
+        "cvss": 7.6,
+        "epss": 0.00013,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26322",
+        "severity": "HIGH",
+        "cvss": 7.6,
+        "epss": 0.00013,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26323",
+      "vulners": {
+        "cve": "CVE-2026-26323",
+        "severity": "HIGH",
+        "cvss": 8.6,
+        "epss": 0.00175,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26323",
+        "severity": "HIGH",
+        "cvss": 8.6,
+        "epss": 0.00175,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26324",
+      "vulners": {
+        "cve": "CVE-2026-26324",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00011,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26324",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00011,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26325",
+      "vulners": {
+        "cve": "CVE-2026-26325",
+        "severity": "HIGH",
+        "cvss": 7.2,
+        "epss": 0.00024,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26325",
+        "severity": "HIGH",
+        "cvss": 7.2,
+        "epss": 0.00024,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26326",
+      "vulners": {
+        "cve": "CVE-2026-26326",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 9e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26326",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 9e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26327",
+      "vulners": {
+        "cve": "CVE-2026-26327",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": 4e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26327",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": 4e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26328",
+      "vulners": {
+        "cve": "CVE-2026-26328",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": 0.00025,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26328",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": 0.00025,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26329",
+      "vulners": {
+        "cve": "CVE-2026-26329",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": 0.0004,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26329",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": 0.0004,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-26996",
+      "vulners": {
+        "cve": "CVE-2026-26996",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.0004,
+        "packages": [
+          "minimatch@10.1.1",
+          "minimatch@9.0.5"
+        ],
+        "risk_score": 9.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-26996",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.0004,
+        "packages": [
+          "minimatch@10.1.1",
+          "minimatch@9.0.5"
+        ],
+        "risk_score": 8.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27001",
+      "vulners": {
+        "cve": "CVE-2026-27001",
+        "severity": "HIGH",
+        "cvss": 8.6,
+        "epss": 0.00018,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27001",
+        "severity": "HIGH",
+        "cvss": 8.6,
+        "epss": 0.00018,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27002",
+      "vulners": {
+        "cve": "CVE-2026-27002",
+        "severity": "HIGH",
+        "cvss": 7.7,
+        "epss": 0.00045,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27002",
+        "severity": "HIGH",
+        "cvss": 7.7,
+        "epss": 0.00045,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27003",
+      "vulners": {
+        "cve": "CVE-2026-27003",
+        "severity": "MEDIUM",
+        "cvss": 6.9,
+        "epss": 0.00013,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27003",
+        "severity": "MEDIUM",
+        "cvss": 6.9,
+        "epss": 0.00013,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27004",
+      "vulners": {
+        "cve": "CVE-2026-27004",
+        "severity": "MEDIUM",
+        "cvss": 6.9,
+        "epss": 6e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27004",
+        "severity": "MEDIUM",
+        "cvss": 6.9,
+        "epss": 6e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27007",
+      "vulners": {
+        "cve": "CVE-2026-27007",
+        "severity": "MEDIUM",
+        "cvss": 4.8,
+        "epss": 0.00011,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27007",
+        "severity": "MEDIUM",
+        "cvss": 4.8,
+        "epss": 0.00011,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27008",
+      "vulners": {
+        "cve": "CVE-2026-27008",
+        "severity": "MEDIUM",
+        "cvss": 6.8,
+        "epss": 0.00014,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27008",
+        "severity": "MEDIUM",
+        "cvss": 6.8,
+        "epss": 0.00014,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27009",
+      "vulners": {
+        "cve": "CVE-2026-27009",
+        "severity": "MEDIUM",
+        "cvss": 5.8,
+        "epss": 0.0002,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27009",
+        "severity": "MEDIUM",
+        "cvss": 5.8,
+        "epss": 0.0002,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27484",
+      "vulners": {
+        "cve": "CVE-2026-27484",
+        "severity": "LOW",
+        "cvss": 2.3,
+        "epss": 0.00022,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 2.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27484",
+        "severity": "LOW",
+        "cvss": 2.3,
+        "epss": 0.00022,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 2.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27485",
+      "vulners": {
+        "cve": "CVE-2026-27485",
+        "severity": "MEDIUM",
+        "cvss": 4.6,
+        "epss": 5e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27485",
+        "severity": "MEDIUM",
+        "cvss": 4.6,
+        "epss": 5e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27486",
+      "vulners": {
+        "cve": "CVE-2026-27486",
+        "severity": "MEDIUM",
+        "cvss": 4.3,
+        "epss": 0.00013,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27486",
+        "severity": "MEDIUM",
+        "cvss": 4.3,
+        "epss": 0.00013,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27487",
+      "vulners": {
+        "cve": "CVE-2026-27487",
+        "severity": "HIGH",
+        "cvss": 7.6,
+        "epss": 0.00051,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27487",
+        "severity": "HIGH",
+        "cvss": 7.6,
+        "epss": 0.00051,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27488",
+      "vulners": {
+        "cve": "CVE-2026-27488",
+        "severity": "MEDIUM",
+        "cvss": 6.9,
+        "epss": 0.00012,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27488",
+        "severity": "MEDIUM",
+        "cvss": 6.9,
+        "epss": 0.00012,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-27576",
+      "vulners": {
+        "cve": "CVE-2026-27576",
+        "severity": "MEDIUM",
+        "cvss": 4.8,
+        "epss": 5e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-27576",
+        "severity": "MEDIUM",
+        "cvss": 4.8,
+        "epss": 5e-05,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-3HCM-GGVF-RCH5",
+      "vulners": {
+        "cve": "GHSA-3HCM-GGVF-RCH5",
+        "severity": "HIGH",
+        "cvss": 7.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-3HCM-GGVF-RCH5",
+        "severity": "HIGH",
+        "cvss": 7.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-4685-C5CP-VP95",
+      "vulners": {
+        "cve": "GHSA-4685-C5CP-VP95",
+        "severity": "LOW",
+        "cvss": 3.6,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-4685-C5CP-VP95",
+        "severity": "LOW",
+        "cvss": 3.6,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 3.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-4RJ2-GPMH-QQ5X",
+      "vulners": {
+        "cve": "GHSA-4RJ2-GPMH-QQ5X",
+        "severity": "CRITICAL",
+        "cvss": 9.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-4RJ2-GPMH-QQ5X",
+        "severity": "CRITICAL",
+        "cvss": 9.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-56F2-HVWG-5743",
+      "vulners": {
+        "cve": "GHSA-56F2-HVWG-5743",
+        "severity": "HIGH",
+        "cvss": 7.6,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-56F2-HVWG-5743",
+        "severity": "HIGH",
+        "cvss": 7.6,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-5XFQ-5MR7-426Q",
+      "vulners": {
+        "cve": "GHSA-5XFQ-5MR7-426Q",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-5XFQ-5MR7-426Q",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-64QX-VPXX-MVQF",
+      "vulners": {
+        "cve": "GHSA-64QX-VPXX-MVQF",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-64QX-VPXX-MVQF",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-6C9J-X93C-RW6J",
+      "vulners": {
+        "cve": "GHSA-6C9J-X93C-RW6J",
+        "severity": "MEDIUM",
+        "cvss": 4.3,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-6C9J-X93C-RW6J",
+        "severity": "MEDIUM",
+        "cvss": 4.3,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-7RCP-MXPQ-72PJ",
+      "vulners": {
+        "cve": "GHSA-7RCP-MXPQ-72PJ",
+        "severity": "MEDIUM",
+        "cvss": 5.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-7RCP-MXPQ-72PJ",
+        "severity": "MEDIUM",
+        "cvss": 5.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-7VWX-582J-J332",
+      "vulners": {
+        "cve": "GHSA-7VWX-582J-J332",
+        "severity": "HIGH",
+        "cvss": 7.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-7VWX-582J-J332",
+        "severity": "HIGH",
+        "cvss": 7.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-C37P-4QQG-3P76",
+      "vulners": {
+        "cve": "GHSA-C37P-4QQG-3P76",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-C37P-4QQG-3P76",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-CHM2-M3W2-WCXM",
+      "vulners": {
+        "cve": "GHSA-CHM2-M3W2-WCXM",
+        "severity": "LOW",
+        "cvss": 2.1,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 2.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-CHM2-M3W2-WCXM",
+        "severity": "LOW",
+        "cvss": 2.1,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 2.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-FH3F-Q9QW-93J9",
+      "vulners": {
+        "cve": "GHSA-FH3F-Q9QW-93J9",
+        "severity": "MEDIUM",
+        "cvss": 5.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-FH3F-Q9QW-93J9",
+        "severity": "MEDIUM",
+        "cvss": 5.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-FHVM-J76F-QMJV",
+      "vulners": {
+        "cve": "GHSA-FHVM-J76F-QMJV",
+        "severity": "CRITICAL",
+        "cvss": 9.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-FHVM-J76F-QMJV",
+        "severity": "CRITICAL",
+        "cvss": 9.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-G27F-9QJV-22PM",
+      "vulners": {
+        "cve": "GHSA-G27F-9QJV-22PM",
+        "severity": "LOW",
+        "cvss": 3.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 3.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-G27F-9QJV-22PM",
+        "severity": "LOW",
+        "cvss": 3.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 3.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-GQ3J-XVXP-8HRF",
+      "vulners": {
+        "cve": "GHSA-GQ3J-XVXP-8HRF",
+        "severity": "LOW",
+        "cvss": 3.7,
+        "epss": null,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 4.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-GQ3J-XVXP-8HRF",
+        "severity": "LOW",
+        "cvss": 3.7,
+        "epss": null,
+        "packages": [
+          "hono@4.11.3"
+        ],
+        "risk_score": 3.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-GQ9C-WG68-GWJ2",
+      "vulners": {
+        "cve": "GHSA-GQ9C-WG68-GWJ2",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-GQ9C-WG68-GWJ2",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-H89V-J3X9-8WQJ",
+      "vulners": {
+        "cve": "GHSA-H89V-J3X9-8WQJ",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-H89V-J3X9-8WQJ",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-HV93-R4J3-Q65F",
+      "vulners": {
+        "cve": "GHSA-HV93-R4J3-Q65F",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-HV93-R4J3-Q65F",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-J27P-HQ53-9WGC",
+      "vulners": {
+        "cve": "GHSA-J27P-HQ53-9WGC",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-J27P-HQ53-9WGC",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-JQPQ-MGVM-F9R6",
+      "vulners": {
+        "cve": "GHSA-JQPQ-MGVM-F9R6",
+        "severity": "HIGH",
+        "cvss": 8.8,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-JQPQ-MGVM-F9R6",
+        "severity": "HIGH",
+        "cvss": 8.8,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-MJ5R-HH7J-4GXF",
+      "vulners": {
+        "cve": "GHSA-MJ5R-HH7J-4GXF",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-MJ5R-HH7J-4GXF",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-MQPW-46FH-299H",
+      "vulners": {
+        "cve": "GHSA-MQPW-46FH-299H",
+        "severity": "HIGH",
+        "cvss": 7.2,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-MQPW-46FH-299H",
+        "severity": "HIGH",
+        "cvss": 7.2,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-MV9J-6XHH-G383",
+      "vulners": {
+        "cve": "GHSA-MV9J-6XHH-G383",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-MV9J-6XHH-G383",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-P536-VVPP-9MC8",
+      "vulners": {
+        "cve": "GHSA-P536-VVPP-9MC8",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-P536-VVPP-9MC8",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-PG2V-8XWH-QHCC",
+      "vulners": {
+        "cve": "GHSA-PG2V-8XWH-QHCC",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-PG2V-8XWH-QHCC",
+        "severity": "MEDIUM",
+        "cvss": 6.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-Q447-RJ3R-2CGH",
+      "vulners": {
+        "cve": "GHSA-Q447-RJ3R-2CGH",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-Q447-RJ3R-2CGH",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-QJ77-C3C8-9C3Q",
+      "vulners": {
+        "cve": "GHSA-QJ77-C3C8-9C3Q",
+        "severity": "HIGH",
+        "cvss": 7.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-QJ77-C3C8-9C3Q",
+        "severity": "HIGH",
+        "cvss": 7.4,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-R5FQ-947M-XM57",
+      "vulners": {
+        "cve": "GHSA-R5FQ-947M-XM57",
+        "severity": "HIGH",
+        "cvss": 8.8,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-R5FQ-947M-XM57",
+        "severity": "HIGH",
+        "cvss": 8.8,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-RQ6G-PX6M-C248",
+      "vulners": {
+        "cve": "GHSA-RQ6G-PX6M-C248",
+        "severity": "HIGH",
+        "cvss": 8.3,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-RQ6G-PX6M-C248",
+        "severity": "HIGH",
+        "cvss": 8.3,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-RV39-79C4-7459",
+      "vulners": {
+        "cve": "GHSA-RV39-79C4-7459",
+        "severity": "CRITICAL",
+        "cvss": 9.3,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-RV39-79C4-7459",
+        "severity": "CRITICAL",
+        "cvss": 9.3,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-RWJ8-P9VQ-25GV",
+      "vulners": {
+        "cve": "GHSA-RWJ8-P9VQ-25GV",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-RWJ8-P9VQ-25GV",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-V6C6-VQQG-W888",
+      "vulners": {
+        "cve": "GHSA-V6C6-VQQG-W888",
+        "severity": "HIGH",
+        "cvss": 7.2,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-V6C6-VQQG-W888",
+        "severity": "HIGH",
+        "cvss": 7.2,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-V773-R54F-Q32W",
+      "vulners": {
+        "cve": "GHSA-V773-R54F-Q32W",
+        "severity": "MEDIUM",
+        "cvss": 4.8,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-V773-R54F-Q32W",
+        "severity": "MEDIUM",
+        "cvss": 4.8,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 4.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-W2CG-VXX6-5XJG",
+      "vulners": {
+        "cve": "GHSA-W2CG-VXX6-5XJG",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-W2CG-VXX6-5XJG",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": null,
+        "packages": [
+          "clawdbot@2026.1.10",
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-W5C7-9QQW-6645",
+      "vulners": {
+        "cve": "GHSA-W5C7-9QQW-6645",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-W5C7-9QQW-6645",
+        "severity": "HIGH",
+        "cvss": 7.1,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 7.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-WFP2-V9C7-FH79",
+      "vulners": {
+        "cve": "GHSA-WFP2-V9C7-FH79",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-WFP2-V9C7-FH79",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-X22M-J5QQ-J49M",
+      "vulners": {
+        "cve": "GHSA-X22M-J5QQ-J49M",
+        "severity": "HIGH",
+        "cvss": 8.6,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 9.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-X22M-J5QQ-J49M",
+        "severity": "HIGH",
+        "cvss": 8.6,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 8.6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-XC7W-V5X6-CC87",
+      "vulners": {
+        "cve": "GHSA-XC7W-V5X6-CC87",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-XC7W-V5X6-CC87",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "GHSA-XVHF-X56F-2HPP",
+      "vulners": {
+        "cve": "GHSA-XVHF-X56F-2HPP",
+        "severity": "MEDIUM",
+        "cvss": 5.7,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 6.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "GHSA-XVHF-X56F-2HPP",
+        "severity": "MEDIUM",
+        "cvss": 5.7,
+        "epss": null,
+        "packages": [
+          "openclaw@2026.1.10"
+        ],
+        "risk_score": 5.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    }
+  ],
+  "cves_vulners_only": [
+    {
+      "cve": "CVE-2023-34104",
+      "severity": "CRITICAL",
+      "cvss": 9.3,
+      "epss": 0.00273,
+      "packages": [
+        "fast-xml-parser@4.5.3"
+      ],
+      "risk_score": 9.8,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2024-51999",
+      "severity": "MEDIUM",
+      "cvss": 6.9,
+      "epss": 0.00014,
+      "packages": [
+        "express@4.21.2"
+      ],
+      "risk_score": 7.4,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2026-25128",
+      "severity": "HIGH",
+      "cvss": 8.7,
+      "epss": 0.00027,
+      "packages": [
+        "fast-xml-parser@4.5.3"
+      ],
+      "risk_score": 9.2,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    }
+  ],
+  "cves_grype_only": []
+}

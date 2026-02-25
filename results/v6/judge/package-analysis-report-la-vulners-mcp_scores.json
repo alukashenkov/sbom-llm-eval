@@ -3,36 +3,36 @@
     "gemini-3-flash": {
       "cra_alignment": 8,
       "accuracy": 9,
-      "completeness": 8,
+      "completeness": 9,
       "conciseness": 7,
       "actionability": 8,
-      "weighted_total": 8.1,
-      "notes": "Good CRA alignment with Article 14 check and compliance actions. Accurate CVE counts and EPSS values. Slightly verbose but comprehensive coverage."
+      "weighted_total": 8.35,
+      "notes": "Strong accuracy with all confirmed CVEs covered. Good CRA compliance focus but slightly verbose. Correctly identifies all high-risk CVEs."
     },
     "gpt-4.1-mini": {
-      "cra_alignment": 8,
+      "cra_alignment": 7,
       "accuracy": 8,
-      "completeness": 7,
+      "completeness": 8,
       "conciseness": 8,
-      "actionability": 8,
-      "weighted_total": 7.8,
-      "notes": "Strong CRA compliance focus with proper Article references. Minor inaccuracy claiming '1 more HIGH/CRITICAL CVE' when only 3 total exist. Good structure and actionability."
+      "actionability": 7,
+      "weighted_total": 7.65,
+      "notes": "Accurate CVE reporting but vague on specific fix versions. Good structure but less detailed on risk prioritization. Mentions phantom 'and 1 more HIGH/CRITICAL CVE'."
     },
     "deepseek-v3": {
-      "cra_alignment": 9,
-      "accuracy": 9,
-      "completeness": 9,
+      "cra_alignment": 6,
+      "accuracy": 6,
+      "completeness": 8,
       "conciseness": 9,
-      "actionability": 9,
-      "weighted_total": 9.0,
-      "notes": "Excellent CRA alignment with proper Article 14 assessment. Most accurate with exploit evidence details. Concise yet complete, with specific PoC sources and EPSS monitoring guidance."
+      "actionability": 7,
+      "weighted_total": 6.85,
+      "notes": "Falsely claims PoC evidence for CVE-2026-27171 and CVE-2025-60876 which contradicts source data showing has_poc: false. Good conciseness but accuracy issues hurt score."
     }
   },
   "ranking": [
-    "deepseek-v3",
     "gemini-3-flash",
-    "gpt-4.1-mini"
+    "gpt-4.1-mini",
+    "deepseek-v3"
   ],
-  "winner": "deepseek-v3",
-  "analysis": "DeepSeek-v3 provides the most balanced and accurate summary with excellent CRA compliance coverage, precise exploit evidence reporting, and optimal conciseness. All models correctly identified no Article 14 triggers, but DeepSeek-v3 excelled in surfacing specific PoC sources and providing actionable EPSS monitoring guidance."
+  "winner": "gemini-3-flash",
+  "analysis": "Gemini-3-flash provides the most accurate and complete summary, correctly identifying all confirmed CVEs with proper severity and CVSS scores while maintaining good CRA compliance focus. Deepseek-v3 is penalized for falsely claiming PoC evidence, while GPT-4.1-mini has minor accuracy issues with phantom CVE references."
 }

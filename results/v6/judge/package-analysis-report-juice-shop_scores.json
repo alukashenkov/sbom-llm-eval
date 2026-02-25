@@ -1,31 +1,31 @@
 {
   "scores": {
     "gemini-3-flash": {
-      "cra_alignment": 8,
-      "accuracy": 9,
+      "cra_alignment": 6,
+      "accuracy": 8,
       "completeness": 9,
       "conciseness": 7,
       "actionability": 8,
-      "weighted_total": 8.25,
-      "notes": "Strong CRA compliance focus with correct Article 14 assessment and detailed exploit evidence. Accurate CVE counts and severity mapping. Comprehensive coverage of critical findings with specific version recommendations."
+      "weighted_total": 7.65,
+      "notes": "Good coverage of high-risk CVEs and accurate counts. Missing specific CRA Article 14 deadlines and CISA KEV context. Strong completeness with all critical CVEs covered."
     },
     "gpt-4.1-mini": {
-      "cra_alignment": 7,
+      "cra_alignment": 6,
       "accuracy": 8,
       "completeness": 8,
-      "conciseness": 6,
+      "conciseness": 8,
       "actionability": 7,
-      "weighted_total": 7.35,
-      "notes": "Good CRA Article 14 assessment but less detailed on specific deadlines. Accurate data presentation with good exploit categorization. Somewhat verbose with bullet formatting reducing conciseness."
+      "weighted_total": 7.5,
+      "notes": "Accurate CVE counts and severity mapping. Good structure but lacks specific CRA deadline mentions. Some formatting inconsistencies with EPSS notation."
     },
     "deepseek-v3": {
-      "cra_alignment": 8,
+      "cra_alignment": 7,
       "accuracy": 9,
       "completeness": 8,
-      "conciseness": 10,
-      "actionability": 9,
-      "weighted_total": 8.55,
-      "notes": "Excellent conciseness at 450 words with clear structure. Strong CRA compliance messaging and accurate technical details. Well-prioritized actions with specific version requirements and EPSS monitoring guidance."
+      "conciseness": 9,
+      "actionability": 8,
+      "weighted_total": 8.2,
+      "notes": "Most concise while maintaining accuracy. Correctly identifies top risk CVEs and mentions EPSS thresholds. Good CRA article references but could be more specific on deadlines."
     }
   },
   "ranking": [
@@ -34,5 +34,5 @@
     "gpt-4.1-mini"
   ],
   "winner": "deepseek-v3",
-  "analysis": "DeepSeek-v3 achieves the best balance with exceptional conciseness (450 words) while maintaining technical accuracy and strong CRA compliance guidance. Gemini-3-flash provides comprehensive detail but is more verbose, while GPT-4.1-mini offers good coverage but lacks the crisp prioritization of the winner."
+  "analysis": "All summaries accurately identify the critical CVEs and avoid hallucinations, with deepseek-v3 providing the best balance of conciseness and completeness. While none fully address CRA Article 14 deadlines, deepseek-v3 offers the clearest risk prioritization and actionable guidance. The EPSS threshold monitoring suggestion demonstrates strong CRA alignment understanding."
 }

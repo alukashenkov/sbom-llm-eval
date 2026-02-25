@@ -116,6 +116,11 @@ def compute_cve_analytics(processed_data: list) -> dict:
 
         for adv in pkg["advisories"]:
             cve_ids = adv.get("cvelist", [])
+            if not cve_ids:
+                # Use advisory ID for non-CVE advisories (e.g. GHSA)
+                adv_id = adv.get("id", "")
+                if adv_id:
+                    cve_ids = [adv_id]
             poc = adv.get("pocSources") or {}
             exploitation = adv.get("exploitation") or {}
             metrics = adv.get("metrics") or {}

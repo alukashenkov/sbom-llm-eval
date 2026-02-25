@@ -1,0 +1,1408 @@
+{
+  "overview": {
+    "vulners_cves": 62,
+    "grype_cves": 34,
+    "total_unique": 62,
+    "overlap": 34,
+    "overlap_pct": 54.8
+  },
+  "packages": {
+    "both": [
+      "python@3.11.4"
+    ],
+    "vulners_only": [
+      "https://curl.se|curl@8.14.1",
+      "https://openssl.org|openssl@3.0.16"
+    ],
+    "grype_only": []
+  },
+  "cves_in_both": [
+    {
+      "cve": "CVE-2023-27043",
+      "vulners": {
+        "cve": "CVE-2023-27043",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00193,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2023-27043",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00193,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2023-36632",
+      "vulners": {
+        "cve": "CVE-2023-36632",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00112,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2023-36632",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00112,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2023-40217",
+      "vulners": {
+        "cve": "CVE-2023-40217",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00581,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2023-40217",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00581,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2023-41105",
+      "vulners": {
+        "cve": "CVE-2023-41105",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.0037,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2023-41105",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.0037,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2023-6597",
+      "vulners": {
+        "cve": "CVE-2023-6597",
+        "severity": "HIGH",
+        "cvss": 7.8,
+        "epss": 0.00071,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2023-6597",
+        "severity": "HIGH",
+        "cvss": 7.8,
+        "epss": 0.00071,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-0397",
+      "vulners": {
+        "cve": "CVE-2024-0397",
+        "severity": "HIGH",
+        "cvss": 7.4,
+        "epss": 0.00384,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-0397",
+        "severity": "HIGH",
+        "cvss": 7.4,
+        "epss": 0.00384,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-0450",
+      "vulners": {
+        "cve": "CVE-2024-0450",
+        "severity": "MEDIUM",
+        "cvss": 6.2,
+        "epss": 0.00148,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-0450",
+        "severity": "MEDIUM",
+        "cvss": 6.2,
+        "epss": 0.00148,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-12718",
+      "vulners": {
+        "cve": "CVE-2024-12718",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00203,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.8,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-12718",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00203,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-4032",
+      "vulners": {
+        "cve": "CVE-2024-4032",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.01127,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-4032",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.01127,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-50602",
+      "vulners": {
+        "cve": "CVE-2024-50602",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": 0.00127,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-50602",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": 0.00127,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-6232",
+      "vulners": {
+        "cve": "CVE-2024-6232",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.02874,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 9.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-6232",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.02874,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-6923",
+      "vulners": {
+        "cve": "CVE-2024-6923",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": 0.00245,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-6923",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": 0.00245,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-7592",
+      "vulners": {
+        "cve": "CVE-2024-7592",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00796,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-7592",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00796,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-8088",
+      "vulners": {
+        "cve": "CVE-2024-8088",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00154,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 9.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-8088",
+        "severity": "HIGH",
+        "cvss": 8.7,
+        "epss": 0.00154,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2024-9287",
+      "vulners": {
+        "cve": "CVE-2024-9287",
+        "severity": "HIGH",
+        "cvss": 7.8,
+        "epss": 0.00062,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2024-9287",
+        "severity": "MEDIUM",
+        "cvss": 5.3,
+        "epss": 0.00062,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2025-0938",
+      "vulners": {
+        "cve": "CVE-2025-0938",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": 0.01244,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-0938",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": 0.01244,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-11468",
+      "vulners": {
+        "cve": "CVE-2025-11468",
+        "severity": "MEDIUM",
+        "cvss": 5.7,
+        "epss": 0.0003,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.2,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-11468",
+        "severity": "MEDIUM",
+        "cvss": 5.7,
+        "epss": 0.0003,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.7,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-12084",
+      "vulners": {
+        "cve": "CVE-2025-12084",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": 0.00049,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-12084",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": 0.00049,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-13836",
+      "vulners": {
+        "cve": "CVE-2025-13836",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00152,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-13836",
+        "severity": "MEDIUM",
+        "cvss": 6.3,
+        "epss": 0.00152,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2025-13837",
+      "vulners": {
+        "cve": "CVE-2025-13837",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": 0.00022,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-13837",
+        "severity": "LOW",
+        "cvss": 2.1,
+        "epss": 0.00022,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 2.1,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2025-15282",
+      "vulners": {
+        "cve": "CVE-2025-15282",
+        "severity": "MEDIUM",
+        "cvss": 6,
+        "epss": 0.00046,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-15282",
+        "severity": "MEDIUM",
+        "cvss": 6,
+        "epss": 0.00046,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-1795",
+      "vulners": {
+        "cve": "CVE-2025-1795",
+        "severity": "LOW",
+        "cvss": 2.3,
+        "epss": 0.00593,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 2.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-1795",
+        "severity": "LOW",
+        "cvss": 2.3,
+        "epss": 0.00593,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 2.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-4138",
+      "vulners": {
+        "cve": "CVE-2025-4138",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00077,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 9.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-4138",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00077,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-4330",
+      "vulners": {
+        "cve": "CVE-2025-4330",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00298,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 9.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-4330",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00298,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-4435",
+      "vulners": {
+        "cve": "CVE-2025-4435",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00123,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 9.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-4435",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00123,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-4516",
+      "vulners": {
+        "cve": "CVE-2025-4516",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": 0.0006,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-4516",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": 0.0006,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-4517",
+      "vulners": {
+        "cve": "CVE-2025-4517",
+        "severity": "CRITICAL",
+        "cvss": 9.4,
+        "epss": 0.00071,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 10.0,
+        "wild_exploited": false,
+        "has_poc": true,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-4517",
+        "severity": "CRITICAL",
+        "cvss": 9.4,
+        "epss": 0.00071,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 9.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-6069",
+      "vulners": {
+        "cve": "CVE-2025-6069",
+        "severity": "MEDIUM",
+        "cvss": 4.3,
+        "epss": 0.00194,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 4.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-6069",
+        "severity": "MEDIUM",
+        "cvss": 4.3,
+        "epss": 0.00194,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 4.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-6075",
+      "vulners": {
+        "cve": "CVE-2025-6075",
+        "severity": "MEDIUM",
+        "cvss": 5.5,
+        "epss": 0.00025,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-6075",
+        "severity": "LOW",
+        "cvss": 1.8,
+        "epss": 0.00025,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 1.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": false
+    },
+    {
+      "cve": "CVE-2025-8194",
+      "vulners": {
+        "cve": "CVE-2025-8194",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00162,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 8.0,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-8194",
+        "severity": "HIGH",
+        "cvss": 7.5,
+        "epss": 0.00162,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 7.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2025-8291",
+      "vulners": {
+        "cve": "CVE-2025-8291",
+        "severity": "MEDIUM",
+        "cvss": 4.3,
+        "epss": 0.00169,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 4.8,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2025-8291",
+        "severity": "MEDIUM",
+        "cvss": 4.3,
+        "epss": 0.00169,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 4.3,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-0672",
+      "vulners": {
+        "cve": "CVE-2026-0672",
+        "severity": "MEDIUM",
+        "cvss": 6,
+        "epss": 0.00164,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-0672",
+        "severity": "MEDIUM",
+        "cvss": 6,
+        "epss": 0.00164,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-0865",
+      "vulners": {
+        "cve": "CVE-2026-0865",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": 0.00165,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.4,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-0865",
+        "severity": "MEDIUM",
+        "cvss": 5.9,
+        "epss": 0.00165,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 5.9,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    },
+    {
+      "cve": "CVE-2026-1299",
+      "vulners": {
+        "cve": "CVE-2026-1299",
+        "severity": "MEDIUM",
+        "cvss": 6,
+        "epss": 0.00046,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6.5,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": false
+      },
+      "grype": {
+        "cve": "CVE-2026-1299",
+        "severity": "MEDIUM",
+        "cvss": 6,
+        "epss": 0.00046,
+        "packages": [
+          "python@3.11.4"
+        ],
+        "risk_score": 6,
+        "wild_exploited": false,
+        "has_poc": false,
+        "fix_available": true
+      },
+      "severity_match": true
+    }
+  ],
+  "cves_vulners_only": [
+    {
+      "cve": "CVE-2007-4559",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "epss": 0.90582,
+      "packages": [
+        "python@3.11.4"
+      ],
+      "risk_score": 10.0,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2023-5363",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "epss": 0.0439,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 8.0,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2024-3220",
+      "severity": "LOW",
+      "cvss": 2.3,
+      "epss": 0.00259,
+      "packages": [
+        "python@3.11.4"
+      ],
+      "risk_score": 2.8,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2024-4030",
+      "severity": "HIGH",
+      "cvss": 7.1,
+      "epss": 0.00025,
+      "packages": [
+        "python@3.11.4"
+      ],
+      "risk_score": 7.6,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-10148",
+      "severity": "MEDIUM",
+      "cvss": 5.3,
+      "epss": 0.00102,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 6.8,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-10966",
+      "severity": "MEDIUM",
+      "cvss": 4.3,
+      "epss": 0.00015,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 5.8,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-11563",
+      "severity": "NONE",
+      "cvss": 0,
+      "epss": null,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 0.5,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-12781",
+      "severity": "MEDIUM",
+      "cvss": 6.3,
+      "epss": 0.0004,
+      "packages": [
+        "python@3.11.4"
+      ],
+      "risk_score": 6.8,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-13034",
+      "severity": "MEDIUM",
+      "cvss": 5.9,
+      "epss": 8e-05,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 6.4,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-14017",
+      "severity": "MEDIUM",
+      "cvss": 6.3,
+      "epss": 7e-05,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 6.8,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-14524",
+      "severity": "MEDIUM",
+      "cvss": 5.3,
+      "epss": 0.0003,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 6.8,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-14819",
+      "severity": "MEDIUM",
+      "cvss": 5.3,
+      "epss": 0.00039,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 5.8,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-15079",
+      "severity": "MEDIUM",
+      "cvss": 5.3,
+      "epss": 0.0003,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 6.8,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-15224",
+      "severity": "LOW",
+      "cvss": 3.1,
+      "epss": 0.00072,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 4.6,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-15366",
+      "severity": "MEDIUM",
+      "cvss": 5.9,
+      "epss": 0.00093,
+      "packages": [
+        "python@3.11.4"
+      ],
+      "risk_score": 6.4,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-15367",
+      "severity": "MEDIUM",
+      "cvss": 5.9,
+      "epss": 0.00093,
+      "packages": [
+        "python@3.11.4"
+      ],
+      "risk_score": 6.4,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-15467",
+      "severity": "CRITICAL",
+      "cvss": 9.8,
+      "epss": 0.00672,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 10.0,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-22795",
+      "severity": "HIGH",
+      "cvss": 7.1,
+      "epss": 0.00187,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 8.6,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-68160",
+      "severity": "MEDIUM",
+      "cvss": 4.7,
+      "epss": 0.00014,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 6.2,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-69418",
+      "severity": "MEDIUM",
+      "cvss": 4,
+      "epss": 5e-05,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 5.5,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-69419",
+      "severity": "HIGH",
+      "cvss": 7.4,
+      "epss": 0.00056,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 8.9,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-69420",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "epss": 0.0007,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 9.0,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-69421",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "epss": 0.00059,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 9.0,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-9086",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "epss": 0.00035,
+      "packages": [
+        "https://curl.se|curl@8.14.1"
+      ],
+      "risk_score": 9.0,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-9230",
+      "severity": "HIGH",
+      "cvss": 7.5,
+      "epss": 0.00031,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 8.0,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2025-9232",
+      "severity": "MEDIUM",
+      "cvss": 5.9,
+      "epss": 0.00039,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 6.4,
+      "wild_exploited": false,
+      "has_poc": false,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2026-22795",
+      "severity": "HIGH",
+      "cvss": 7.1,
+      "epss": 0.00015,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 8.6,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    },
+    {
+      "cve": "CVE-2026-22796",
+      "severity": "MEDIUM",
+      "cvss": 5.3,
+      "epss": 0.0007,
+      "packages": [
+        "https://openssl.org|openssl@3.0.16"
+      ],
+      "risk_score": 6.8,
+      "wild_exploited": false,
+      "has_poc": true,
+      "fix_available": false
+    }
+  ],
+  "cves_grype_only": []
+}
