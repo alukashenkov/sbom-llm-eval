@@ -1,22 +1,22 @@
 {
   "scores": {
-    "gemini-2.5-flash": {
+    "gemini-3-flash": {
       "cra_alignment": 8,
       "accuracy": 9,
       "completeness": 8,
       "conciseness": 7,
       "actionability": 8,
-      "weighted_total": 8.05,
-      "notes": "Strong CRA alignment with correct Article 14 assessment. Accurate CVE counts and EPSS values. Well-structured but slightly verbose."
+      "weighted_total": 8.1,
+      "notes": "Good CRA alignment with Article 14 check and compliance actions. Accurate CVE counts and EPSS values. Slightly verbose but comprehensive coverage."
     },
-    "gemini-3-flash": {
+    "gpt-4.1-mini": {
       "cra_alignment": 8,
       "accuracy": 8,
-      "completeness": 9,
-      "conciseness": 6,
-      "actionability": 9,
-      "weighted_total": 8.05,
-      "notes": "Good CRA compliance focus with specific version recommendations. Mentions PoC evidence discrepancy. Slightly verbose with redundant phrasing."
+      "completeness": 7,
+      "conciseness": 8,
+      "actionability": 8,
+      "weighted_total": 7.8,
+      "notes": "Strong CRA compliance focus with proper Article references. Minor inaccuracy claiming '1 more HIGH/CRITICAL CVE' when only 3 total exist. Good structure and actionability."
     },
     "deepseek-v3": {
       "cra_alignment": 9,
@@ -25,14 +25,14 @@
       "conciseness": 9,
       "actionability": 9,
       "weighted_total": 9.0,
-      "notes": "Excellent conciseness while maintaining completeness. Correctly identifies PoC evidence for specific CVEs. Clear CRA-aligned action priorities with specific Article references."
+      "notes": "Excellent CRA alignment with proper Article 14 assessment. Most accurate with exploit evidence details. Concise yet complete, with specific PoC sources and EPSS monitoring guidance."
     }
   },
   "ranking": [
     "deepseek-v3",
-    "gemini-2.5-flash",
-    "gemini-3-flash"
+    "gemini-3-flash",
+    "gpt-4.1-mini"
   ],
   "winner": "deepseek-v3",
-  "analysis": "DeepSeek-v3 delivers the most effective summary with superior conciseness while maintaining complete coverage of critical findings. It correctly identifies PoC evidence and provides clear, CRA-aligned action priorities with specific Article references. The other models are solid but more verbose with less precise exploit assessment."
+  "analysis": "DeepSeek-v3 provides the most balanced and accurate summary with excellent CRA compliance coverage, precise exploit evidence reporting, and optimal conciseness. All models correctly identified no Article 14 triggers, but DeepSeek-v3 excelled in surfacing specific PoC sources and providing actionable EPSS monitoring guidance."
 }

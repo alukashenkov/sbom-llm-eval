@@ -30,8 +30,8 @@ load_dotenv()
 # Model registry — OpenRouter model IDs
 # ---------------------------------------------------------------------------
 CANDIDATE_MODELS = {
-    "gemini-2.5-flash": "google/gemini-2.5-flash",
     "gemini-3-flash": "google/gemini-3-flash-preview",
+    "gpt-4.1-mini": "openai/gpt-4.1-mini",
     "deepseek-v3": "deepseek/deepseek-chat-v3-0324",
 }
 
@@ -40,9 +40,8 @@ CONFIG = {"judge_model": "anthropic/claude-sonnet-4"}
 # Pricing per million tokens (input, output) — for cost estimation
 MODEL_PRICING = {
     "google/gemini-3-flash-preview": (0.50, 3.00),
-    "google/gemini-2.5-flash": (0.30, 2.50),
+    "openai/gpt-4.1-mini": (0.40, 1.60),
     "deepseek/deepseek-chat-v3-0324": (0.28, 0.40),
-    "z-ai/glm-4.7": (0.45, 2.20),
     "anthropic/claude-sonnet-4": (3.00, 15.00),
 }
 
@@ -72,7 +71,7 @@ def call_openrouter(
     model_id: str,
     system_prompt: str,
     user_content: str,
-    max_tokens: int = 4096,
+    max_tokens: int = 16384,
     temperature: float = 0.3,
 ) -> dict:
     """Call OpenRouter chat completions API."""
@@ -101,7 +100,7 @@ def call_openrouter(
         "https://openrouter.ai/api/v1/chat/completions",
         headers=headers,
         json=payload,
-        timeout=120,
+        timeout=300,
     )
 
     if resp.status_code != 200:

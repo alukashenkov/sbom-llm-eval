@@ -1,38 +1,38 @@
 {
   "scores": {
-    "gemini-2.5-flash": {
-      "cra_alignment": 8,
-      "accuracy": 9,
-      "completeness": 9,
-      "conciseness": 6,
-      "actionability": 8,
-      "weighted_total": 8.05,
-      "notes": "Strong CRA alignment with correct Article 14 assessment and detailed compliance actions. Accurate CVE counts and severity distribution. Comprehensive coverage but exceeds word limit significantly."
-    },
     "gemini-3-flash": {
       "cra_alignment": 8,
       "accuracy": 9,
-      "completeness": 8,
-      "conciseness": 8,
-      "actionability": 9,
-      "weighted_total": 8.4,
-      "notes": "Excellent CRA compliance focus with proper Article references. Accurate data representation and good balance of detail vs brevity. Strong actionable recommendations with clear prioritization."
+      "completeness": 9,
+      "conciseness": 7,
+      "actionability": 8,
+      "weighted_total": 8.25,
+      "notes": "Strong CRA alignment with correct Article 14 assessment and detailed compliance actions. Accurate CVE counts and EPSS values. Comprehensive coverage but slightly verbose at ~600 words."
     },
-    "deepseek-v3": {
+    "gpt-4.1-mini": {
       "cra_alignment": 7,
       "accuracy": 8,
-      "completeness": 7,
-      "conciseness": 10,
+      "completeness": 8,
+      "conciseness": 8,
       "actionability": 7,
       "weighted_total": 7.65,
-      "notes": "Good CRA awareness but less detailed Article references. Accurate core data but some CVE attribution issues (CVE-2026-25253 listed under openclaw vs clawdbot). Excellent conciseness at 450 words."
+      "notes": "Good CRA compliance coverage but less detailed on Article references. Accurate data presentation. Well-structured but actionability could be more specific with version recommendations."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 9,
+      "accuracy": 9,
+      "completeness": 8,
+      "conciseness": 10,
+      "actionability": 9,
+      "weighted_total": 8.85,
+      "notes": "Excellent CRA alignment with specific Article citations. Accurate data and good completeness. Outstanding conciseness at 450 words. Clear, prioritized actions with specific compliance references."
     }
   },
   "ranking": [
+    "deepseek-v3",
     "gemini-3-flash",
-    "gemini-2.5-flash",
-    "deepseek-v3"
+    "gpt-4.1-mini"
   ],
-  "winner": "gemini-3-flash",
-  "analysis": "Gemini-3-flash achieves the best balance of CRA compliance, accuracy, and actionability while maintaining reasonable length. Gemini-2.5-flash provides comprehensive detail but is too verbose, while deepseek-v3 excels in conciseness but has some accuracy issues and less detailed CRA guidance."
+  "winner": "deepseek-v3",
+  "analysis": "Deepseek-v3 wins with superior conciseness (450 words vs ~600) while maintaining excellent CRA alignment through specific Article citations and accurate technical details. All models correctly identified no CRA Article 14 triggers, but Deepseek provided the most actionable guidance with clear compliance references."
 }

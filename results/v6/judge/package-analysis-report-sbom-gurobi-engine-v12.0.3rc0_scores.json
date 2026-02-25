@@ -1,38 +1,38 @@
 {
   "scores": {
-    "gemini-2.5-flash": {
-      "cra_alignment": 8,
-      "accuracy": 7,
-      "completeness": 8,
-      "conciseness": 6,
-      "actionability": 7,
-      "weighted_total": 7.35,
-      "notes": "Good CRA alignment with Article 14 check and compliance actions. Some accuracy issues with CVE counts and EPSS values. Comprehensive but verbose at ~600 words."
-    },
     "gemini-3-flash": {
       "cra_alignment": 8,
-      "accuracy": 8,
+      "accuracy": 9,
       "completeness": 9,
-      "conciseness": 8,
+      "conciseness": 7,
       "actionability": 8,
-      "weighted_total": 8.1,
-      "notes": "Strong CRA compliance focus with proper Article 14 assessment. Good accuracy on CVE details and EPSS scores. Well-structured with clear exploit assessment and actionable recommendations."
+      "weighted_total": 8.25,
+      "notes": "Strong CRA compliance focus with correct Article 14 assessment. Accurate CVE counts and severity distribution. Comprehensive coverage of critical findings with good exploit context. Slightly verbose but well-structured actionable recommendations."
+    },
+    "gpt-4.1-mini": {
+      "cra_alignment": 8,
+      "accuracy": 9,
+      "completeness": 8,
+      "conciseness": 8,
+      "actionability": 9,
+      "weighted_total": 8.4,
+      "notes": "Excellent CRA alignment and accuracy. Well-organized exploit assessment with specific PoC counts. Clear prioritization of actions by severity and exploit availability. Good balance of detail and conciseness."
     },
     "deepseek-v3": {
-      "cra_alignment": 8,
-      "accuracy": 8,
+      "cra_alignment": 9,
+      "accuracy": 9,
       "completeness": 8,
       "conciseness": 9,
       "actionability": 9,
-      "weighted_total": 8.3,
-      "notes": "Excellent conciseness while maintaining completeness. Strong CRA alignment and very actionable recommendations with clear priority ordering. Good accuracy on technical details."
+      "weighted_total": 8.7,
+      "notes": "Outstanding CRA compliance awareness with proper Article 14 assessment. Accurate technical details and EPSS scores. Most concise while maintaining completeness. Excellent actionable recommendations with specific CVE prioritization and monitoring guidance."
     }
   },
   "ranking": [
     "deepseek-v3",
-    "gemini-3-flash",
-    "gemini-2.5-flash"
+    "gpt-4.1-mini",
+    "gemini-3-flash"
   ],
   "winner": "deepseek-v3",
-  "analysis": "DeepSeek-v3 wins with superior conciseness and actionability while maintaining strong CRA alignment and accuracy. All models correctly identified no Article 14 triggers and provided good exploit assessments, but DeepSeek-v3 delivered the most focused and actionable summary. Gemini-3-Flash was close second with good structure, while Gemini-2.5-Flash was too verbose despite good technical content."
+  "analysis": "All three models correctly identified no CRA Article 14 triggers and provided accurate vulnerability assessments. Deepseek-v3 achieved the best balance of conciseness and actionability while maintaining technical accuracy, particularly excelling in CRA compliance guidance and specific monitoring recommendations."
 }

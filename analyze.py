@@ -27,12 +27,16 @@ load_dotenv()
 MODELS = {
     "gemini-3-flash": "google/gemini-3-flash-preview",
     "gemini-2.5-flash": "google/gemini-2.5-flash",
+    "gpt-4.1-mini": "openai/gpt-4.1-mini",
+    "gpt-5-nano": "openai/gpt-5-nano",
     "deepseek-v3": "deepseek/deepseek-chat-v3-0324",
 }
 
 MODEL_PRICING = {
     "google/gemini-3-flash-preview": (0.50, 3.00),
     "google/gemini-2.5-flash": (0.30, 2.50),
+    "openai/gpt-4.1-mini": (0.40, 1.60),
+    "openai/gpt-5-nano": (0.05, 0.40),
     "deepseek/deepseek-chat-v3-0324": (0.28, 0.40),
 }
 
@@ -237,10 +241,10 @@ def call_openrouter(model_id: str, system_prompt: str, user_content: str) -> dic
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_content},
             ],
-            "max_tokens": 4096,
+            "max_tokens": 16384,
             "temperature": 0.3,
         },
-        timeout=120,
+        timeout=300,
     )
 
     if resp.status_code != 200:
