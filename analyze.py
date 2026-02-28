@@ -2,12 +2,12 @@
 """
 SBOM Vulnerability Analysis — Single-file pipeline.
 
-Preprocesses an SBOM audit JSON, sends it to an LLM via OpenRouter,
-and prints a CRA-aligned vulnerability summary to the console.
+Preprocesses an SBOM audit JSON via preprocess.py, sends it to an LLM
+via OpenRouter, and prints a CRA-aligned vulnerability summary to the console.
 
 Usage:
     python3 analyze.py vulners_results/package-analysis-report-juice-shop.json
-    python3 analyze.py report.json --model deepseek-v3 --prompt prompts/v4.txt
+    python3 analyze.py report.json --model deepseek-v3 --prompt prompts/v7.txt
 """
 
 import argparse
@@ -18,6 +18,8 @@ import time
 
 import requests
 from dotenv import load_dotenv
+
+from preprocess import preprocess_file
 
 load_dotenv()
 
@@ -41,185 +43,7 @@ MODEL_PRICING = {
 }
 
 DEFAULT_MODEL = "gemini-3-flash"
-DEFAULT_PROMPT = os.path.join(os.path.dirname(__file__) or ".", "prompts", "v6.txt")
-
-# ---------------------------------------------------------------------------
-# Reference types indicating PoC / exploit availability
-# ---------------------------------------------------------------------------
-POC_REFERENCE_TYPES = {
-    "githubexploit",
-    "packetstorm",
-    "exploitdb",
-    "hackerone",
-    "nuclei",
-    "zdt",
-    "kitploit",
-    "cisa_kev",
-    "gitee",
-}
-
-
-# ---------------------------------------------------------------------------
-# Preprocessing (self-contained — no external imports needed)
-# ---------------------------------------------------------------------------
-def preprocess_advisory(adv: dict) -> dict:
-    """Strip an advisory to CRA-relevant fields + PoC extraction."""
-    poc_sources = {}
-    enchantments = adv.get("enchantments", {})
-    deps = enchantments.get("dependencies", {})
-    for ref in deps.get("references", []):
-        rtype = ref.get("type", "")
-        if rtype in POC_REFERENCE_TYPES:
-            poc_sources[rtype] = len(ref.get("idList", []))
-
-    desc = adv.get("description", "")
-    return {
-        "id": adv.get("id"),
-        "title": adv.get("title"),
-        "cvelist": adv.get("cvelist", []),
-        "description": desc[:200] + ("..." if len(desc) > 200 else ""),
-        "metrics": adv.get("metrics"),
-        "epss": adv.get("epss"),
-        "aiScore": adv.get("aiScore"),
-        "exploitation": adv.get("exploitation"),
-        "exploits": [
-            {"type": e.get("type"), "href": e.get("href")}
-            for e in adv.get("exploits", [])
-        ]
-        or None,
-        "pocSources": poc_sources or None,
-    }
-
-
-def compute_cve_analytics(processed_data: list) -> dict:
-    """Pre-compute CVE-level analytics for LLM accuracy."""
-    cve_map = {}
-    cra_triggers = []
-    poc_by_type = {}
-    pkg_cve_counts = {}
-
-    for pkg in processed_data:
-        pkg_name = f"{pkg['package']}@{pkg['version']}"
-        pkg_cves = set()
-
-        for adv in pkg["advisories"]:
-            cve_ids = adv.get("cvelist", [])
-            if not cve_ids:
-                # Use advisory ID for non-CVE advisories (e.g. GHSA)
-                adv_id = adv.get("id", "")
-                if adv_id:
-                    cve_ids = [adv_id]
-            poc = adv.get("pocSources") or {}
-            exploitation = adv.get("exploitation") or {}
-            metrics = adv.get("metrics") or {}
-            epss_data = adv.get("epss") or []
-            epss_score = epss_data[0].get("epss") if epss_data else None
-
-            cvss_score = None
-            severity = None
-            cvss = metrics.get("cvss")
-            if cvss:
-                cvss_score = cvss.get("score")
-                severity = (cvss.get("severity") or "").upper()
-
-            is_wild = exploitation.get("wildExploited", False)
-            has_kev = "cisa_kev" in poc
-
-            for cve_id in cve_ids:
-                pkg_cves.add(cve_id)
-                if cve_id not in cve_map:
-                    cve_map[cve_id] = {
-                        "severity": severity,
-                        "cvss": cvss_score,
-                        "epss": epss_score,
-                        "packages": set(),
-                        "wildExploited": False,
-                        "cisa_kev": False,
-                    }
-                entry = cve_map[cve_id]
-                entry["packages"].add(pkg_name)
-                if is_wild:
-                    entry["wildExploited"] = True
-                if has_kev:
-                    entry["cisa_kev"] = True
-                sev_order = {"CRITICAL": 4, "HIGH": 3, "MEDIUM": 2, "LOW": 1}
-                if sev_order.get(severity, 0) > sev_order.get(entry["severity"], 0):
-                    entry["severity"] = severity
-                    entry["cvss"] = cvss_score
-
-            for src_type in poc:
-                if src_type not in poc_by_type:
-                    poc_by_type[src_type] = set()
-                for cve_id in cve_ids:
-                    poc_by_type[src_type].add(cve_id)
-
-        pkg_cve_counts[pkg_name] = len(pkg_cves)
-
-    severity_dist = {}
-    for info in cve_map.values():
-        sev = info["severity"] or "UNKNOWN"
-        severity_dist[sev] = severity_dist.get(sev, 0) + 1
-
-    for cve_id, info in cve_map.items():
-        if info["wildExploited"] or info["cisa_kev"]:
-            cra_triggers.append(
-                {
-                    "cve": cve_id,
-                    "cvss": info["cvss"],
-                    "epss": info["epss"],
-                    "packages": sorted(info["packages"]),
-                    "wildExploited": info["wildExploited"],
-                    "cisa_kev": info["cisa_kev"],
-                }
-            )
-
-    top_packages = sorted(pkg_cve_counts.items(), key=lambda x: x[1], reverse=True)
-
-    return {
-        "uniqueCVECount": len(cve_map),
-        "severityDistribution": severity_dist,
-        "craMandatoryTriggers": cra_triggers or None,
-        "pocSummary": {k: len(v) for k, v in poc_by_type.items()},
-        "topAffectedPackages": [
-            {"package": p, "uniqueCVEs": c} for p, c in top_packages[:5]
-        ],
-    }
-
-
-def preprocess_file(filepath: str) -> dict:
-    """Load a JSON report and strip to CRA-relevant data with analytics."""
-    with open(filepath) as f:
-        raw = json.load(f)
-
-    meta = raw.get("meta", {})
-    packages = raw.get("data", [])
-    processed_data = []
-    total_packages = len(packages)
-
-    for pkg in packages:
-        advisories = pkg.get("applicableAdvisories", [])
-        if not advisories:
-            continue
-        processed_data.append(
-            {
-                "package": pkg.get("package"),
-                "version": pkg.get("version"),
-                "advisories": [preprocess_advisory(a) for a in advisories],
-            }
-        )
-
-    analytics = compute_cve_analytics(processed_data)
-
-    return {
-        "meta": meta,
-        "stats": {
-            "totalPackages": total_packages,
-            "affectedPackages": len(processed_data),
-            "totalAdvisories": sum(len(p["advisories"]) for p in processed_data),
-        },
-        "cveAnalytics": analytics,
-        "data": processed_data,
-    }
+DEFAULT_PROMPT = os.path.join(os.path.dirname(__file__) or ".", "prompts", "v7.txt")
 
 
 # ---------------------------------------------------------------------------
@@ -292,7 +116,9 @@ def main():
     model_id = MODELS[args.model]
     prompt_text = open(args.prompt).read()
 
-    # Step 1: Preprocess
+    # ------------------------------------------------------------------
+    # Step 1: Preprocess (via preprocess.py)
+    # ------------------------------------------------------------------
     print(f"{'=' * 60}")
     print(f"  File:   {args.file}")
     print(f"  Model:  {args.model} ({model_id})")
@@ -304,31 +130,82 @@ def main():
     preprocessed = preprocess_file(args.file)
     elapsed = time.time() - t0
 
-    analytics = preprocessed["cveAnalytics"]
+    an = preprocessed["cveAnalytics"]
     user_content = json.dumps(preprocessed, indent=None, ensure_ascii=False)
     token_est = len(user_content) // 4
 
     print(f"done ({elapsed:.1f}s)")
     print(
-        f"      Packages: {preprocessed['stats']['totalPackages']} total, "
+        f"      Packages : {preprocessed['stats']['totalPackages']} total, "
         f"{preprocessed['stats']['affectedPackages']} affected"
     )
     print(f"      Advisories: {preprocessed['stats']['totalAdvisories']}")
-    print(f"      Unique CVEs: {analytics['uniqueCVECount']}")
-    print(f"      Severity: ", end="")
+    print(f"      Unique CVEs: {an['uniqueCVECount']}")
+
+    # Severity distribution
+    print("      Severity : ", end="")
     for sev in ("CRITICAL", "HIGH", "MEDIUM", "LOW"):
-        count = analytics["severityDistribution"].get(sev, 0)
+        count = an["severityDistribution"].get(sev, 0)
         if count:
             print(f"{sev}={count} ", end="")
     print()
-    triggers = analytics.get("craMandatoryTriggers")
-    if triggers:
-        print(f"      ⚠️  CRA TRIGGERS: {len(triggers)} mandatory reporting entries")
-    else:
-        print(f"      ✅ No CRA mandatory reporting triggers")
-    print(f"      Payload: {len(user_content) // 1024} KB (~{token_est} tokens)")
 
+    # CRA tier distribution
+    tier_dist = an.get("craTierDistribution", {})
+    if tier_dist:
+        parts = []
+        for tier in ("ACTIVELY_EXPLOITED", "EXPLOITABLE", "VULNERABILITY"):
+            c = tier_dist.get(tier, 0)
+            if c:
+                parts.append(f"{tier}={c}")
+        print(f"      CRA tiers: {', '.join(parts)}")
+
+    # Art. 14 Track 1 — mandatory triggers
+    triggers = an.get("craMandatoryTriggers")
+    if triggers:
+        print(
+            f"      ⚠️  Art.14 Track1 TRIGGERS: {len(triggers)} — CSIRT/ENISA notification required"
+        )
+        for t in triggers:
+            print(
+                f"           {t['cve']}  CVSS={t['cvss']}  EPSS={t['epss']}  "
+                f"wildExploited={t['wildExploited']}  KEV={t['cisa_kev']}"
+            )
+    else:
+        print("      ✅ No Art. 14 Track 1 mandatory reporting triggers")
+
+    # Art. 14 Track 2 — severe-incident candidates
+    track2 = an.get("craTrack2Candidates")
+    if track2:
+        print(
+            f"      ⚠️  Art.14 Track2 CANDIDATES: {len(track2)} possible severe-incident CVEs"
+        )
+        for t in track2[:3]:
+            print(f"           {t['cve']}  CVSS={t['cvss']}  {t.get('cvssVector', '')}")
+    else:
+        print("      ✅ No Art. 14 Track 2 severe-incident candidates")
+
+    # EPSS staleness
+    stale = an.get("epssStaleCount", 0)
+    if stale:
+        print(
+            f"      ℹ️  EPSS stale (>90d): {stale} CVEs — lower confidence in exploitability scores"
+        )
+
+    # Age risk
+    age_risk = an.get("ageRisk")
+    if age_risk:
+        oldest = age_risk[0]
+        print(
+            f"      ⏱  Oldest unpatched: {oldest['cve']} ({oldest['severity']}) "
+            f"— {oldest['daysPublic']} days public"
+        )
+
+    print(f"      Payload  : {len(user_content) // 1024} KB (~{token_est} tokens)")
+
+    # ------------------------------------------------------------------
     # Step 2: Call LLM
+    # ------------------------------------------------------------------
     print(f"\n[2/3] Calling {args.model}...", end=" ", flush=True)
     t0 = time.time()
     result = call_openrouter(model_id, prompt_text, user_content)
@@ -347,11 +224,13 @@ def main():
 
     print(f"done ({elapsed:.1f}s)")
     print(f"      Tokens: {in_tok:,} in / {out_tok:,} out")
-    print(f"      Cost: ${cost:.4f}")
+    print(f"      Cost:   ${cost:.4f}")
 
+    # ------------------------------------------------------------------
     # Step 3: Output
-    print(f"\n[3/3] Summary")
-    print(f"{'=' * 60}\n")
+    # ------------------------------------------------------------------
+    print("\n[3/3] Summary")
+    print("=" * 60 + "\n")
     print(result["content"])
     print(f"\n{'=' * 60}")
 

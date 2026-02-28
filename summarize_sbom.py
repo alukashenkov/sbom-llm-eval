@@ -124,7 +124,8 @@ def call_openrouter(
 # ---------------------------------------------------------------------------
 # Evaluate Mode
 # ---------------------------------------------------------------------------
-JUDGE_PROMPT = """You are an expert evaluator of cybersecurity vulnerability summaries.
+JUDGE_PROMPT = """You are an expert evaluator of cybersecurity vulnerability summaries produced
+under the EU Cyber Resilience Act (Regulation EU 2024/2847).
 You will receive a CROSS-REFERENCED VULNERABILITY COMPARISON from two scan sources
 and {n_models} candidate summaries produced by different LLM models.
 
@@ -149,15 +150,26 @@ EVALUATION RULES:
 - ONLY penalise CVEs found in NEITHER source (true hallucinations).
 - Use risk_score values to assess whether summaries prioritise the right CVEs.
 
+CRA CONTEXT — the preprocessed data supplied to each model includes pre-computed fields:
+- craTier per CVE: ACTIVELY_EXPLOITED (Art.3(42)) / EXPLOITABLE (Art.3(41)) / VULNERABILITY (Art.3(40))
+- craMandatoryTriggers: Art. 14 Track 1 entries (wildExploited / CISA KEV)
+  requiring 24h early warning → 72h notification → 14d final report
+- craTrack2Candidates: Art. 14 Track 2 severe-incident heuristic (CVSS≥9 + AV:N + CIA:H)
+  requiring 24h early warning → 72h incident notification → 1 month final report
+- fixHint: upgrade path/version extracted per CVE (summaries should cite this in actions)
+- daysPublic: age of vulnerability (ageRisk flags oldest-unpatched as Annex I Part II §2 signals)
+- epssPercentile: relative exploit probability ranking
+- epssStaleCount: CVEs with EPSS >90 days old (flagging reduces exploitability confidence)
+
 Score each summary on these criteria (1-10 scale):
 
-| Criterion | Weight | Description |
-|-----------|--------|-------------|
-| CRA Alignment | 30% | Correctly flags exploited CVEs, mentions Article 14 deadlines (24h/72h/14d), surfaces CISA KEV entries |
-| Accuracy | 25% | CVE IDs, counts, severity, CVSS/EPSS match source_comparison. Penalise true hallucinations heavily. |
-| Completeness | 20% | All high-risk CVEs (risk_score >= 7) covered, fix versions mentioned where available |
-| Conciseness | 15% | Under 600 words, no filler, no hallucinated CVEs |
-| Actionability | 10% | Priority actions reference correct fix versions, ordered by risk_score then CRA obligation |
+| Criterion | Weight | What to reward / penalise |
+|-----------|--------|---------------------------|
+| CRA Alignment | 30% | REWARD: Art. 3 three-tier classification used; Track 1 deadlines (24h/72h/14d) stated; Track 2 candidates identified where present; Annex I Part II § numbers cited for each action. PENALISE: missing Track 2 when craTrack2Candidates exist; wrong deadlines; wrong article references; no tier classification |
+| Accuracy | 25% | CVE IDs, counts, severity, CVSS/EPSS match source_comparison. Uses cvssVector info correctly. Penalise true hallucinations heavily. |
+| Completeness | 20% | All CVEs with risk_score ≥ 7 covered; fixHint cited per remediation action; ageRisk oldest-unpatched CVEs flagged with daysPublic; epssStale flagged when epssStaleCount > 0 |
+| Conciseness | 15% | Under 550 words, bullet-point format, no filler, no hallucinated CVEs |
+| Actionability | 10% | Actions cite fixHint for target versions; ordered by craTier then risk_score; Art. 14 notification steps are concrete and operationally complete |
 
 Output a JSON object with this structure:
 {{
@@ -169,7 +181,7 @@ Output a JSON object with this structure:
             "conciseness": <1-10>,
             "actionability": <1-10>,
             "weighted_total": <float>,
-            "notes": "<brief justification>"
+            "notes": "<brief justification — note craTier usage, Track2 detection, fixHint usage, epssStale handling>"
         }}
     }},
     "ranking": ["<best_model>", "<second>", ...],

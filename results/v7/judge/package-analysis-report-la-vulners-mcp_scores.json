@@ -1,0 +1,38 @@
+{
+  "scores": {
+    "gemini-3-flash": {
+      "cra_alignment": 9,
+      "accuracy": 8,
+      "completeness": 9,
+      "conciseness": 7,
+      "actionability": 9,
+      "weighted_total": 8.5,
+      "notes": "Excellent CRA tier classification and Art. 14 Track 2 detection. Correctly identifies CVE-2023-45853 and CVE-2026-22184 as Track 2 candidates. Good fixHint usage and age risk flagging. Slightly verbose but comprehensive coverage."
+    },
+    "gpt-4.1-mini": {
+      "cra_alignment": 9,
+      "accuracy": 9,
+      "completeness": 10,
+      "conciseness": 6,
+      "actionability": 9,
+      "weighted_total": 8.7,
+      "notes": "Outstanding accuracy and completeness. Properly uses craTier classification, detects Track 2 candidates, and extensively cites fixHint for each CVE. Excellent EPSS stale handling. Too verbose but most comprehensive."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 8,
+      "accuracy": 8,
+      "completeness": 7,
+      "conciseness": 10,
+      "actionability": 8,
+      "weighted_total": 8.1,
+      "notes": "Good CRA alignment with proper Track 2 detection and tier classification. Accurate CVE reporting but less detailed fixHint usage. Excellent conciseness while maintaining essential information. Some completeness gaps in detailed remediation guidance."
+    }
+  },
+  "ranking": [
+    "gpt-4.1-mini",
+    "gemini-3-flash",
+    "deepseek-v3"
+  ],
+  "winner": "gpt-4.1-mini",
+  "analysis": "GPT-4.1-mini achieves the highest score through exceptional accuracy and completeness, properly identifying all confirmed CVEs and Track 2 candidates while extensively citing fixHint guidance. Gemini-3-flash provides strong CRA alignment and actionability but is slightly less accurate. DeepSeek-v3 excels in conciseness while maintaining good accuracy but lacks some completeness in remediation details."
+}

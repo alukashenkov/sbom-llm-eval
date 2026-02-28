@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "gemini-3-flash": {
+      "cra_alignment": 8,
+      "accuracy": 7,
+      "completeness": 8,
+      "conciseness": 6,
+      "actionability": 8,
+      "weighted_total": 7.5,
+      "notes": "Good CRA tier classification and Track 2 detection. Uses Art. 3 references correctly. Includes fixHint citations. No epssStale handling mentioned. Slightly verbose at ~550 words but well-structured."
+    },
+    "gpt-4.1-mini": {
+      "cra_alignment": 9,
+      "accuracy": 9,
+      "completeness": 9,
+      "conciseness": 7,
+      "actionability": 9,
+      "weighted_total": 8.7,
+      "notes": "Excellent CRA alignment with proper Art. 14 deadlines and tier classification. Accurate CVE data and CVSS vectors. Comprehensive fixHint usage. Mentions epssStale count: 0. Strong actionability with concrete steps."
+    },
+    "deepseek-v3": {
+      "cra_alignment": 8,
+      "accuracy": 8,
+      "completeness": 7,
+      "conciseness": 8,
+      "weighted_total": 8.0,
+      "notes": "Good CRA tier usage and Track 2 identification. Accurate CVE data. Most concise format. Some fixHint usage but less comprehensive than others. No epssStale handling mentioned. Clear actionable steps."
+    }
+  },
+  "ranking": [
+    "gpt-4.1-mini",
+    "deepseek-v3",
+    "gemini-3-flash"
+  ],
+  "winner": "gpt-4.1-mini",
+  "analysis": "GPT-4.1-mini provides the most comprehensive CRA-compliant summary with excellent accuracy, proper Art. 14 notification procedures, and thorough fixHint citations. DeepSeek-v3 offers superior conciseness while maintaining good CRA alignment. Gemini-3-flash is solid but slightly verbose and less precise in some technical details."
+}

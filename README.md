@@ -1,83 +1,103 @@
 # Vulners SBOM Audit Summary — LLM Prompt & Model Evaluation
 
-LLM-powered summarization of [Vulners SBOM Audit](https://vulners.com/sbom-audit) results into CRA-aligned vulnerability reports. Audit results can be obtained via [UI](https://vulners.com/sbom-audit) or [API](https://docs.vulners.com/docs/api/audit/#sbom-audit).
+LLM-powered summarization of [Vulners SBOM Audit](https://vulners.com/sbom-audit) results into CRA-aligned vulnerability reports under **Regulation (EU) 2024/2847** (Cyber Resilience Act). Audit results can be obtained via [UI](https://vulners.com/sbom-audit) or [API](https://docs.vulners.com/docs/api/audit/#sbom-audit).
 
-## Winner: DeepSeek V3 + v6 prompt
+## Winner: Gemini 3 Flash + v7 prompt *(speed-weighted)*
 
 | | |
 | --- | --- |
-| **Model** | `deepseek/deepseek-chat-v3-0324` via OpenRouter |
-| **Prompt** | `prompts/v6.txt` |
-| **Score** | 8.01 / 10 (judged by Claude Sonnet 4) |
-| **Speed** | ~44s per file |
-| **Cost** | ~$0.012 per file |
+| **Model** | `google/gemini-3-flash-preview` via OpenRouter |
+| **Prompt** | `prompts/v7.txt` |
+| **Quality score** | 7.77 / 10 (judged by Claude Sonnet 4) |
+| **Speed** | **~11s per file** (2× faster than GPT-4.1-mini, 4× faster than DeepSeek) |
+| **Cost** | ~$0.032 per file |
+| **Composite (50% quality + 50% speed)** | **7.69** |
 
-Best balance of quality and cost for CRA-aligned vulnerability summaries from Vulners SBOM audit JSON. Consistently wins on conciseness and accuracy, with strong CRA article citations.
+For highest output quality (CRA alignment, accuracy, completeness) without hard latency constraints, use **GPT-4.1-mini** (composite 6.79, quality 8.52, ~23s/file).
 
-Fastest option: **Gemini 3 Flash** (7.66 avg, ~8s/file).
-Most consistent: **GPT-4.1-mini** (7.81 avg, ~14s/file).
+## v7 Evaluation Summary — Speed-Weighted Composite (50/50)
+
+| Rank | Model | Quality | Avg time | Speed score | **Composite** |
+|---|---|---|---|---|---|
+| 🥇 | **gemini-3-flash** | 7.77 | **11.4s** | 7.61 | **7.69** |
+| 🥈 | gpt-4.1-mini | **8.52** | 23.4s | 5.07 | 6.79 |
+| 🥉 | deepseek-v3 | 8.08 | 47.5s | 0.00 | 4.04 |
+
+> DeepSeek disqualifies itself under ≥50% speed weight — tail latency of 84.7s on large files (openclaw) makes it unsuitable for production with SLA requirements, despite being the cheapest ($0.085 total) and most concise.
+
+### Per-Criterion Quality Scores (v7)
+
+| Criterion | Weight | gemini-3-flash | gpt-4.1-mini | deepseek-v3 |
+|---|---|---|---|---|
+| CRA Alignment | 30% | 8.33 | **9.00** | 8.17 |
+| Accuracy | 25% | 7.17 | **8.50** | 8.00 |
+| Completeness | 20% | 8.17 | **9.00** | 7.33 |
+| Conciseness | 15% | 6.50 | 7.00 | **9.17** |
+| Actionability | 10% | 8.33 | **8.83** | 7.80 |
+
+### Per-File Response Times (v7)
+
+| File | gemini-3-flash | gpt-4.1-mini | deepseek-v3 |
+|---|---|---|---|
+| juice-shop | 13.6s | 26.9s | 31.1s |
+| la-vulners-mcp | 9.2s | 19.1s | 34.9s |
+| openclaw | 14.0s | 23.6s | ⚠️ 84.7s |
+| grbrsm_ui | 7.6s | 23.2s | 20.2s |
+| gurobi-engine | 12.6s | 29.9s | 38.0s |
+| vulners-mcp | 11.2s | 17.8s | ⚠️ 76.2s |
 
 ## Ground Truth: Dual-Source Comparison
 
-Evaluation uses cross-referenced findings from **Vulners** (70% weight) and **Grype** (30% weight). The `compare_sources.py` script normalizes vulnerability IDs (including non-CVE advisories like GHSA), computes per-CVE risk scores, and generates structured comparison data for the judge.
+Evaluation uses cross-referenced findings from **Vulners** (70% weight) and **Grype** (30% weight). The `compare_sources.py` script normalises vulnerability IDs (including non-CVE advisories like GHSA), computes per-CVE risk scores, and generates structured comparison data for the judge.
 
-Judge receives a `source_comparison` with CVEs categorized as:
+Judge receives a `source_comparison` with CVEs categorised as:
 
 - **In both sources** — confirmed findings, penalises summaries that miss them
 - **Vulners-only** — legitimate (primary source), no penalty for including
 - **Grype-only** — legitimate (cross-check), not mandatory to include
 - **In neither** — true hallucinations, penalised heavily
 
-## Evaluation Summary (9 models tested, 6 prompt iterations, 6 test files)
+## CRA Alignment
 
-| Model | Score (v6) | Speed | Status |
-|-------|-----------|-------|--------|
-| **DeepSeek V3** | **8.01** | 44s | ✅ **Winner** — best quality-to-cost ratio, wins 4/6 files |
-| GPT-4.1-mini | 7.81 | 14s | Most consistent — narrowest score range, wins openclaw |
-| Gemini 3 Flash | 7.66 | 8s | Fastest — best for bulk processing, wins la-vulners-mcp |
-| Gemini 2.5 Flash | 7.88 (prev) | 7s | Persistent verbosity — exceeds word limits |
-| GPT-5 Nano | 7.67 (prev) | 120s | All tokens consumed by internal reasoning; needs 16K max_tokens |
-| GLM 4.7 | 7.53 (v1) | 64s | Slow, expensive, only scored 4/6 files in v2 |
-| Kimi K2.5 | — | 200s | Replaced after v0 — 200s/call unusable |
-| Qwen Turbo | 6.07 (v1) | 37s | Collapsed on largest file (score 2.45) |
-| Claude 3 Haiku | 5.91 (v1) | 15s | Falsely triggered CRA Article 14 reporting |
+Summaries are produced under the three-tier vulnerability taxonomy of Regulation (EU) 2024/2847:
 
-### Per-File Breakdown (v6)
+| Tier | CRA Article | Definition | Action |
+|---|---|---|---|
+| `ACTIVELY_EXPLOITED` | Art. 3(42) | Reliable evidence of in-the-wild malicious exploitation | Art. 14 Track 1: 24h → 72h → 14-day report to ENISA/CSIRT |
+| `EXPLOITABLE` | Art. 3(41) | Potential to be effectively used under practical operational conditions | Pre-market gate (Annex I §2); remediate without delay (Annex I Part II §2) |
+| `VULNERABILITY` | Art. 3(40) | Weakness that can be exploited | Track, document, manage throughout lifecycle |
 
-| File | DeepSeek V3 | GPT-4.1-mini | Gemini 3 Flash |
-|------|-------------|-------------|----------------|
-| openclaw (96 vulns) | 8.20 | **8.60** | 7.60 |
-| vulners-mcp (374 vulns) | **8.50** | 8.40 | 7.60 |
-| gurobi-engine (62 vulns) | **8.40** | 7.90 | 7.60 |
-| juice-shop (87 vulns) | **8.20** | 7.50 | 7.65 |
-| la-vulners-mcp (15 vulns) | 6.85 | 7.65 | **8.35** |
-| grbrsm_ui (9 vulns) | **7.90** | 6.25 | 7.15 |
+## Key Optimisations
 
-## Key Optimizations
-
-1. **Pre-computed CVE analytics** (v5) — Python deduplicates CVEs before sending to LLM. Eliminated counting errors that plagued all models.
-2. **Non-CVE advisory support** — GHSA and other non-CVE advisories are included via advisory ID fallback when `cvelist` is empty. Increased openclaw from 57 to 96 matched vulnerabilities.
-3. **Dual-source comparison judge** — Cross-referenced Vulners + Grype findings with per-CVE risk scores give the judge structured, verifiable ground truth.
-4. **Inline CRA article citations** (v6) — Baking "Article 10/11/14" into prompt section headers drove CRA alignment scores from ~7 to ~8.5.
-5. **Anti-hallucination rule** (v6) — "ONLY reference CVEs in the input data" reduced fabricated entries. Judge penalises only CVEs found in neither source.
+1. **CRA-accurate article references** (v7) — corrected from Article 10/11 to **Art. 3, 13, 14, Annex I** per final Regulation (EU) 2024/2847 text.
+2. **Three-tier taxonomy pre-classification** (v7) — `preprocess.py` computes `craTier` per CVE before sending to the LLM, eliminating exploitability inference errors.
+3. **Art. 14 dual-track reporting** (v7) — Track 1 (actively exploited: 24h/72h/14d) and Track 2 (severe incident: 24h/72h/1mo) are surfaced as separate pre-computed `craMandatoryTriggers` / `craTrack2Candidates` fields.
+4. **Rich CVSS fields** (v7) — `cvssVector`, `cvssVersion`, `cvssSource` extracted; model can reason about network reachability and attack complexity for Art. 3(41) exploitability assessment.
+5. **EPSS percentile + staleness** (v7) — `epssPercentile` and `epssDate` extracted; stale scores (>90 days) flagged so the model can express appropriate uncertainty.
+6. **Fix hints from Vulners AI** (v7) — `enchantments.short_description` ("upgrade to X.Y.Z") and `aiDescription` extracted as `fixHint` and `description`; drives concrete remediation actions in Annex I Part II §2.
+7. **Age risk signal** (v7) — `daysPublic` computed per CVE; top unpatched CRITICAL/HIGH CVEs surfaced as `ageRisk` — long-unpatched issues are flagged as potential "without delay" violations (Annex I Part II §2).
+8. **EPSS merge bug fixed** (v7) — EPSS score now correctly keeps the *highest* value when a CVE appears across multiple advisories (previously took first seen).
+9. **Pre-computed CVE analytics** (v5) — Python deduplicates CVEs before sending to LLM. Eliminated counting errors across all models.
+10. **Dual-source judge** (v5) — Cross-referenced Vulners + Grype findings with per-CVE risk scores give the judge structured, verifiable ground truth.
 
 ## Project Structure
 
 ```
 SSA/
-├── vulners_results/           # Vulners SBOM audit JSON files
+├── vulners_results/       # Vulners SBOM audit JSON files
 ├── grype_results/         # Grype vulnerability scan outputs
 ├── comparisons/           # Cross-source comparison reports per SBOM
 │   └── {sbom-name}/
 │       ├── comparison.md  # Human-readable report
 │       └── comparison.json # Structured data for judge
-├── prompts/               # Prompt versions (v1–v6)
-│   └── v6.txt             # Best prompt
+├── prompts/               # Prompt versions (v1–v7)
+│   └── v7.txt             # Current best prompt (CRA-aligned)
 ├── results/               # Versioned evaluation results
-│   └── v6/                # Latest: rankings, judge scores, metrics
+│   └── v7/                # Latest: rankings, judge scores, run metrics
 ├── compare_sources.py     # Grype vs Vulners comparison script
-├── preprocess.py          # Data preprocessing module
-├── summarize_sbom.py      # Evaluation workbench (multi-model, judge)
+├── preprocess.py          # Data preprocessing — CRA-tier classification,
+│                          #   CVSS/EPSS/fixHint/ageRisk extraction
+├── summarize_sbom.py      # Evaluation workbench (multi-model + judge)
 ├── analyze.py             # Single-file analysis script
 ├── requirements.txt       # Python dependencies
 └── .env                   # OPENROUTER_API_KEY (not committed)
@@ -94,36 +114,37 @@ echo 'OPENROUTER_API_KEY=sk-or-v1-your-key' > .env
 
 ### `analyze.py` — Single-file analysis
 
-Runs the full pipeline on one Vulners SBOM audit JSON file: preprocess → call LLM → print summary to console.
+Preprocesses one Vulners SBOM audit JSON, calls the LLM, and prints a CRA-aligned summary to the console.
 
 ```bash
-# Default: Gemini 3 Flash + v6 prompt
+# Default: Gemini 3 Flash + v7 prompt
 python3 analyze.py vulners_results/package-analysis-report-juice-shop.json
 
 # Custom model and prompt
-python3 analyze.py vulners_results/package-analysis-report-juice-shop.json --model deepseek-v3 --prompt prompts/v4.txt
+python3 analyze.py vulners_results/package-analysis-report-juice-shop.json \
+  --model gpt-4.1-mini --prompt prompts/v7.txt
 ```
+
+Available models: `gemini-3-flash`, `gemini-2.5-flash`, `gpt-4.1-mini`, `gpt-5-nano`, `deepseek-v3`
 
 ### `compare_sources.py` — Grype vs Vulners comparison
 
-Cross-references Grype and Vulners findings per SBOM. Normalizes vulnerability IDs (CVE + GHSA), computes risk scores, and generates comparison reports.
+Cross-references Grype and Vulners findings per SBOM. Normalises vulnerability IDs (CVE + GHSA), computes risk scores, and generates comparison reports used by the judge.
 
 ```bash
-# Default directories
 python3 compare_sources.py
-
-# Custom paths
+# Custom paths:
 python3 compare_sources.py --vulners vulners_results/ --grype grype_results/ --output comparisons/
 ```
 
 ### `summarize_sbom.py` — Evaluation workbench
 
-Runs all candidate models on all files, then uses a judge model (Claude Sonnet 4) to score and rank outputs using cross-source comparison data.
+Runs all candidate models on all files, then scores and ranks outputs using Claude Sonnet 4 as judge with cross-source ground truth.
 
 ```bash
-# Full evaluation (requires comparison data — run compare_sources.py first)
-python3 summarize_sbom.py --evaluate --prompt prompts/v6.txt --data vulners_results/ --comparisons comparisons/
+# Full evaluation (run compare_sources.py first)
+python3 summarize_sbom.py --evaluate --prompt prompts/v7.txt --data vulners_results/
 
 # Single model, all files (no judging)
-python3 summarize_sbom.py --summarize --model gemini-3-flash --prompt prompts/v6.txt --data vulners_results/
+python3 summarize_sbom.py --summarize --model gemini-3-flash --prompt prompts/v7.txt --data vulners_results/
 ```
